@@ -83,7 +83,17 @@
 │       ├── linkedin_profile_overview.png
 │       └── linkedin_skills_updated.png
 │
-├── 📊 Scholarship_and_Visa_Application_Tracker_2026.xlsx  <-- LIVE MASTER MULTI-SHEET TRACKER (6 Sheets: Master Dashboard, Non-IELTS Universities, China CSC, Russia Open Doors, Hungary Stipendium, Romania Work Visa)
+├── 📁 07_Chat_History_and_Session_Archives/ <-- PERMANENT CONVERSATION & SESSION BACKUP
+│   ├── FULL_CHAT_AND_SESSION_TRANSCRIPT.md  (Complete dialogue transcript & progress archive)
+│   ├── transcript_full.jsonl                (Raw JSONL log with full tool calls & system events)
+│   └── transcript.jsonl                     (Compact session JSONL)
+│
+├── 📄 APPLICATIONS.md                               <-- Master GitHub / CLI markdown tracker
+├── 📊 applications.json                             <-- Single source of truth JSON database
+├── 🐍 track.py                                      <-- Zero-dependency Python CLI tracker for Termux & PC
+├── 🔄 sync.sh                                       <-- 1-click sync script between PC and mobile
+├── 📱 TERMUX_AND_AGY_MOBILE_SETUP.md                <-- Android Termux + agy CLI guide
+├── 📊 Scholarship_and_Visa_Application_Tracker_2026.xlsx  <-- LIVE MASTER MULTI-SHEET TRACKER (6 Sheets)
 ├── 📝 SESSION_STATE_AND_NEXT_STEPS_OCT_2026.md          <-- APPLICATION STATUS & ROADMAP
 └── 💼 CAREER_ACTION_PLAN_AND_LINKEDIN_OVERHAUL.md        <-- CAREER & LINKEDIN STRATEGY
 ```
