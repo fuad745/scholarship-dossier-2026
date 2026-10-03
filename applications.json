@@ -240,6 +240,22 @@
       "priority": "Work Track",
       "portal_url": "https://workinromania.gov.ro/",
       "notes": "Commercial backup to enter EU legally with driving license."
+    },
+    {
+      "id": "france-campus-france",
+      "country": "France",
+      "university": "Université Paris-Saclay / UGA / IP Paris / Lille / Lorraine (Up to 7 choices)",
+      "program": "MSc Computer Science: Software Architecture, Distributed Systems & Cloud",
+      "funding": "France Excellence Eiffel Scholarship + Partial Tuition Fee Waivers (Exonération)",
+      "benefits": "€1,181/mo Cash Stipend + Flights + Health Insurance (if Eiffel) OR Tuition down to €243/yr",
+      "language_requirement": "English Medium of Instruction (MOI) Certificate Accepted",
+      "target_intake": "Fall 2027 (Starting Sept 2027)",
+      "deadline": "2026-12-15",
+      "portal_open": "2026-10-01",
+      "status": "DOSSIER_READY",
+      "priority": "P1",
+      "portal_url": "https://pastel.diplomatie.gouv.fr/etudesenfrance/",
+      "notes": "1 master profile for up to 7 universities. In-person interview at Alliance Éthio-Française Piassa, Addis Ababa."
     }
   ],
   "china_professors": [

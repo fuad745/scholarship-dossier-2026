@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Fuad Ahmed - Academic CV</title>
+<style>
+    @page {
+        size: A4;
+        margin: 12mm 15mm 12mm 15mm;
+    }
+    body {
+        font-family: 'Liberation Sans', 'DejaVu Sans', Arial, sans-serif;
+        color: #1e293b;
+        line-height: 1.4;
+        font-size: 9.8pt;
+    }
+    h1 {
+        color: #0f2d4a;
+        font-size: 17pt;
+        margin: 0 0 4px 0;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    h2 {
+        color: #1e3a8a;
+        font-size: 11pt;
+        border-bottom: 1.5px solid #2563eb;
+        padding-bottom: 2px;
+        margin-top: 11px;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    h3 {
+        color: #0f172a;
+        font-size: 10.2pt;
+        margin-top: 6px;
+        margin-bottom: 2px;
+    }
+    p {
+        margin: 0 0 3px 0;
+    }
+    ul {
+        margin: 2px 0 5px 16px;
+        padding: 0;
+    }
+    li {
+        margin-bottom: 2px;
+    }
+    a {
+        color: #2563eb;
+        text-decoration: none;
+    }
+    code {
+        background: #f1f5f9;
+        padding: 1px 3px;
+        font-size: 8.8pt;
+        border-radius: 3px;
+        font-family: monospace;
+    }
+    hr {
+        border: none;
+        border-top: 1px solid #cbd5e1;
+        margin: 6px 0;
+    }
+</style>
+</head>
+<body>
+<h1>FUAD AHMED</h1>
+<p><strong>Full-Stack Software Engineer & Computer Systems Researcher</strong></p>
+<p>Addis Ababa, Ethiopia | <code>fuadahmedt@gmail.com</code> | <code>+251 925 278 350</code></p>
+<p><strong>Portfolio:</strong> <a href="https://fuad-portfolio-rose.vercel.app">fuad-portfolio-rose.vercel.app</a> | <strong>GitHub:</strong> <a href="https://github.com/fuad745">github.com/fuad745</a> | <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/fuad-ahmed745">linkedin.com/in/fuad-ahmed745</a></p>
+<hr/>
+<h2>🎯 ACADEMIC & RESEARCH PROFILE</h2>
+<p>Results-driven Computer Science graduate and Systems Engineer with a <strong>3.20 Major GPA</strong> and proven experience designing high-concurrency backend architectures, reactive cross-platform mobile systems, and geospatial engines. Combines rigorous computational foundations (distributed systems, database internals, and concurrency algorithms) with practical engineering leadership in multi-stakeholder and operational environments. Seeking admission to a <strong>Master of Science (M1/M2) in Computer Science / Software Architecture & Distributed Systems</strong> in France, with eligibility for the <strong>France Excellence Eiffel Scholarship</strong>.</p>
+<hr/>
+<h2>🎓 EDUCATION & ACADEMIC ACHIEVEMENTS</h2>
+<h3>**Bachelor of Science in Computer Science**</h3>
+<p><strong>St. Mary’s University</strong>, Addis Ababa, Ethiopia</p>
+<p><em>Graduated: July 2022 | Medium of Instruction: 100% English</em></p>
+<ul>
+<li><strong>Major GPA:</strong> <strong>3.20 / 4.00</strong> | <strong>Cumulative GPA:</strong> 3.04 / 4.00</li>
+<li><strong>Core Computational Coursework:</strong></li>
+<li>Data Structures & Algorithms (Advanced Algorithmic Complexity, Graph Algorithms, Sorting & Searching)</li>
+<li>Database Systems & Architecture (Relational Normalization, Indexing, B-Trees, Query Optimization, ACID Properties)</li>
+<li>Operating Systems & Systems Programming (Process Scheduling, Thread Synchronization, Memory Hierarchy, IPC)</li>
+<li>Computer Networks & Distributed Communication (TCP/IP Protocols, Sockets, Network Topology, Security)</li>
+<li>Object-Oriented Analysis & Design (Design Patterns, SOLID Principles, UML Architectural Modeling)</li>
+<li>Software Engineering & Quality Assurance (Testing Methodologies, SDLC, CI/CD Fundamentals)</li>
+<li><strong>BSc Capstone Project:</strong> Multi-tiered web and database management system with role-based access control (RBAC), transactional consistency, and normalized MySQL schemas.</li>
+</ul>
+<h3>**Executive Certification: Capital Markets & Securities Analysis**</h3>
+<p><strong>Addis Ababa University</strong>, School of Commerce (in collaboration with Ethiopian Capital Market Authority)</p>
+<p><em>Completed: September 2024 (50-hour intensive certification)</em></p>
+<ul>
+<li><strong>Focus Areas:</strong> Financial market microstructure, equity valuation, clearing and settlement mechanisms, risk assessment models, and transactional integrity.</li>
+</ul>
+<hr/>
+<h2>💻 SOFTWARE SYSTEMS & PRODUCTION PROJECTS</h2>
+<h3>**Addis Condo Finder — Geospatial Distributed Property & Mapping Platform**</h3>
+<p><em>Architecture: Flutter (Dart), Laravel 11/13 REST API, PostgreSQL/MySQL, Filament Admin, OpenStreetMap</em></p>
+<ul>
+<li><strong>Spatial Query Optimization:</strong> Designed bounding-box spatial indexing algorithms (<code>bbox=minLat,minLng,maxLat,maxLng</code>) to serve viewport-constrained geospatial payloads, eliminating server memory overhead.</li>
+<li><strong>Token-Matching Search Engine:</strong> Engineered an any-order multi-token search pipeline indexing condominium names, project IDs, and block numbers with sub-50ms query response times.</li>
+<li><strong>Consensus Verification & Security:</strong> Implemented a multi-user crowdsourced verification engine with client write rate-limiting (20 requests/minute per user) and atomic database unique-constraint handling to prevent verification races.</li>
+</ul>
+<h3>**LuckyDraw Engine — High-Concurrency Financial Gaming & Ledger Architecture**</h3>
+<p><em>Architecture: Laravel 13, Livewire 4, MySQL (InnoDB), Telegram Mini App API, REST Webhooks</em></p>
+<ul>
+<li><strong>Atomic Concurrency Guards:</strong> Implemented strict pessimistic row-level locking (<code>lockForUpdate</code>) on draw execution and prize distribution, mathematically guaranteeing zero double-payouts and single-draw dispatch under concurrent client traffic.</li>
+<li><strong>Integer-Cent Exact Accounting:</strong> Formatted all currency balances and ticket prices into integer cents (<code>tests/Unit/MoneyTest.php</code>) to eradicate floating-point rounding errors across multi-tiered jackpot distributions.</li>
+<li><strong>Fail-Closed Payment Verification:</strong> Integrated automated payment-verification webhooks for mobile money providers (Telebirr/CBE) with unique reference deduplication to prevent replay attacks.</li>
+<li><strong>Automated Testing Suite:</strong> Developed a suite of 25+ automated feature, unit, and concurrency tests validated directly on production-grade MySQL engines.</li>
+</ul>
+<h3>**Money Manager — Offline-First Reactive Personal Finance System**</h3>
+<p><em>Architecture: Flutter, Dart, Riverpod 2.0, SQLite (sqflite), Material 3 Design System</em></p>
+<ul>
+<li><strong>In-Memory Cache & Synchronous Reads:</strong> Structured an <code>AppRepository</code> abstraction maintaining an in-memory state cache for instant UI rendering while persisting incremental row mutations asynchronously to SQLite.</li>
+<li><strong>Security & Biometrics:</strong> Engineered biometric fingerprint/PIN authentication with failed-attempt lockout security and OS-level <code>FLAG_SECURE</code> window protections preventing app switcher data leakage.</li>
+<li><strong>Automated Scheduling:</strong> Built background local notification schedulers and auto-posting engines for recurring debts, upcoming bills, and savings goal contributions.</li>
+</ul>
+<hr/>
+<h2>💼 PROFESSIONAL EXPERIENCE</h2>
+<h3>**Full-Stack Software Engineer (Independent & Contract)**</h3>
+<p><em>Addis Ababa, Ethiopia</em> | <strong>Nov 2023 – Present</strong></p>
+<ul>
+<li>Architected, tested, and deployed end-to-end web and mobile applications using Flutter, Laravel, and relational database systems.</li>
+<li>Designed resilient Android background processing pipelines, leveraging Foreground Services, WorkManager, and battery-optimization bypass mechanisms for high-reliability field execution.</li>
+<li>Authored clean, maintainable documentation, schema migrations, and CI workflows across multiple open-source and proprietary codebases.</li>
+</ul>
+<h3>**Web Developer & UI/UX Systems Specialist**</h3>
+<p><em>Aduutech, Addis Ababa, Ethiopia</em> | <strong>Feb 2023 – Nov 2023</strong></p>
+<ul>
+<li>Developed responsive enterprise web platforms and internal inventory management systems utilizing PHP, Laravel, and MySQL.</li>
+<li>Re-engineered inventory tracking workflows handling 1,000+ daily operational records, reducing order processing latency by 35%.</li>
+<li>Actively participated in weekly sprint planning, rigorous peer code reviews, and schema optimization sessions.</li>
+</ul>
+<h3>**Operations & Systems Lead (Hospitality Management)**</h3>
+<p><em>Addis Ababa, Ethiopia</em> | <strong>Jan 2022 – Jan 2023</strong></p>
+<ul>
+<li>Supervised end-to-end property operations, front-desk hospitality management, guest reservations, and supplier logistics.</li>
+<li>Implemented digital POS and computerized booking systems, streamlining billing transparency and financial record-keeping.</li>
+<li>Demonstrated high leadership maturity, managing cross-functional service teams, resolving high-pressure client escalations, and optimizing resource allocation.</li>
+</ul>
+<h3>**Database Design Intern**</h3>
+<p><em>Ministry of Revenues, Addis Ababa, Ethiopia</em> | <strong>Oct 2021 – Nov 2021</strong></p>
+<ul>
+<li>Designed normalized 3NF relational schemas for taxpayer agent registry and auditing modules.</li>
+<li>Collaborated with senior systems architects to write indexing strategies, foreign key constraints, and audit logging triggers.</li>
+</ul>
+<hr/>
+<h2>🛠️ TECHNICAL COMPETENCIES</h2>
+<ul>
+<li><strong>Programming Languages:</strong> PHP (8.x), Dart, JavaScript (ES6+), Python, SQL, C++, Java/Kotlin basics</li>
+<li><strong>Frameworks & Libraries:</strong> Laravel, Flutter, Riverpod, Livewire, Filament, Vue.js / React basics, Bootstrap, TailwindCSS</li>
+<li><strong>Databases & Storage:</strong> MySQL, PostgreSQL, SQLite, Redis caching fundamentals</li>
+<li><strong>Architecture & Patterns:</strong> Microservices & Modular Monoliths, RESTful API Design, MVC, Repository Pattern, Offline-First Architecture, Concurrency Control (Row Locking, ACID)</li>
+<li><strong>DevOps & Developer Tools:</strong> Git, GitHub, Linux (Ubuntu/Debian, Bash scripting), Docker fundamentals, Apache/Nginx, cPanel</li>
+<li><strong>Testing & Quality Assurance:</strong> PHPUnit, Pest PHP, Concurrency Test Suites, Flutter Test Harness</li>
+</ul>
+<hr/>
+<h2>🌍 LANGUAGES & INTERCULTURAL COMPETENCIES</h2>
+<ul>
+<li><strong>English:</strong> Fluent (Full Professional & Academic Proficiency — Official Medium of Instruction Certified)</li>
+<li><strong>Amharic:</strong> Native</li>
+<li><strong>Oromiffa:</strong> Professional Working Proficiency</li>
+<li><strong>French:</strong> Beginner / Elementary (A1 in-progress — actively acquiring French language and culture)</li>
+<li><strong>Intercultural Aptitude:</strong> Proven capacity to collaborate in diverse, multi-lingual teams, high adaptability, and strong work ethic in rigorous academic environments.</li>
+</ul>
+<hr/>
+<h2>📜 VERIFIABLE CREDENTIALS & REFERENCES</h2>
+<ul>
+<li><strong>GitHub Repository:</strong> <a href="https://github.com/fuad745">https://github.com/fuad745</a></li>
+<li><strong>Master Scholarship Dossier:</strong> <a href="https://github.com/fuad745/scholarship-dossier-2026">https://github.com/fuad745/scholarship-dossier-2026</a></li>
+<li>Academic transcripts, official English Medium of Instruction certificate, and faculty recommendation letters from St. Mary's University available immediately.</li>
+</ul>
+</body>
+</html>
