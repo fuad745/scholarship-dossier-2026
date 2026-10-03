@@ -23,15 +23,14 @@ Applying to French higher education through **Études en France (EEF)** offers s
 
 Here are the top 7 recommended French public universities offering English-taught Master's in Computer Science with strong fee-waiver policies and Eiffel nomination records:
 
-| University | Master's Program | Key Strengths & Research Focus | Tuition / Waiver Policy |
+| University | Master's Program & Verified EEF ID | Key Strengths & Research Focus | Tuition / Waiver Policy |
 | :--- | :--- | :--- | :--- |
-| **1. Université Paris-Saclay** *(Orsay/Paris)* | Master in Computer Science (*Distributed Systems & Cloud Computing / Foundations*) | Ranked #1 in France for Computer Science & Mathematics; hub of French deep tech and CNRS research. | Offers partial fee waivers; top nominator for Eiffel Excellence Scholarship. |
-| **2. Université Grenoble Alpes (UGA)** *(Grenoble)* | Master of Science in Informatics at Grenoble (MoSIG) — *Software Architecture & Cloud* | Located in the "Silicon Valley of the Alps"; direct integration with Inria and CEA research labs. | Systematic fee waiver (*exonération*) for international students (~€243/year). |
-| **3. Institut Polytechnique de Paris (IP Paris)** *(Palaiseau)* | MSc in Computer Science — *Networks and Distributed Systems* | Comprises École Polytechnique & Télécom Paris; world elite engineering faculty. | Selective; high Eiffel nomination rate; industry sponsorships. |
-| **4. Université de Lille** *(Lille)* | Master Informatique — *E-Services & Distributed Software Systems* | Strong focus on scalable cloud architectures; partnered with Inria Nord Europe. | Automatic partial fee waiver applied to developing country applicants (€243/year). |
-| **5. Université de Lorraine** *(Nancy)* | Master in Computer Science — *Software Engineering & Dependable Systems* | Home to LORIA and Inria Grand Est; world-class formal verification and systems security. | Tuition waiver policy reducing fees to domestic rate (€243/year). |
-| **6. Université Côte d'Azur** *(Nice / Sophia Antipolis)* | MSc Data Science & Artificial Intelligence / Cloud Systems | Located in Sophia Antipolis, Europe's largest science and technology park. | Active Eiffel nominator; high industry internship placement. |
-| **7. Université de Bordeaux** *(Bordeaux)* | Master in Computer Science — *Software Engineering & Distributed Applications* | Leading research in distributed algorithms and software engineering methodologies. | Regular partial waiver for non-EU students (€243/year). |
+| **1. Université Grenoble Alpes (UGA)** *(Grenoble)* | **ID 61801**: *Master Informatique parcours Computer Science (MoSIG - M1)*<br>**ID 61800**: *Master Cloud Computing & Data Infrastructures (M2)* | Direct integration with Inria; world-renowned systems & cloud faculty. | Systematic fee waiver (*exonération*) for international students (~€243/year). |
+| **2. Université de Lille** *(Lille)* | **ID 60987**: *Master mention Informatique parcours Computer Sciences (M1)*<br>**ID 53388**: *Master Data Science (M1/M2)* | Direct EEF application without parallel platform; partnered with Inria Nord Europe. | Automatic partial fee waiver applied to developing country applicants (€243/year). |
+| **3. Université Paris-Saclay & CentraleSupélec** *(Paris)* | **ID 60589**: *MSc in Artificial Intelligence (M1/M2)*<br>**ID 60587**: *MSc in Data Sciences and Business Analytics* | Ranked #1 in France for CS; top nominator for Eiffel Excellence Scholarship. | Partial fee waivers applied; IDEX & Eiffel scholarships available. |
+| **4. Institut Polytechnique de Paris (IP Paris)** *(Palaiseau)* | **ID 43238**: *MSc&T Artificial Intelligence & Advanced Visual Computing*<br>**ID 18997**: *Diplôme d'ingénieur Télécom SudParis* | Elite cluster (École Polytechnique & Télécom Paris). Parallel direct app at `application.ip-paris.fr`. | Selective; high Eiffel nomination rate; merit scholarships. |
+| **5. Université de Lorraine** *(Nancy)* | **ID 13751**: *TELECOM Nancy*<br>**ID 40799**: *Master Informatique (Ingénierie des Logiciels - M2)* | Home to LORIA and Inria Grand Est; formal methods, systems security. | Tuition waiver policy reducing fees to domestic rate (€243/year). |
+| **6. Université Côte d'Azur** *(Sophia Antipolis)* | *EUR DS4H - Smart Systems & Software Engineering* | Located in Europe's largest science/tech park (Sophia Antipolis). | Active Eiffel nominator; €5,000/semester excellence grants. |
 
 ---
 
