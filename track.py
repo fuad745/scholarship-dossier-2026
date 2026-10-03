@@ -59,12 +59,21 @@ def cmd_show(args):
             print(f"• Target Intake    : {t['target_intake']}")
             print(f"• Application Cutoff: {t['deadline']}")
             print(f"• Current Status   : {t['status']} (Priority: {t['priority']})")
-            if "eef_candidate_id" in t:
+            if "credentials" in t and t["credentials"]:
+                c = t["credentials"]
+                print(f"• Portal Account   : {c.get('created_by', 'User')} | ID: {c.get('username', 'N/A')} | Email: {c.get('email', 'N/A')}")
+                print(f"• Portal Password  : {c.get('password', 'N/A')}")
+            if "eef_candidate_id" in t and ("credentials" not in t or not t["credentials"]):
                 print(f"• EEF Candidate ID : {t['eef_candidate_id']}")
             print(f"• Portal URL       : {t['portal_url']}")
             print(f"• Strategic Notes  : {t['notes']}")
             if "professors_contacted" in t:
                 print(f"• Professors Contacted: {', '.join(t['professors_contacted'])}")
+            if "required_documents" in t and t["required_documents"]:
+                print("• Required Documents Readiness:")
+                for d in t["required_documents"]:
+                    icon = "✅ READY  " if d.get("ready") else "⏳ PENDING"
+                    print(f"  [{icon}] {d.get('label')}")
             print("-" * 75 + "\n")
             return
     print(f"No track found matching '{tid}'")

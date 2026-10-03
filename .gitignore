@@ -1,6 +1,9 @@
 # Temporary Office lock files
 .~lock.*
 *.tmp
+scratch/
+test_*.png
+slice_*.png
 
 # Python cache
 __pycache__/

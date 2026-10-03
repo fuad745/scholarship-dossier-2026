@@ -6,8 +6,8 @@
     "github": "https://github.com/fuad745",
     "degree": "BSc Computer Science",
     "institution": "St. Mary's University, Addis Ababa",
-    "gpa_major": 3.20,
-    "gpa_scale": 4.00,
+    "gpa_major": 3.2,
+    "gpa_scale": 4.0,
     "language_status": "English Medium of Instruction (MOI) - St. Mary's University (IELTS/TOEFL Exempted)"
   },
   "last_updated": "2026-10-03T14:30:00+03:00",
@@ -26,7 +26,40 @@
       "status": "READY_TO_APPLY",
       "priority": "P1",
       "portal_url": "https://www.unitn.it/en/apply",
-      "notes": "Top CS ranking in Italy. Guaranteed need-based DSU award for Ethiopian applicants."
+      "notes": "Top CS ranking in Italy. Guaranteed need-based DSU award for Ethiopian applicants.",
+      "required_documents": [
+        {
+          "id": "passport",
+          "label": "Biometric Passport (E00340202)",
+          "ready": true
+        },
+        {
+          "id": "degree",
+          "label": "3-Page Degree & Transcripts (Legalized)",
+          "ready": true
+        },
+        {
+          "id": "moi",
+          "label": "St. Mary's English MOI Certificate",
+          "ready": true
+        },
+        {
+          "id": "cv_sop",
+          "label": "Academic CV & Motivation Letter",
+          "ready": true
+        },
+        {
+          "id": "recs",
+          "label": "2 Academic Recommendation Letters",
+          "ready": true
+        },
+        {
+          "id": "isee_parificato",
+          "label": "ISEE Parificato (Trentino DSU €7,200/yr Cash)",
+          "ready": false
+        }
+      ],
+      "credentials": null
     },
     {
       "id": "italy-padua",
@@ -42,7 +75,40 @@
       "status": "DOSSIER_PREPARATION",
       "priority": "P1",
       "portal_url": "https://apply.unipd.it/",
-      "notes": "Automatic evaluation for €8,000/yr merit grant alongside ESU need grant."
+      "notes": "Automatic evaluation for €8,000/yr merit grant alongside ESU need grant.",
+      "required_documents": [
+        {
+          "id": "passport",
+          "label": "Biometric Passport (E00340202)",
+          "ready": true
+        },
+        {
+          "id": "degree",
+          "label": "3-Page Degree & Transcripts (Legalized / CIMEA)",
+          "ready": true
+        },
+        {
+          "id": "moi",
+          "label": "St. Mary's Official English MOI Certificate",
+          "ready": true
+        },
+        {
+          "id": "cv_sop",
+          "label": "Academic CV & Motivation Letter",
+          "ready": true
+        },
+        {
+          "id": "recs",
+          "label": "2 Academic Recommendation Letters",
+          "ready": true
+        },
+        {
+          "id": "isee_parificato",
+          "label": "ISEE Parificato (Veneto ESU Scholarship €7,000/yr Cash)",
+          "ready": false
+        }
+      ],
+      "credentials": null
     },
     {
       "id": "italy-polimi",
@@ -58,7 +124,40 @@
       "status": "ROUND_1_ACTIVE",
       "priority": "P1",
       "portal_url": "https://www.polimi.it/en/international-prospective-students",
-      "notes": "Round 1 closes Nov 15; Round 2 closes Mar 2, 2027. Ranked #1 in Italy."
+      "notes": "Round 1 closes Nov 15; Round 2 closes Mar 2, 2027. Ranked #1 in Italy.",
+      "required_documents": [
+        {
+          "id": "passport",
+          "label": "Biometric Passport (E00340202)",
+          "ready": true
+        },
+        {
+          "id": "degree",
+          "label": "3-Page Degree & Transcripts (Legalized / CIMEA Statement)",
+          "ready": true
+        },
+        {
+          "id": "moi",
+          "label": "St. Mary's Official English MOI Certificate from Registrar",
+          "ready": true
+        },
+        {
+          "id": "cv_sop",
+          "label": "Academic CV & Program-Specific Motivation Letter",
+          "ready": true
+        },
+        {
+          "id": "recs",
+          "label": "2 Academic Recommendation Letters",
+          "ready": true
+        },
+        {
+          "id": "isee_parificato",
+          "label": "ISEE Parificato (Family Income & Asset Affidavit for €7,650/yr DSU)",
+          "ready": false
+        }
+      ],
+      "credentials": null
     },
     {
       "id": "italy-sapienza",
@@ -74,7 +173,40 @@
       "status": "UPCOMING",
       "priority": "P1",
       "portal_url": "https://www.uniroma1.it/en",
-      "notes": "High acceptance quota for non-EU students."
+      "notes": "High acceptance quota for non-EU students.",
+      "required_documents": [
+        {
+          "id": "passport",
+          "label": "Biometric Passport (E00340202)",
+          "ready": true
+        },
+        {
+          "id": "degree",
+          "label": "3-Page Degree & Transcripts (Legalized)",
+          "ready": true
+        },
+        {
+          "id": "moi",
+          "label": "St. Mary's English MOI Certificate",
+          "ready": true
+        },
+        {
+          "id": "cv_sop",
+          "label": "Academic CV & Motivation Letter",
+          "ready": true
+        },
+        {
+          "id": "recs",
+          "label": "2 Academic Recommendation Letters",
+          "ready": true
+        },
+        {
+          "id": "isee_parificato",
+          "label": "ISEE Parificato (LazioDiSCo Scholarship €7,000/yr Cash)",
+          "ready": false
+        }
+      ],
+      "credentials": null
     },
     {
       "id": "italy-unical",
@@ -90,7 +222,40 @@
       "status": "UPCOMING",
       "priority": "P1",
       "portal_url": "https://unical.portaleamministrazionetrasparente.it/",
-      "notes": "120 full-ride scholarships for non-EU; very high Ethiopian success rate."
+      "notes": "120 full-ride scholarships for non-EU; very high Ethiopian success rate.",
+      "required_documents": [
+        {
+          "id": "passport",
+          "label": "Biometric Passport (E00340202)",
+          "ready": true
+        },
+        {
+          "id": "degree",
+          "label": "3-Page Degree & Transcripts (Legalized)",
+          "ready": true
+        },
+        {
+          "id": "moi",
+          "label": "St. Mary's English MOI Certificate",
+          "ready": true
+        },
+        {
+          "id": "cv_sop",
+          "label": "Academic CV & Motivation Letter",
+          "ready": true
+        },
+        {
+          "id": "recs",
+          "label": "2 Academic Recommendation Letters",
+          "ready": true
+        },
+        {
+          "id": "isee_parificato",
+          "label": "Extra-EU Family Economic Affidavit (€6,000/yr Award)",
+          "ready": false
+        }
+      ],
+      "credentials": null
     },
     {
       "id": "china-hit",
@@ -106,8 +271,54 @@
       "status": "OUTREACH_ACTIVE",
       "priority": "P1",
       "portal_url": "https://studyathit.hit.edu.cn/",
-      "professors_contacted": ["Prof. Weizhe Zhang", "Prof. Shaohuai Shi"],
-      "notes": "Top 5 CS in China. Follow up scheduled Oct 12–13 if no response."
+      "professors_contacted": [
+        "Prof. Weizhe Zhang",
+        "Prof. Shaohuai Shi"
+      ],
+      "notes": "Top 5 CS in China. Follow up scheduled Oct 12–13 if no response.",
+      "required_documents": [
+        {
+          "id": "passport",
+          "label": "Biometric Passport (E00340202)",
+          "ready": true
+        },
+        {
+          "id": "degree",
+          "label": "3-Page Degree Certificate & Transcripts (Notarized)",
+          "ready": true
+        },
+        {
+          "id": "physical_exam",
+          "label": "Foreigner Physical Examination Form (Hospital Medical Report with ECG & Blood)",
+          "ready": false
+        },
+        {
+          "id": "police_clearance",
+          "label": "Non-Criminal Record Certificate (Federal Police Clearance Report)",
+          "ready": false
+        },
+        {
+          "id": "study_plan",
+          "label": "CSC Study Plan & Research Proposal (1,200 Words)",
+          "ready": true
+        },
+        {
+          "id": "recs",
+          "label": "2 Professor Recommendation Letters (St. Mary's)",
+          "ready": true
+        },
+        {
+          "id": "moi",
+          "label": "St. Mary's English MOI Certificate (IELTS Waiver)",
+          "ready": true
+        },
+        {
+          "id": "supervisor_pal",
+          "label": "Supervisor Provisional Acceptance Letter (PAL) from Professor",
+          "ready": false
+        }
+      ],
+      "credentials": null
     },
     {
       "id": "china-bit",
@@ -123,8 +334,54 @@
       "status": "OUTREACH_ACTIVE",
       "priority": "P1",
       "portal_url": "https://isc.bit.edu.cn/",
-      "professors_contacted": ["Assoc. Prof. Song Yang", "Prof. Meihui Zhang"],
-      "notes": "Direct research match in Edge Computing & Blockchain."
+      "professors_contacted": [
+        "Assoc. Prof. Song Yang",
+        "Prof. Meihui Zhang"
+      ],
+      "notes": "Direct research match in Edge Computing & Blockchain.",
+      "required_documents": [
+        {
+          "id": "passport",
+          "label": "Biometric Passport (E00340202)",
+          "ready": true
+        },
+        {
+          "id": "degree",
+          "label": "3-Page Degree Certificate & Transcripts (Notarized)",
+          "ready": true
+        },
+        {
+          "id": "physical_exam",
+          "label": "Foreigner Physical Examination Form (Hospital Medical Report with ECG & Blood)",
+          "ready": false
+        },
+        {
+          "id": "police_clearance",
+          "label": "Non-Criminal Record Certificate (Federal Police Clearance Report)",
+          "ready": false
+        },
+        {
+          "id": "study_plan",
+          "label": "CSC Study Plan & Research Proposal (1,200 Words)",
+          "ready": true
+        },
+        {
+          "id": "recs",
+          "label": "2 Professor Recommendation Letters (St. Mary's)",
+          "ready": true
+        },
+        {
+          "id": "moi",
+          "label": "St. Mary's English MOI Certificate (IELTS Waiver)",
+          "ready": true
+        },
+        {
+          "id": "supervisor_pal",
+          "label": "Supervisor Provisional Acceptance Letter (PAL) from Professor",
+          "ready": false
+        }
+      ],
+      "credentials": null
     },
     {
       "id": "china-ustc",
@@ -140,8 +397,54 @@
       "status": "OUTREACH_ACTIVE",
       "priority": "P1",
       "portal_url": "https://isa.ustc.edu.cn/",
-      "professors_contacted": ["Prof. Mingjun Xiao", "Prof. Gongming Zhao"],
-      "notes": "Elite C9 League institution."
+      "professors_contacted": [
+        "Prof. Mingjun Xiao",
+        "Prof. Gongming Zhao"
+      ],
+      "notes": "Elite C9 League institution.",
+      "required_documents": [
+        {
+          "id": "passport",
+          "label": "Biometric Passport (E00340202)",
+          "ready": true
+        },
+        {
+          "id": "degree",
+          "label": "3-Page Degree Certificate & Transcripts (Notarized)",
+          "ready": true
+        },
+        {
+          "id": "physical_exam",
+          "label": "Foreigner Physical Examination Form (Hospital Medical Report with ECG & Blood)",
+          "ready": false
+        },
+        {
+          "id": "police_clearance",
+          "label": "Non-Criminal Record Certificate (Federal Police Clearance Report)",
+          "ready": false
+        },
+        {
+          "id": "study_plan",
+          "label": "CSC Study Plan & Research Proposal (1,200 Words)",
+          "ready": true
+        },
+        {
+          "id": "recs",
+          "label": "2 Professor Recommendation Letters (St. Mary's)",
+          "ready": true
+        },
+        {
+          "id": "moi",
+          "label": "St. Mary's English MOI Certificate (IELTS Waiver)",
+          "ready": true
+        },
+        {
+          "id": "supervisor_pal",
+          "label": "Supervisor Provisional Acceptance Letter (PAL) from Professor",
+          "ready": false
+        }
+      ],
+      "credentials": null
     },
     {
       "id": "china-pku-yenching",
@@ -157,7 +460,40 @@
       "status": "PORTAL_OPEN",
       "priority": "P2",
       "portal_url": "https://yenchingacademy.pku.edu.cn/",
-      "notes": "Prestigious fully funded fellowship. Hard cutoff 12:00 noon Beijing Time."
+      "notes": "Prestigious fully funded fellowship. Hard cutoff 12:00 noon Beijing Time.",
+      "required_documents": [
+        {
+          "id": "passport",
+          "label": "Biometric Passport (E00340202)",
+          "ready": true
+        },
+        {
+          "id": "degree",
+          "label": "3-Page BSc Degree & Transcripts (Official English)",
+          "ready": true
+        },
+        {
+          "id": "sop",
+          "label": "Statement of Purpose & China Studies Research Proposal",
+          "ready": true
+        },
+        {
+          "id": "recs",
+          "label": "2 Recommendation Letters (Assoc. Prof or higher)",
+          "ready": true
+        },
+        {
+          "id": "moi",
+          "label": "St. Mary's English MOI Certificate / Language Waiver",
+          "ready": true
+        },
+        {
+          "id": "cv",
+          "label": "International Academic CV",
+          "ready": true
+        }
+      ],
+      "credentials": null
     },
     {
       "id": "russia-open-doors",
@@ -175,7 +511,48 @@
       "portal_url": "https://od.globaluni.ru/",
       "portfolio_score": 93,
       "max_score": 100,
-      "notes": "Next step: Take 60-min online entrance test before Nov 1, 2026."
+      "notes": "Next step: Take 60-min online entrance test before Nov 1, 2026.",
+      "required_documents": [
+        {
+          "id": "passport",
+          "label": "Biometric Passport (E00340202)",
+          "ready": true
+        },
+        {
+          "id": "degree",
+          "label": "BSc Degree Certificate & Transcripts",
+          "ready": true
+        },
+        {
+          "id": "portfolio",
+          "label": "Stage 1 Portfolio Verification Dossier (93/100 Pts Verified)",
+          "ready": true
+        },
+        {
+          "id": "sop",
+          "label": "Motivation Statement for ITMO / HSE Distributed Systems",
+          "ready": true
+        },
+        {
+          "id": "moi",
+          "label": "St. Mary's English MOI Certificate",
+          "ready": true
+        },
+        {
+          "id": "exam",
+          "label": "Stage 2 Online Proctored Subject Exam (CS & Math)",
+          "ready": false
+        }
+      ],
+      "credentials": {
+        "created_by": "Fuad & AI Agent",
+        "email": "fuadahmedt@gmail.com",
+        "username": "396112",
+        "id_label": "Participant ID",
+        "password": "FuadRussia2027!#",
+        "portal_url": "https://od.globaluni.ru/en/",
+        "notes": "Verified 93/100 points portfolio submitted."
+      }
     },
     {
       "id": "hungary-stipendium",
@@ -191,7 +568,40 @@
       "status": "AWAITING_PORTAL",
       "priority": "P2",
       "portal_url": "https://apply.stipendiumhungaricum.hu/",
-      "notes": "Portal opens Nov 15; require MoE Ethiopia partner nomination."
+      "notes": "Portal opens Nov 15; require MoE Ethiopia partner nomination.",
+      "required_documents": [
+        {
+          "id": "passport",
+          "label": "Biometric Passport (E00340202)",
+          "ready": true
+        },
+        {
+          "id": "degree",
+          "label": "Authenticated Degree Certificate & Academic Transcripts",
+          "ready": true
+        },
+        {
+          "id": "moi",
+          "label": "St. Mary's English MOI Certificate (Exempt from IELTS)",
+          "ready": true
+        },
+        {
+          "id": "sop",
+          "label": "Motivation Letter (ELTE / BME Software Tech)",
+          "ready": true
+        },
+        {
+          "id": "medical",
+          "label": "Medical Health Certificate & Laboratory Screening Report",
+          "ready": false
+        },
+        {
+          "id": "nomination",
+          "label": "Ethiopian MoE Partner Nomination Dossier",
+          "ready": false
+        }
+      ],
+      "credentials": null
     },
     {
       "id": "canada-manitoba",
@@ -207,7 +617,40 @@
       "status": "RESEARCHING_ADVISORS",
       "priority": "P2",
       "portal_url": "https://umanitoba.ca/admissions",
-      "notes": "Requires identifying potential supervisor for UMGF consideration."
+      "notes": "Requires identifying potential supervisor for UMGF consideration.",
+      "required_documents": [
+        {
+          "id": "passport",
+          "label": "Biometric Passport (E00340202)",
+          "ready": true
+        },
+        {
+          "id": "transcripts",
+          "label": "Official Sealed Transcripts & Degree Certificate",
+          "ready": true
+        },
+        {
+          "id": "cv_sop",
+          "label": "Statement of Intent & Academic CV",
+          "ready": true
+        },
+        {
+          "id": "recs",
+          "label": "2 Academic Reference Letters (Online Referee Submission)",
+          "ready": true
+        },
+        {
+          "id": "moi_waiver",
+          "label": "UMGF English MOI Exemption Form (St. Mary's Listed)",
+          "ready": true
+        },
+        {
+          "id": "supervisor",
+          "label": "Prospective Graduate Supervisor Confirmation",
+          "ready": false
+        }
+      ],
+      "credentials": null
     },
     {
       "id": "rwanda-alu",
@@ -223,7 +666,35 @@
       "status": "APPLICATIONS_OPEN",
       "priority": "P2",
       "portal_url": "https://www.alueducation.com/",
-      "notes": "Pan-African scholarship. Zero visa refusal risk for Ethiopians."
+      "notes": "Pan-African scholarship. Zero visa refusal risk for Ethiopians.",
+      "required_documents": [
+        {
+          "id": "passport",
+          "label": "Biometric Passport (E00340202) / National ID",
+          "ready": true
+        },
+        {
+          "id": "degree",
+          "label": "BSc Computer Science Degree & Transcripts",
+          "ready": true
+        },
+        {
+          "id": "financial_proof",
+          "label": "Mastercard Foundation Financial Eligibility & Need Proof",
+          "ready": true
+        },
+        {
+          "id": "essays",
+          "label": "Leadership, Community Impact & Problem Solving Essays",
+          "ready": true
+        },
+        {
+          "id": "recs",
+          "label": "2 Professional & Academic Recommendation Letters",
+          "ready": true
+        }
+      ],
+      "credentials": null
     },
     {
       "id": "romania-work-visa",
@@ -239,7 +710,35 @@
       "status": "EMPLOYER_RESEARCH",
       "priority": "Work Track",
       "portal_url": "https://workinromania.gov.ro/",
-      "notes": "Commercial backup to enter EU legally with driving license."
+      "notes": "Commercial backup to enter EU legally with driving license.",
+      "required_documents": [
+        {
+          "id": "passport",
+          "label": "Biometric Passport (E00340202)",
+          "ready": true
+        },
+        {
+          "id": "driving_license",
+          "label": "Valid Driver's License (Category B, 2+ Years Experience Validated)",
+          "ready": true
+        },
+        {
+          "id": "police_clearance",
+          "label": "Non-Criminal Police Clearance Record (Apostilled / MoFA)",
+          "ready": false
+        },
+        {
+          "id": "medical_fitness",
+          "label": "Occupational Medical Fitness Certificate",
+          "ready": false
+        },
+        {
+          "id": "work_permit",
+          "label": "Romanian Employer Work Authorization (Aviz de Muncă / IGI)",
+          "ready": false
+        }
+      ],
+      "credentials": null
     },
     {
       "id": "france-campus-france",
@@ -256,7 +755,53 @@
       "status": "DOSSIER_PROFILE_COMPLETED",
       "priority": "P1",
       "portal_url": "https://etudesenfrance.diplomatie.gouv.fr/connexion",
-      "notes": "Official EEF ID: ET26-00453. My Student Hub, Personal Info, School Record (BSc 3-pages + Highschool), CV & Languages all COMPLETED. Target IDs: 61801 (UGA), 60987 (Lille), 60589 (CentraleSupélec)."
+      "notes": "Official EEF ID: ET26-00453. My Student Hub, Personal Info, School Record (BSc 3-pages + Highschool), CV & Languages all COMPLETED. Target IDs: 61801 (UGA), 60987 (Lille), 60589 (CentraleSupélec).",
+      "required_documents": [
+        {
+          "id": "passport",
+          "label": "Biometric Passport (E00340202)",
+          "ready": true
+        },
+        {
+          "id": "degree",
+          "label": "3-Page Combined Degree & Official Academic Transcripts",
+          "ready": true
+        },
+        {
+          "id": "highschool",
+          "label": "Secondary Education (Grade 12 National Exam & Grade 10)",
+          "ready": true
+        },
+        {
+          "id": "cv",
+          "label": "French Academic CV (Europass Format)",
+          "ready": true
+        },
+        {
+          "id": "sop",
+          "label": "Statement of Purpose & Study Project (Projet d'études)",
+          "ready": true
+        },
+        {
+          "id": "moi",
+          "label": "St. Mary's English MOI Certificate (IELTS Waiver)",
+          "ready": true
+        },
+        {
+          "id": "recs",
+          "label": "2 Academic Recommendation Letters (St. Mary's)",
+          "ready": true
+        }
+      ],
+      "credentials": {
+        "created_by": "AI Agent",
+        "email": "fuadahmedt@gmail.com",
+        "username": "ET26-00453",
+        "id_label": "Identifiant EEF",
+        "password": "FuadFrance2027!#",
+        "portal_url": "https://etudesenfrance.diplomatie.gouv.fr/connexion",
+        "notes": "Verified active. Profile 100% completed by AI Agent."
+      }
     }
   ],
   "china_professors": [

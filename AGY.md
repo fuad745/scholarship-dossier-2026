@@ -19,25 +19,65 @@ When completing forms, drafting motivation letters, compiling application packag
 
 ---
 
-## 🧭 2. Real-Time State & "Where We Stopped"
+## 🔍 2. Opportunity Screening & Ingestion Protocol (MANDATORY)
 
-Before executing any task, check [CURRENT_STATUS.md](file:///home/kichner/Desktop/stuff/docs/CURRENT_STATUS.md):
-1. **France (Études en France):**
-   * Candidate ID: **`ET26-00453`** | Password: `FuadFrance2027!#`
-   * Profile is **100% COMPLETED** (Identity, 3-page BSc degree, Grade 12, CV, Languages).
-   * 4 Target programs verified: `61801` (UGA MoSIG), `61800` (UGA Cloud M2), `60987` (Lille M1), `60589` (CentraleSupélec AI).
-   * Program cart intake is currently locked by ministry ("out of period"). **Action:** Monitor intake opening twice weekly.
-2. **China (CSC Type B):**
-   * 6 professors contacted at HIT, BIT, USTC.
-   * Follow-up dates: **October 12 & 13, 2026**.
-3. **Russia (Open Doors):**
-   * Portfolio **submitted with verified 93/100 points**. Stage 1 results due mid-November 2026.
-4. **Italy (Politecnico di Milano & UNIPD):**
-   * Polimi Round 1 closes **November 15, 2026**. UNIPD opens **November 2, 2026**.
+Whenever Fuad gives you a link or name for a **new scholarship, fellowship, internship, apprenticeship, or work visa**:
+
+### Step 1: Scan & Inspect Link
+* Use `/browser` or `read_url_content` to inspect the program page, guidelines, eligibility criteria, and fee schedule.
+
+### Step 2: Perform Comprehensive Suitability Audit against Fuad's Profile
+You **must** evaluate and report these 5 criteria before starting any application:
+1. **Language Requirement:**  
+   * Does the university accept an **English Medium of Instruction (MOI)** letter from St. Mary's University?
+   * Or does it strictly require an IELTS / TOEFL / Duolingo certificate?
+2. **Financials & Fees:**  
+   * Is there an application fee (e.g. €50, $100)?
+   * Is it a 100% full-ride scholarship (Tuition + Housing + Monthly Stipend), a partial tuition waiver, or self-funded?
+3. **Academic & Degree Match:**  
+   * Does it accept a 4-year BSc in Computer Science with a **3.20 GPA**?
+4. **Nationality / Citizenship Eligibility:**  
+   * Is it open to **Ethiopian / Non-EU nationals**? Are there specific national quotas?
+5. **Mandatory Documentation Requirements:**  
+   * What exact documents are required? (e.g., Police Clearance / Non-Criminal Record, Foreigner Physical Medical Exam, Supervisor Acceptance Letter, Financial Affidavits).
+
+### Step 3: Present Suitability Verdict & Wait for Confirmation
+Report a concise audit summary to Fuad with a clear verdict:
+* **`🟢 RECOMMENDED (NO IELTS / FULL RIDE)`** — Meets all criteria, 100% MOI accepted, full funding.
+* **`🟡 CONDITIONAL (NEEDS IELTS OR SUPERVISOR)`** — Great opportunity, but requires taking IELTS or securing professor consent first.
+* **`🔴 NOT RECOMMENDED / INELIGIBLE`** — Strict IELTS requirement without waiver, exorbitant fees, or GPA threshold above 3.50.
+
+### Step 4: Ingestion into Repository & Website Tracker
+Once Fuad confirms (*"Yes, apply"* or *"Yes, add to tracker"*):
+1. Add the opportunity to [applications.json](file:///home/kichner/Desktop/stuff/docs/applications.json) and [index.html](file:///home/kichner/Desktop/stuff/docs/index.html).
+2. Configure its **scholarship-specific document checklist** (e.g. including Police Clearance and Hospital Medical Report for China, or ISEE Parificato for Italy).
+3. If an account is created by `agy`, record the login credentials under `credentials` with `created_by: "AI Agent"`.
+4. Set initial status (`NOT_STARTED` or `STARTED`).
+5. Run `./sync.sh "Add new opportunity: <Name>"` to commit and push.
 
 ---
 
-## ⚡ 3. Autonomous Execution Rules for `agy`
+## 🔑 3. Portal Account Creation & Credential Logging Rule
+
+Whenever `agy` creates an account on any university, government, or scholarship portal:
+1. Always use Fuad's primary email: `fuadahmedt@gmail.com`.
+2. Generate or use a strong, compliant password (e.g. `FuadFrance2027!#` or standard secure scheme).
+3. Record the credentials in `applications.json` and `index.html`:
+   ```json
+   "credentials": {
+     "created_by": "AI Agent",
+     "email": "fuadahmedt@gmail.com",
+     "username": "<Candidate ID or Username>",
+     "password": "<Password>",
+     "portal_url": "<Login URL>"
+   }
+   ```
+4. This ensures Fuad can view, copy, or use the credentials at any time on the website card.
+5. If Fuad created the account himself, provide the interactive `🔑 Add Login Credentials` option on the card.
+
+---
+
+## ⚡ 4. Autonomous Execution Rules for `agy`
 
 1. **Be Fully Autonomous:**  
    The user explicitly directed: *"dont ask me everytime tell me when u finish u know everything about me"*. Do not ask trivial questions or request approval for standard data entries. Execute tasks end-to-end and report when done.
@@ -50,16 +90,14 @@ Before executing any task, check [CURRENT_STATUS.md](file:///home/kichner/Deskto
      `08_France_Campus_France_and_Eiffel_2027/Fuad_Ahmed_High_School_Certificates.pdf`.
 3. **Maintain Repository Synchronization:**  
    Whenever you modify application statuses, add documents, or update dossiers:
-   * Update [applications.json](file:///home/kichner/Desktop/stuff/docs/applications.json)
-   * Update [APPLICATIONS.md](file:///home/kichner/Desktop/stuff/docs/APPLICATIONS.md)
-   * Update [CURRENT_STATUS.md](file:///home/kichner/Desktop/stuff/docs/CURRENT_STATUS.md)
+   * Update `applications.json`, `APPLICATIONS.md`, `CURRENT_STATUS.md`, and `index.html`.
    * Run `./sync.sh "<descriptive commit message>"` to commit and push cleanly to GitHub.
 
 ---
 
-## 🔄 4. Synchronizing Between PC and Termux Mobile
+## 🔄 5. Synchronizing Between PC and Termux Mobile
 
-* `sync.sh` automatically performs a `git pull --rebase origin main` before committing and pushing.
+* `sync.sh` automatically performs a commit, then `git pull --rebase origin main`, and pushes.
 * If working on phone in Termux:
   ```bash
   ./sync.sh "Update from Termux mobile"
@@ -68,19 +106,17 @@ Before executing any task, check [CURRENT_STATUS.md](file:///home/kichner/Deskto
   ```bash
   ./sync.sh "Update from Linux PC"
   ```
-* This guarantees that neither PC nor mobile will ever suffer from merge conflicts or out-of-sync states.
 
 ---
 
-## 📱 5. Terminal CLI Quick Commands (Zero Dependencies)
+## 📱 6. Terminal CLI Quick Commands (Zero Dependencies)
 
-Fuad or `agy` can run these in Termux or PC at any time:
 ```bash
 python track.py list             # View all tracked programs and current statuses
 python track.py show <id>        # View full dossier (e.g. `python track.py show france-campus-france`)
 python track.py deadlines        # Chronological queue of upcoming deadlines
 python track.py china            # China CSC professor outreach status & follow-up dates
-python track.py france           # France EEF credentials, target program IDs, and reminder
-python track.py profile          # Display Fuad's complete candidate profile
-python track.py update <id> <st> # Update application status (e.g. `python track.py update italy-polimi APPLIED`)
+python track.py france           # France EEF credentials, target program IDs & cart reminder
+python track.py profile          # Display Fuad's complete candidate profile & credentials
+python track.py update <id> <st> # Update application status
 ```

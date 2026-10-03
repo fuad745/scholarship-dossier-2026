@@ -564,6 +564,131 @@
       cursor: pointer;
     }
 
+        /* Portal Credentials Box on Card */
+    .credentials-box {
+      background: var(--ks-paper-raised);
+      border: 1px solid var(--ks-hairline);
+      border-radius: var(--radius-sm);
+      padding: 9px 12px;
+      margin-bottom: 12px;
+      font-size: 11.5px;
+    }
+
+    .credentials-box.has-creds {
+      border-color: rgba(99, 102, 241, 0.35);
+      background: linear-gradient(180deg, rgba(30, 41, 59, 0.45) 0%, rgba(17, 24, 39, 0.45) 100%);
+    }
+
+    .cred-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+
+    .cred-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+
+    .cred-badge.badge-ai {
+      background: rgba(99, 102, 241, 0.15);
+      color: #a5b4fc;
+      border: 1px solid rgba(99, 102, 241, 0.35);
+    }
+
+    .cred-badge.badge-user {
+      background: rgba(16, 185, 129, 0.15);
+      color: #6ee7b7;
+      border: 1px solid rgba(16, 185, 129, 0.35);
+    }
+
+    .cred-rows {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .cred-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      padding: 3px 0;
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.05);
+    }
+
+    .cred-row:last-child {
+      border-bottom: none;
+    }
+
+    .cred-label {
+      color: var(--text-3);
+      font-size: 11px;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+
+    .cred-val-wrap {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11.5px;
+      color: #f1f5f9;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .btn-cred-mini {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--ks-hairline);
+      color: var(--text-2);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 10.5px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      transition: all 0.15s;
+    }
+
+    .btn-cred-mini:hover {
+      background: rgba(255, 255, 255, 0.14);
+      color: #fff;
+    }
+
+    .btn-add-cred {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px dashed var(--ks-hairline-strong);
+      border-radius: var(--radius-sm);
+      color: #93c5fd;
+      font-size: 11.5px;
+      font-weight: 600;
+      padding: 7px 12px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      margin-bottom: 12px;
+      transition: all 0.15s;
+    }
+
+    .btn-add-cred:hover {
+      background: rgba(59, 130, 246, 0.08);
+      border-color: #3b82f6;
+      color: #bfdbfe;
+    }
+
     /* Interactive Note Box */
     .note-card-box {
       background: var(--ks-paper-raised);
@@ -1051,6 +1176,66 @@
     </div>
   </div>
 
+    <!-- Portal Credential Editor Modal -->
+  <div class="modal-backdrop" id="credModal" onclick="closeModalOnBg(event, 'credModal')">
+    <div class="modal-box" style="max-width: 480px;">
+      <div class="modal-head">
+        <div class="modal-title" id="credModalTitle">🔑 Portal Login Credentials</div>
+        <button class="btn-close" onclick="closeCredModal()">✕</button>
+      </div>
+      <p style="font-size: 12px; color: var(--text-2); margin-bottom: 14px;" id="credModalSub">
+        Manage login credentials for this admission or visa portal.
+      </p>
+
+      <form id="credForm" onsubmit="saveCredForm(event)">
+        <div style="margin-bottom: 12px;">
+          <label style="display:block; font-size:11px; font-weight:700; color:var(--text-3); text-transform:uppercase; margin-bottom:5px;">Account Creator</label>
+          <div style="display:flex; gap:8px;">
+            <label style="flex:1; display:flex; align-items:center; gap:6px; background:var(--ks-ink); padding:8px 10px; border-radius:var(--radius-sm); border:1px solid var(--ks-hairline); cursor:pointer; font-size:12px;">
+              <input type="radio" name="credCreator" value="AI Agent" id="credCreatorAI" checked>
+              <span>🤖 Created by AI Agent</span>
+            </label>
+            <label style="flex:1; display:flex; align-items:center; gap:6px; background:var(--ks-ink); padding:8px 10px; border-radius:var(--radius-sm); border:1px solid var(--ks-hairline); cursor:pointer; font-size:12px;">
+              <input type="radio" name="credCreator" value="Fuad" id="credCreatorUser">
+              <span>👤 Added by Fuad</span>
+            </label>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 12px;">
+          <label style="display:block; font-size:11px; font-weight:700; color:var(--text-3); text-transform:uppercase; margin-bottom:5px;">Email / Login Username</label>
+          <input type="text" id="credEmail" required placeholder="e.g. fuadahmedt@gmail.com" style="width:100%; background:var(--ks-ink); border:1px solid var(--ks-hairline); border-radius:var(--radius-sm); color:#fff; padding:8px 12px; font-size:13px; font-family:monospace; outline:none;">
+        </div>
+
+        <div style="margin-bottom: 12px;">
+          <label style="display:block; font-size:11px; font-weight:700; color:var(--text-3); text-transform:uppercase; margin-bottom:5px;">Candidate / Application ID (Optional)</label>
+          <input type="text" id="credUsername" placeholder="e.g. ET26-00453 or 396112" style="width:100%; background:var(--ks-ink); border:1px solid var(--ks-hairline); border-radius:var(--radius-sm); color:#fff; padding:8px 12px; font-size:13px; font-family:monospace; outline:none;">
+        </div>
+
+        <div style="margin-bottom: 12px;">
+          <label style="display:block; font-size:11px; font-weight:700; color:var(--text-3); text-transform:uppercase; margin-bottom:5px;">Password</label>
+          <div style="display:flex; gap:6px;">
+            <input type="password" id="credPassword" required placeholder="Enter portal password" style="flex:1; background:var(--ks-ink); border:1px solid var(--ks-hairline); border-radius:var(--radius-sm); color:#fff; padding:8px 12px; font-size:13px; font-family:monospace; outline:none;">
+            <button type="button" class="btn-nav" onclick="toggleCredModalPasswordVisibility()" style="padding:0 10px;">👁️</button>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 16px;">
+          <label style="display:block; font-size:11px; font-weight:700; color:var(--text-3); text-transform:uppercase; margin-bottom:5px;">Portal URL</label>
+          <input type="url" id="credPortalUrl" placeholder="https://..." style="width:100%; background:var(--ks-ink); border:1px solid var(--ks-hairline); border-radius:var(--radius-sm); color:#fff; padding:8px 12px; font-size:12px; font-family:monospace; outline:none;">
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items:center;">
+          <button type="button" class="btn-text-edit" style="color:#ef4444;" id="btnDeleteCred" onclick="deleteCurrentCred()">Remove Credentials</button>
+          <div style="display:flex; gap:8px;">
+            <button type="button" class="btn-nav" onclick="closeCredModal()">Cancel</button>
+            <button type="submit" class="btn-action-portal" style="flex:none; padding:7px 18px;">Save Credentials</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
   <!-- Profile Modal -->
   <div class="modal-backdrop" id="profileModal" onclick="closeModalOnBg(event, 'profileModal')">
     <div class="modal-box" style="max-width: 520px;">
@@ -1109,232 +1294,786 @@
 
   <!-- Toast -->
   <div class="toast-msg" id="toastMsg">Copied!</div>
-
   <script>
-    // Master Dataset with Initial 5-Stage Statuses & Document Checklists
+    // Master Dataset with Initial 5-Stage Statuses, Tailored Checklists & Credentials
     const masterTracks = [
       {
-        id: "france-campus-france",
-        country: "France",
-        flag: "🇫🇷",
-        university: "Université Paris-Saclay / UGA / Lille",
-        program: "MSc Computer Science: Distributed Systems, Cloud & AI",
-        funding: "Eiffel Excellence Scholarship + Fee Waivers",
-        benefits: "€1,181/mo Cash + Flights OR Tuition reduced to €243/yr",
-        language: "MOI Accepted (NO IELTS)",
-        intake: "Fall 2027 (Starts Sept 2027)",
-        deadline: "2026-12-15",
-        status: "FINISHED", // Dossier completed
-        priority: "P1",
-        portal_url: "https://etudesenfrance.diplomatie.gouv.fr/connexion",
-        default_docs: { passport: true, degree: true, moi: true, sop: true, recs: true },
-        default_note: "Candidate ID: ET26-00453. Target Programs: UGA MoSIG (61801), UGA Cloud (61800), Lille (60987), CentraleSupélec AI (60589). Monitoring intake cart twice weekly (Mon & Fri)."
+            "id": "italy-trento",
+            "country": "Italy",
+            "flag": "🇮🇹",
+            "university": "University of Trento",
+            "program": "MSc Computer Science / Software Engineering",
+            "funding": "DSU Trentino Full Scholarship",
+            "benefits": "100% Free Tuition + Free Dorm + €7,200/yr Cash + Meals",
+            "language": "MOI Accepted (NO IELTS)",
+            "intake": "Fall 2027 (Sept/Oct 2027)",
+            "deadline": "2027-02-20",
+            "status": "NOT_STARTED",
+            "priority": "P1",
+            "portal_url": "https://www.unitn.it/en/apply",
+            "default_note": "Top CS ranking in Italy. Guaranteed need-based DSU award for Ethiopian applicants.",
+            "credentials": null,
+            "required_documents": [
+                  {
+                        "id": "passport",
+                        "label": "Biometric Passport (E00340202)",
+                        "ready": true
+                  },
+                  {
+                        "id": "degree",
+                        "label": "3-Page Degree & Transcripts (Legalized)",
+                        "ready": true
+                  },
+                  {
+                        "id": "moi",
+                        "label": "St. Mary's English MOI Certificate",
+                        "ready": true
+                  },
+                  {
+                        "id": "cv_sop",
+                        "label": "Academic CV & Motivation Letter",
+                        "ready": true
+                  },
+                  {
+                        "id": "recs",
+                        "label": "2 Academic Recommendation Letters",
+                        "ready": true
+                  },
+                  {
+                        "id": "isee_parificato",
+                        "label": "ISEE Parificato (Trentino DSU €7,200/yr Cash)",
+                        "ready": false
+                  }
+            ]
       },
       {
-        id: "italy-polimi",
-        country: "Italy",
-        flag: "🇮🇹",
-        university: "Politecnico di Milano",
-        program: "MSc Computer Science and Engineering",
-        funding: "DSU Lombardia Scholarship",
-        benefits: "100% Tuition + Housing + €7,650/yr Cash + Meals",
-        language: "MOI Accepted (English Taught)",
-        intake: "Fall 2027 (Starts Sept 2027)",
-        deadline: "2026-11-15",
-        status: "STARTED", // R1 active
-        priority: "P1",
-        portal_url: "https://www.polimi.it/en/international-prospective-students",
-        default_docs: { passport: true, degree: true, moi: true, sop: true, recs: true },
-        default_note: "URGENT: Round 1 closes Nov 15, 2026! Submit master portfolio & MOI."
+            "id": "italy-padua",
+            "country": "Italy",
+            "flag": "🇮🇹",
+            "university": "University of Padua (UNIPD)",
+            "program": "MSc Computer Engineering / Data Science",
+            "funding": "Veneto ESU Scholarship + Padua International Excellence Grant",
+            "benefits": "100% Tuition + Housing Subsidy + €7,000/yr Cash + Meals",
+            "language": "MOI Accepted (NO IELTS)",
+            "intake": "Fall 2027 (Starts Oct 2027)",
+            "deadline": "2027-02-02",
+            "status": "NEEDS_DOCS",
+            "priority": "P1",
+            "portal_url": "https://apply.unipd.it/",
+            "default_note": "Automatic evaluation for €8,000/yr merit grant alongside ESU need grant.",
+            "credentials": null,
+            "required_documents": [
+                  {
+                        "id": "passport",
+                        "label": "Biometric Passport (E00340202)",
+                        "ready": true
+                  },
+                  {
+                        "id": "degree",
+                        "label": "3-Page Degree & Transcripts (Legalized / CIMEA)",
+                        "ready": true
+                  },
+                  {
+                        "id": "moi",
+                        "label": "St. Mary's Official English MOI Certificate",
+                        "ready": true
+                  },
+                  {
+                        "id": "cv_sop",
+                        "label": "Academic CV & Motivation Letter",
+                        "ready": true
+                  },
+                  {
+                        "id": "recs",
+                        "label": "2 Academic Recommendation Letters",
+                        "ready": true
+                  },
+                  {
+                        "id": "isee_parificato",
+                        "label": "ISEE Parificato (Veneto ESU Scholarship €7,000/yr Cash)",
+                        "ready": false
+                  }
+            ]
       },
       {
-        id: "italy-padua",
-        country: "Italy",
-        flag: "🇮🇹",
-        university: "University of Padua (UNIPD)",
-        program: "MSc Computer Engineering / Data Science",
-        funding: "Veneto ESU Scholarship + Excellence Grant",
-        benefits: "100% Tuition + Housing Subsidy + €7,000/yr Cash + Meals",
-        language: "MOI Accepted (NO IELTS)",
-        intake: "Fall 2027 (Starts Oct 2027)",
-        deadline: "2027-02-02",
-        status: "NEEDS_DOCS", // Waiting portal & physical stamp
-        priority: "P1",
-        portal_url: "https://apply.unipd.it/",
-        default_docs: { passport: true, degree: true, moi: false, sop: true, recs: true },
-        default_note: "Portal opens Nov 2, 2026. Automatic consideration for €8,000/yr merit grant."
+            "id": "italy-polimi",
+            "country": "Italy",
+            "flag": "🇮🇹",
+            "university": "Politecnico di Milano",
+            "program": "MSc Computer Science and Engineering",
+            "funding": "DSU Lombardia Scholarship",
+            "benefits": "100% Tuition + Housing + €7,650/yr Cash + Meals",
+            "language": "MOI Accepted (Degree taught in English)",
+            "intake": "Fall 2027 (Semester 1, starts Sept 2027)",
+            "deadline": "2026-11-15",
+            "status": "STARTED",
+            "priority": "P1",
+            "portal_url": "https://www.polimi.it/en/international-prospective-students",
+            "default_note": "Round 1 closes Nov 15; Round 2 closes Mar 2, 2027. Ranked #1 in Italy.",
+            "credentials": null,
+            "required_documents": [
+                  {
+                        "id": "passport",
+                        "label": "Biometric Passport (E00340202)",
+                        "ready": true
+                  },
+                  {
+                        "id": "degree",
+                        "label": "3-Page Degree & Transcripts (Legalized / CIMEA Statement)",
+                        "ready": true
+                  },
+                  {
+                        "id": "moi",
+                        "label": "St. Mary's Official English MOI Certificate from Registrar",
+                        "ready": true
+                  },
+                  {
+                        "id": "cv_sop",
+                        "label": "Academic CV & Program-Specific Motivation Letter",
+                        "ready": true
+                  },
+                  {
+                        "id": "recs",
+                        "label": "2 Academic Recommendation Letters",
+                        "ready": true
+                  },
+                  {
+                        "id": "isee_parificato",
+                        "label": "ISEE Parificato (Family Income & Asset Affidavit for €7,650/yr DSU)",
+                        "ready": false
+                  }
+            ]
       },
       {
-        id: "italy-trento",
-        country: "Italy",
-        flag: "🇮🇹",
-        university: "University of Trento",
-        program: "MSc Computer Science / Software Engineering",
-        funding: "DSU Trentino Full Scholarship",
-        benefits: "100% Free Tuition + Free Dorm + €7,200/yr Cash + Meals",
-        language: "MOI Accepted (NO IELTS)",
-        intake: "Fall 2027 (Sept/Oct 2027)",
-        deadline: "2027-02-20",
-        status: "NOT_STARTED", // Opens Dec 1
-        priority: "P1",
-        portal_url: "https://www.unitn.it/en/apply",
-        default_docs: { passport: true, degree: true, moi: true, sop: false, recs: true },
-        default_note: "Top CS ranking in Italy. Guaranteed need-based DSU award. Portal opens Dec 1, 2026."
+            "id": "italy-sapienza",
+            "country": "Italy",
+            "flag": "🇮🇹",
+            "university": "Sapienza University of Rome",
+            "program": "MSc in Computer Science",
+            "funding": "LazioDiSCo Regional Scholarship",
+            "benefits": "100% Tuition + Free Dorm + €7,000/yr Cash + Free Meals",
+            "language": "MOI Accepted (NO IELTS)",
+            "intake": "Fall 2027 (Sept/Oct 2027)",
+            "deadline": "2027-04-15",
+            "status": "NOT_STARTED",
+            "priority": "P1",
+            "portal_url": "https://www.uniroma1.it/en",
+            "default_note": "High acceptance quota for non-EU students.",
+            "credentials": null,
+            "required_documents": [
+                  {
+                        "id": "passport",
+                        "label": "Biometric Passport (E00340202)",
+                        "ready": true
+                  },
+                  {
+                        "id": "degree",
+                        "label": "3-Page Degree & Transcripts (Legalized)",
+                        "ready": true
+                  },
+                  {
+                        "id": "moi",
+                        "label": "St. Mary's English MOI Certificate",
+                        "ready": true
+                  },
+                  {
+                        "id": "cv_sop",
+                        "label": "Academic CV & Motivation Letter",
+                        "ready": true
+                  },
+                  {
+                        "id": "recs",
+                        "label": "2 Academic Recommendation Letters",
+                        "ready": true
+                  },
+                  {
+                        "id": "isee_parificato",
+                        "label": "ISEE Parificato (LazioDiSCo Scholarship €7,000/yr Cash)",
+                        "ready": false
+                  }
+            ]
       },
       {
-        id: "china-hit",
-        country: "China",
-        flag: "🇨🇳",
-        university: "Harbin Institute of Technology (HIT)",
-        program: "MSc Computer Science & Technology",
-        funding: "Chinese Government Scholarship (CSC Type B)",
-        benefits: "100% Tuition + Free Dorm + 3,000 RMB/mo + Medical",
-        language: "MOI Accepted (NO IELTS)",
-        intake: "Fall 2027 (Starts Sept 2027)",
-        deadline: "2027-02-15",
-        status: "STARTED", // 2 profs contacted
-        priority: "P1",
-        portal_url: "http://studyathit.hit.edu.cn/",
-        default_docs: { passport: true, degree: true, moi: true, sop: true, recs: true },
-        default_note: "Profs. Weizhe Zhang (Distributed) & Shaohuai Shi (ML) contacted. Follow-up: Oct 12 & 13."
+            "id": "italy-unical",
+            "country": "Italy",
+            "flag": "🇮🇹",
+            "university": "University of Calabria (UniCal)",
+            "program": "MSc Computer Science (AI & Cloud)",
+            "funding": "UniCal Extra-EU Full Award",
+            "benefits": "100% Tuition + Free Campus Dorm + €6,000/yr Cash + Meals",
+            "language": "MOI Accepted (NO IELTS)",
+            "intake": "Fall 2027 (Starts Oct 2027)",
+            "deadline": "2027-04-30",
+            "status": "NOT_STARTED",
+            "priority": "P1",
+            "portal_url": "https://unical.portaleamministrazionetrasparente.it/",
+            "default_note": "120 full-ride scholarships for non-EU; very high Ethiopian success rate.",
+            "credentials": null,
+            "required_documents": [
+                  {
+                        "id": "passport",
+                        "label": "Biometric Passport (E00340202)",
+                        "ready": true
+                  },
+                  {
+                        "id": "degree",
+                        "label": "3-Page Degree & Transcripts (Legalized)",
+                        "ready": true
+                  },
+                  {
+                        "id": "moi",
+                        "label": "St. Mary's English MOI Certificate",
+                        "ready": true
+                  },
+                  {
+                        "id": "cv_sop",
+                        "label": "Academic CV & Motivation Letter",
+                        "ready": true
+                  },
+                  {
+                        "id": "recs",
+                        "label": "2 Academic Recommendation Letters",
+                        "ready": true
+                  },
+                  {
+                        "id": "isee_parificato",
+                        "label": "Extra-EU Family Economic Affidavit (€6,000/yr Award)",
+                        "ready": false
+                  }
+            ]
       },
       {
-        id: "china-bit",
-        country: "China",
-        flag: "🇨🇳",
-        university: "Beijing Institute of Technology (BIT)",
-        program: "MSc Computer Science",
-        funding: "CSC Type B / BIT Fellowship",
-        benefits: "100% Tuition + Free Dorm + 3,000 RMB/mo + Medical",
-        language: "MOI Accepted (NO IELTS)",
-        intake: "Fall 2027 (Starts Sept 2027)",
-        deadline: "2027-02-15",
-        status: "STARTED", // 2 profs contacted
-        priority: "P1",
-        portal_url: "https://isc.bit.edu.cn/",
-        default_docs: { passport: true, degree: true, moi: true, sop: true, recs: true },
-        default_note: "Assoc. Prof. Song Yang (Edge) & Prof. Meihui Zhang (DB) contacted. Follow-up: Oct 12 & 13."
+            "id": "china-hit",
+            "country": "China",
+            "flag": "🇨🇳",
+            "university": "Harbin Institute of Technology (HIT)",
+            "program": "MSc Computer Science & Technology",
+            "funding": "Chinese Government Scholarship (CSC Type B)",
+            "benefits": "100% Tuition + Free University Housing + 3,000 RMB/month Cash + Medical",
+            "language": "MOI Accepted (NO IELTS)",
+            "intake": "Fall 2027 (Starts Sept 2027)",
+            "deadline": "2027-02-15",
+            "status": "STARTED",
+            "priority": "P1",
+            "portal_url": "https://studyathit.hit.edu.cn/",
+            "default_note": "Top 5 CS in China. Follow up scheduled Oct 12–13 if no response.",
+            "credentials": null,
+            "required_documents": [
+                  {
+                        "id": "passport",
+                        "label": "Biometric Passport (E00340202)",
+                        "ready": true
+                  },
+                  {
+                        "id": "degree",
+                        "label": "3-Page Degree Certificate & Transcripts (Notarized)",
+                        "ready": true
+                  },
+                  {
+                        "id": "physical_exam",
+                        "label": "Foreigner Physical Examination Form (Hospital Medical Report with ECG & Blood)",
+                        "ready": false
+                  },
+                  {
+                        "id": "police_clearance",
+                        "label": "Non-Criminal Record Certificate (Federal Police Clearance Report)",
+                        "ready": false
+                  },
+                  {
+                        "id": "study_plan",
+                        "label": "CSC Study Plan & Research Proposal (1,200 Words)",
+                        "ready": true
+                  },
+                  {
+                        "id": "recs",
+                        "label": "2 Professor Recommendation Letters (St. Mary's)",
+                        "ready": true
+                  },
+                  {
+                        "id": "moi",
+                        "label": "St. Mary's English MOI Certificate (IELTS Waiver)",
+                        "ready": true
+                  },
+                  {
+                        "id": "supervisor_pal",
+                        "label": "Supervisor Provisional Acceptance Letter (PAL) from Professor",
+                        "ready": false
+                  }
+            ]
       },
       {
-        id: "china-ustc",
-        country: "China",
-        flag: "🇨🇳",
-        university: "Univ. of Science & Technology of China (USTC)",
-        program: "MSc Computer Science",
-        funding: "CSC Type B / USTC Fellowship",
-        benefits: "100% Tuition + Free Dorm + 3,000 RMB/mo + Medical",
-        language: "MOI Accepted (NO IELTS)",
-        intake: "Fall 2027 (Starts Sept 2027)",
-        deadline: "2027-03-15",
-        status: "STARTED", // 2 profs contacted
-        priority: "P1",
-        portal_url: "https://isa.ustc.edu.cn/",
-        default_docs: { passport: true, degree: true, moi: true, sop: true, recs: true },
-        default_note: "Profs. Mingjun Xiao (Algorithms) & Gongming Zhao (Cloud) contacted. Follow-up: Oct 12 & 13."
+            "id": "china-bit",
+            "country": "China",
+            "flag": "🇨🇳",
+            "university": "Beijing Institute of Technology (BIT)",
+            "program": "MSc Computer Science",
+            "funding": "CSC Type B / BIT Fellowship",
+            "benefits": "100% Tuition + Free Accommodation + 3,000 RMB/month Cash + Insurance",
+            "language": "MOI Accepted (NO IELTS)",
+            "intake": "Fall 2027 (Starts Sept 2027)",
+            "deadline": "2027-02-15",
+            "status": "STARTED",
+            "priority": "P1",
+            "portal_url": "https://isc.bit.edu.cn/",
+            "default_note": "Direct research match in Edge Computing & Blockchain.",
+            "credentials": null,
+            "required_documents": [
+                  {
+                        "id": "passport",
+                        "label": "Biometric Passport (E00340202)",
+                        "ready": true
+                  },
+                  {
+                        "id": "degree",
+                        "label": "3-Page Degree Certificate & Transcripts (Notarized)",
+                        "ready": true
+                  },
+                  {
+                        "id": "physical_exam",
+                        "label": "Foreigner Physical Examination Form (Hospital Medical Report with ECG & Blood)",
+                        "ready": false
+                  },
+                  {
+                        "id": "police_clearance",
+                        "label": "Non-Criminal Record Certificate (Federal Police Clearance Report)",
+                        "ready": false
+                  },
+                  {
+                        "id": "study_plan",
+                        "label": "CSC Study Plan & Research Proposal (1,200 Words)",
+                        "ready": true
+                  },
+                  {
+                        "id": "recs",
+                        "label": "2 Professor Recommendation Letters (St. Mary's)",
+                        "ready": true
+                  },
+                  {
+                        "id": "moi",
+                        "label": "St. Mary's English MOI Certificate (IELTS Waiver)",
+                        "ready": true
+                  },
+                  {
+                        "id": "supervisor_pal",
+                        "label": "Supervisor Provisional Acceptance Letter (PAL) from Professor",
+                        "ready": false
+                  }
+            ]
       },
       {
-        id: "russia-opendoors",
-        country: "Russia",
-        flag: "🇷🇺",
-        university: "ITMO University & HSE University",
-        program: "MSc Software Engineering & Data Science",
-        funding: "Russian Open Doors Olympiad / State Quota",
-        benefits: "100% Free Tuition + Subsidized Housing + Monthly Stipend",
-        language: "MOI Accepted (NO IELTS)",
-        intake: "Fall 2027 (Starts Sept 2027)",
-        deadline: "2026-11-01",
-        status: "FINISHED", // 93 Pts submitted
-        priority: "P1",
-        portal_url: "https://od.globaluni.ru/en/",
-        default_docs: { passport: true, degree: true, moi: true, sop: true, recs: true },
-        default_note: "Candidate ID: 396112. Portfolio submitted with verified 93/100 points! Stage 1 results due mid-November."
+            "id": "china-ustc",
+            "country": "China",
+            "flag": "🇨🇳",
+            "university": "University of Science and Technology of China (USTC)",
+            "program": "MSc Computer Science",
+            "funding": "CSC Type B / USTC Fellowship",
+            "benefits": "100% Tuition + Free Accommodation + 3,000 RMB/month Cash + Medical",
+            "language": "MOI Accepted (NO IELTS)",
+            "intake": "Fall 2027 (Starts Sept 2027)",
+            "deadline": "2027-03-15",
+            "status": "STARTED",
+            "priority": "P1",
+            "portal_url": "https://isa.ustc.edu.cn/",
+            "default_note": "Elite C9 League institution.",
+            "credentials": null,
+            "required_documents": [
+                  {
+                        "id": "passport",
+                        "label": "Biometric Passport (E00340202)",
+                        "ready": true
+                  },
+                  {
+                        "id": "degree",
+                        "label": "3-Page Degree Certificate & Transcripts (Notarized)",
+                        "ready": true
+                  },
+                  {
+                        "id": "physical_exam",
+                        "label": "Foreigner Physical Examination Form (Hospital Medical Report with ECG & Blood)",
+                        "ready": false
+                  },
+                  {
+                        "id": "police_clearance",
+                        "label": "Non-Criminal Record Certificate (Federal Police Clearance Report)",
+                        "ready": false
+                  },
+                  {
+                        "id": "study_plan",
+                        "label": "CSC Study Plan & Research Proposal (1,200 Words)",
+                        "ready": true
+                  },
+                  {
+                        "id": "recs",
+                        "label": "2 Professor Recommendation Letters (St. Mary's)",
+                        "ready": true
+                  },
+                  {
+                        "id": "moi",
+                        "label": "St. Mary's English MOI Certificate (IELTS Waiver)",
+                        "ready": true
+                  },
+                  {
+                        "id": "supervisor_pal",
+                        "label": "Supervisor Provisional Acceptance Letter (PAL) from Professor",
+                        "ready": false
+                  }
+            ]
       },
       {
-        id: "italy-unical",
-        country: "Italy",
-        flag: "🇮🇹",
-        university: "University of Calabria (UniCal)",
-        program: "MSc Computer Science (AI & Cloud)",
-        funding: "UniCal Extra-EU Full Award",
-        benefits: "100% Tuition + Free Dorm + €6,000/yr Cash + Meals",
-        language: "MOI Accepted (NO IELTS)",
-        intake: "Fall 2027 (Starts Oct 2027)",
-        deadline: "2027-04-30",
-        status: "NOT_STARTED",
-        priority: "P1",
-        portal_url: "https://unical.portaleamministrazionetrasparente.it/",
-        default_docs: { passport: true, degree: true, moi: true, sop: false, recs: true },
-        default_note: "120 full-ride awards for non-EU; very high Ethiopian success rate."
+            "id": "china-pku-yenching",
+            "country": "China",
+            "flag": "🇨🇳",
+            "university": "Peking University (Yenching Academy)",
+            "program": "Master's in China Studies (Tech & Society)",
+            "funding": "Yenching Full Fellowship",
+            "benefits": "100% Tuition + Private Dorm + Flights + 3,500 RMB/month Cash",
+            "language": "MOI Accepted (Degree taught in English)",
+            "intake": "Fall 2027 (Starts Sept 2027)",
+            "deadline": "2026-11-27",
+            "status": "NOT_STARTED",
+            "priority": "P2",
+            "portal_url": "https://yenchingacademy.pku.edu.cn/",
+            "default_note": "Prestigious fully funded fellowship. Hard cutoff 12:00 noon Beijing Time.",
+            "credentials": null,
+            "required_documents": [
+                  {
+                        "id": "passport",
+                        "label": "Biometric Passport (E00340202)",
+                        "ready": true
+                  },
+                  {
+                        "id": "degree",
+                        "label": "3-Page BSc Degree & Transcripts (Official English)",
+                        "ready": true
+                  },
+                  {
+                        "id": "sop",
+                        "label": "Statement of Purpose & China Studies Research Proposal",
+                        "ready": true
+                  },
+                  {
+                        "id": "recs",
+                        "label": "2 Recommendation Letters (Assoc. Prof or higher)",
+                        "ready": true
+                  },
+                  {
+                        "id": "moi",
+                        "label": "St. Mary's English MOI Certificate / Language Waiver",
+                        "ready": true
+                  },
+                  {
+                        "id": "cv",
+                        "label": "International Academic CV",
+                        "ready": true
+                  }
+            ]
       },
       {
-        id: "hungary-stipendium",
-        country: "Hungary",
-        flag: "🇭🇺",
-        university: "ELTE & BME (Budapest)",
-        program: "MSc Computer Science / Software Engineering",
-        funding: "Stipendium Hungaricum Scholarship",
-        benefits: "100% Tuition + Housing + 43,700 HUF/mo + Medical + Schengen",
-        language: "MOI Accepted (NO IELTS)",
-        intake: "Fall 2027 (Starts Sept 2027)",
-        deadline: "2027-01-15",
-        status: "NOT_STARTED", // Opens Nov 15
-        priority: "P2",
-        portal_url: "https://apply.stipendiumhungaricum.hu/",
-        default_docs: { passport: true, degree: true, moi: true, sop: false, recs: true },
-        default_note: "DreamApply portal opens Nov 15, 2026. Partner quota for Ethiopian applicants."
+            "id": "russia-open-doors",
+            "country": "Russia",
+            "flag": "🇷🇺",
+            "university": "ITMO University & HSE University",
+            "program": "MSc Software Engineering / Distributed Systems / Data Science",
+            "funding": "Open Doors Russian Scholarship / State Quota",
+            "benefits": "100% Free Tuition + Subsidized Dorm + Monthly State Stipend",
+            "language": "Zero IELTS Requirement",
+            "intake": "Fall 2027 (Starts Sept 2027)",
+            "deadline": "2026-11-01",
+            "status": "FINISHED",
+            "priority": "P1",
+            "portal_url": "https://od.globaluni.ru/",
+            "default_note": "Next step: Take 60-min online entrance test before Nov 1, 2026.",
+            "credentials": {
+                  "created_by": "Fuad & AI Agent",
+                  "email": "fuadahmedt@gmail.com",
+                  "username": "396112",
+                  "id_label": "Participant ID",
+                  "password": "FuadRussia2027!#",
+                  "portal_url": "https://od.globaluni.ru/en/",
+                  "notes": "Verified 93/100 points portfolio submitted."
+            },
+            "required_documents": [
+                  {
+                        "id": "passport",
+                        "label": "Biometric Passport (E00340202)",
+                        "ready": true
+                  },
+                  {
+                        "id": "degree",
+                        "label": "BSc Degree Certificate & Transcripts",
+                        "ready": true
+                  },
+                  {
+                        "id": "portfolio",
+                        "label": "Stage 1 Portfolio Verification Dossier (93/100 Pts Verified)",
+                        "ready": true
+                  },
+                  {
+                        "id": "sop",
+                        "label": "Motivation Statement for ITMO / HSE Distributed Systems",
+                        "ready": true
+                  },
+                  {
+                        "id": "moi",
+                        "label": "St. Mary's English MOI Certificate",
+                        "ready": true
+                  },
+                  {
+                        "id": "exam",
+                        "label": "Stage 2 Online Proctored Subject Exam (CS & Math)",
+                        "ready": false
+                  }
+            ]
       },
       {
-        id: "canada-manitoba",
-        country: "Canada",
-        flag: "🇨🇦",
-        university: "University of Manitoba",
-        program: "MSc in Computer Science",
-        funding: "Univ of Manitoba Graduate Fellowship (UMGF)",
-        benefits: "Up to $28,000 CAD Fellowship ($14,000/yr for 2 yrs)",
-        language: "MOI Exemption Form (NO IELTS)",
-        intake: "Fall 2027 (Sept 2027)",
-        deadline: "2026-12-01",
-        status: "NEEDS_DOCS", // Needs supervisor agreement
-        priority: "P2",
-        portal_url: "https://umanitoba.ca/admissions",
-        default_docs: { passport: true, degree: true, moi: true, sop: false, recs: true },
-        default_note: "Priority cutoff Dec 1, 2026. Identifying potential supervisor for UMGF nomination."
+            "id": "hungary-stipendium",
+            "country": "Hungary",
+            "flag": "🇭🇺",
+            "university": "Eötvös Loránd University (ELTE) & BME Budapest",
+            "program": "MSc Computer Science (Software Tech)",
+            "funding": "Stipendium Hungaricum (Ethiopia Quota)",
+            "benefits": "100% Tuition + Free Dorm + 43,700 HUF/mo + Health Insurance + Schengen Visa",
+            "language": "MOI Accepted (NO IELTS)",
+            "intake": "Fall 2027 (Starts Sept 2027)",
+            "deadline": "2027-01-15",
+            "status": "NOT_STARTED",
+            "priority": "P2",
+            "portal_url": "https://apply.stipendiumhungaricum.hu/",
+            "default_note": "Portal opens Nov 15; require MoE Ethiopia partner nomination.",
+            "credentials": null,
+            "required_documents": [
+                  {
+                        "id": "passport",
+                        "label": "Biometric Passport (E00340202)",
+                        "ready": true
+                  },
+                  {
+                        "id": "degree",
+                        "label": "Authenticated Degree Certificate & Academic Transcripts",
+                        "ready": true
+                  },
+                  {
+                        "id": "moi",
+                        "label": "St. Mary's English MOI Certificate (Exempt from IELTS)",
+                        "ready": true
+                  },
+                  {
+                        "id": "sop",
+                        "label": "Motivation Letter (ELTE / BME Software Tech)",
+                        "ready": true
+                  },
+                  {
+                        "id": "medical",
+                        "label": "Medical Health Certificate & Laboratory Screening Report",
+                        "ready": false
+                  },
+                  {
+                        "id": "nomination",
+                        "label": "Ethiopian MoE Partner Nomination Dossier",
+                        "ready": false
+                  }
+            ]
       },
       {
-        id: "rwanda-alu",
-        country: "Rwanda",
-        flag: "🇷🇼",
-        university: "African Leadership University (ALU)",
-        program: "Tech & Entrepreneurial Leadership",
-        funding: "Mastercard Foundation Scholars Program",
-        benefits: "100% Tuition + Housing + Flights + Laptop + Living Allowance",
-        language: "English Medium (NO IELTS)",
-        intake: "Spring 2027 & Fall 2027",
-        deadline: "2026-12-15",
-        status: "STARTED",
-        priority: "P2",
-        portal_url: "https://www.alueducation.com/",
-        default_docs: { passport: true, degree: true, moi: true, sop: true, recs: true },
-        default_note: "Pan-African scholarship. Zero visa refusal risk for Ethiopians. Applications open now."
+            "id": "canada-manitoba",
+            "country": "Canada",
+            "flag": "🇨🇦",
+            "university": "University of Manitoba",
+            "program": "MSc in Computer Science",
+            "funding": "Univ of Manitoba Graduate Fellowship (UMGF)",
+            "benefits": "Up to $28,000 CAD Fellowship ($14,000/yr for 2 yrs) + International Awards",
+            "language": "MOI Exemption Form (NO IELTS)",
+            "intake": "Fall 2027 (Sept 2027) & Winter 2028",
+            "deadline": "2026-12-01",
+            "status": "NEEDS_DOCS",
+            "priority": "P2",
+            "portal_url": "https://umanitoba.ca/admissions",
+            "default_note": "Requires identifying potential supervisor for UMGF consideration.",
+            "credentials": null,
+            "required_documents": [
+                  {
+                        "id": "passport",
+                        "label": "Biometric Passport (E00340202)",
+                        "ready": true
+                  },
+                  {
+                        "id": "transcripts",
+                        "label": "Official Sealed Transcripts & Degree Certificate",
+                        "ready": true
+                  },
+                  {
+                        "id": "cv_sop",
+                        "label": "Statement of Intent & Academic CV",
+                        "ready": true
+                  },
+                  {
+                        "id": "recs",
+                        "label": "2 Academic Reference Letters (Online Referee Submission)",
+                        "ready": true
+                  },
+                  {
+                        "id": "moi_waiver",
+                        "label": "UMGF English MOI Exemption Form (St. Mary's Listed)",
+                        "ready": true
+                  },
+                  {
+                        "id": "supervisor",
+                        "label": "Prospective Graduate Supervisor Confirmation",
+                        "ready": false
+                  }
+            ]
       },
       {
-        id: "romania-work-visa",
-        country: "Romania",
-        flag: "🇷🇴",
-        university: "Food Courier & Fleet Driver (Glovo/Bolt)",
-        program: "Non-EU Labor Migration Route",
-        funding: "D/AM2 Work Visa Quota",
-        benefits: "Earn €700–€1,200/mo + Legal EU Residency + Schengen Access",
-        language: "Basic English (No Certificate Needed)",
-        intake: "Rolling 2026–2027",
-        deadline: "Year-Round",
-        status: "NOT_STARTED",
-        priority: "Work Track",
-        portal_url: "https://workinromania.gov.ro/",
-        default_docs: { passport: true, degree: false, moi: false, sop: false, recs: false },
-        default_note: "Commercial backup to enter EU legally with 2 years driving experience."
+            "id": "rwanda-alu",
+            "country": "Rwanda",
+            "flag": "🇷🇼",
+            "university": "African Leadership University (ALU)",
+            "program": "Tech & Entrepreneurial Leadership",
+            "funding": "Mastercard Foundation Scholars Program",
+            "benefits": "100% Tuition + Housing + Flights + Laptop + Living Allowance",
+            "language": "English Medium (NO IELTS)",
+            "intake": "Spring 2027 (Feb 2027) & Fall 2027 (Sept 2027)",
+            "deadline": "2026-12-15",
+            "status": "STARTED",
+            "priority": "P2",
+            "portal_url": "https://www.alueducation.com/",
+            "default_note": "Pan-African scholarship. Zero visa refusal risk for Ethiopians.",
+            "credentials": null,
+            "required_documents": [
+                  {
+                        "id": "passport",
+                        "label": "Biometric Passport (E00340202) / National ID",
+                        "ready": true
+                  },
+                  {
+                        "id": "degree",
+                        "label": "BSc Computer Science Degree & Transcripts",
+                        "ready": true
+                  },
+                  {
+                        "id": "financial_proof",
+                        "label": "Mastercard Foundation Financial Eligibility & Need Proof",
+                        "ready": true
+                  },
+                  {
+                        "id": "essays",
+                        "label": "Leadership, Community Impact & Problem Solving Essays",
+                        "ready": true
+                  },
+                  {
+                        "id": "recs",
+                        "label": "2 Professional & Academic Recommendation Letters",
+                        "ready": true
+                  }
+            ]
+      },
+      {
+            "id": "romania-work-visa",
+            "country": "Romania",
+            "flag": "🇷🇴",
+            "university": "N/A (Employment Track)",
+            "program": "Food Courier / Fleet Driver (Glovo / Tazz / Bolt)",
+            "funding": "Non-EU Labor Quota (D/AM2 Work Visa)",
+            "benefits": "Earn €700–€1,200/mo + Legal EU Residency + Schengen Access",
+            "language": "Basic English (No Certificate Needed)",
+            "intake": "Year-Round / Rolling 2026–2027",
+            "deadline": "Rolling (90,000 Annual Quota)",
+            "status": "NOT_STARTED",
+            "priority": "Work Track",
+            "portal_url": "https://workinromania.gov.ro/",
+            "default_note": "Commercial backup to enter EU legally with driving license.",
+            "credentials": null,
+            "required_documents": [
+                  {
+                        "id": "passport",
+                        "label": "Biometric Passport (E00340202)",
+                        "ready": true
+                  },
+                  {
+                        "id": "driving_license",
+                        "label": "Valid Driver's License (Category B, 2+ Years Experience Validated)",
+                        "ready": true
+                  },
+                  {
+                        "id": "police_clearance",
+                        "label": "Non-Criminal Police Clearance Record (Apostilled / MoFA)",
+                        "ready": false
+                  },
+                  {
+                        "id": "medical_fitness",
+                        "label": "Occupational Medical Fitness Certificate",
+                        "ready": false
+                  },
+                  {
+                        "id": "work_permit",
+                        "label": "Romanian Employer Work Authorization (Aviz de Muncă / IGI)",
+                        "ready": false
+                  }
+            ]
+      },
+      {
+            "id": "france-campus-france",
+            "country": "France",
+            "flag": "🇫🇷",
+            "university": "Université Paris-Saclay / UGA / IP Paris / Lille / Lorraine (Up to 7 choices)",
+            "program": "MSc Computer Science: Software Architecture, Distributed Systems & Cloud",
+            "funding": "France Excellence Eiffel Scholarship + Partial Tuition Fee Waivers (Exonération)",
+            "benefits": "€1,181/mo Cash Stipend + Flights + Health Insurance (if Eiffel) OR Tuition down to €243/yr",
+            "language": "English Medium of Instruction (MOI) Certificate Accepted",
+            "intake": "Fall 2027 (Starting Sept 2027)",
+            "deadline": "2026-12-15",
+            "status": "FINISHED",
+            "priority": "P1",
+            "portal_url": "https://etudesenfrance.diplomatie.gouv.fr/connexion",
+            "default_note": "Official EEF ID: ET26-00453. My Student Hub, Personal Info, School Record (BSc 3-pages + Highschool), CV & Languages all COMPLETED. Target IDs: 61801 (UGA), 60987 (Lille), 60589 (CentraleSupélec).",
+            "credentials": {
+                  "created_by": "AI Agent",
+                  "email": "fuadahmedt@gmail.com",
+                  "username": "ET26-00453",
+                  "id_label": "Identifiant EEF",
+                  "password": "FuadFrance2027!#",
+                  "portal_url": "https://etudesenfrance.diplomatie.gouv.fr/connexion",
+                  "notes": "Verified active. Profile 100% completed by AI Agent."
+            },
+            "required_documents": [
+                  {
+                        "id": "passport",
+                        "label": "Biometric Passport (E00340202)",
+                        "ready": true
+                  },
+                  {
+                        "id": "degree",
+                        "label": "3-Page Combined Degree & Official Academic Transcripts",
+                        "ready": true
+                  },
+                  {
+                        "id": "highschool",
+                        "label": "Secondary Education (Grade 12 National Exam & Grade 10)",
+                        "ready": true
+                  },
+                  {
+                        "id": "cv",
+                        "label": "French Academic CV (Europass Format)",
+                        "ready": true
+                  },
+                  {
+                        "id": "sop",
+                        "label": "Statement of Purpose & Study Project (Projet d'études)",
+                        "ready": true
+                  },
+                  {
+                        "id": "moi",
+                        "label": "St. Mary's English MOI Certificate (IELTS Waiver)",
+                        "ready": true
+                  },
+                  {
+                        "id": "recs",
+                        "label": "2 Academic Recommendation Letters (St. Mary's)",
+                        "ready": true
+                  }
+            ]
       }
-    ];
+];
 
     // Storage Management (State v2)
     const STORAGE_KEY = "fuad_scholarship_state_v2";
@@ -1364,23 +2103,34 @@
     let targetTrackForStatus = null;
     let targetTrackForNote = null;
     let targetTrackForAgy = null;
+    let targetTrackForCred = null;
     let agyPromptMode = "login"; // "login" | "apply" | "sop"
 
-    const docLabels = {
-      passport: "Biometric Passport (E00340202)",
-      degree: "3-Page Combined Degree & Transcripts",
-      moi: "St. Mary's English MOI Certificate",
-      sop: "Tailored SOP / Study Plan",
-      recs: "Recommendation Letters (St. Mary's)"
-    };
+    const revealedPasswords = {};
 
     function getTrackData(t) {
       const state = getAppState();
-      const trackState = state[t.id] || {};
+      const trackState = state[t.id] || (t.id === "russia-open-doors" ? state["russia-opendoors"] : {}) || {};
       const status = trackState.status || t.status;
       const note = (trackState.note !== undefined) ? trackState.note : t.default_note;
-      const docs = Object.assign({}, t.default_docs, trackState.docs || {});
-      return { status, note, docs, hasCustomNote: (trackState.note && trackState.note.trim().length > 0) };
+      
+      // Credentials resolution: localStorage override if set, else track default
+      const credentials = trackState.credentials !== undefined ? trackState.credentials : (t.credentials || null);
+
+      // Document readiness resolution:
+      const docsOverride = trackState.docs || {};
+      const docsList = (t.required_documents || []).map(doc => {
+        const isReady = (docsOverride[doc.id] !== undefined) ? docsOverride[doc.id] : doc.ready;
+        return { id: doc.id, label: doc.label, ready: isReady };
+      });
+
+      return {
+        status,
+        note,
+        docsList,
+        credentials,
+        hasCustomNote: (trackState.note && trackState.note.trim().length > 0)
+      };
     }
 
     function getStatusBadgeHtml(status, trackId) {
@@ -1436,7 +2186,7 @@
       const search = document.getElementById("searchInput").value.toLowerCase().trim();
 
       return list.filter(t => {
-        const { status, note } = getTrackData(t);
+        const { status, note, credentials } = getTrackData(t);
 
         // Stage filter
         if (currentStageFilter !== "all" && status !== currentStageFilter) return false;
@@ -1454,7 +2204,8 @@
 
         // Search text
         if (search) {
-          const haystack = `${t.country} ${t.university} ${t.program} ${t.funding} ${t.id} ${note} ${status}`.toLowerCase();
+          const credSearch = credentials ? `${credentials.email} ${credentials.username}` : "";
+          const haystack = `${t.country} ${t.university} ${t.program} ${t.funding} ${t.id} ${note} ${status} ${credSearch}`.toLowerCase();
           if (!haystack.includes(search)) return false;
         }
 
@@ -1480,6 +2231,16 @@
       document.getElementById("count-not-started").textContent = countNotStarted;
     }
 
+    function escapeHtml(str) {
+      if (!str) return "";
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+    }
+
     function renderCardsGrid() {
       const container = document.getElementById("viewCardsGrid");
       const filtered = filterTracks(masterTracks);
@@ -1489,18 +2250,70 @@
           <div style="grid-column: 1 / -1; text-align: center; padding: 48px 20px; color: var(--text-2); background: var(--ks-paper); border-radius: var(--radius-lg); border: 1px dashed var(--ks-hairline);">
             <div style="font-size: 30px; margin-bottom: 8px;">🔍</div>
             <p style="font-size: 14px; font-weight: 700;">No opportunities match your filter.</p>
-            <p style="font-size: 12px; color: var(--text-3); margin-top: 4px;">Tap "All Opportunities" to reset filters.</p>
+            <p style="font-size: 12px; color: var(--text-3); margin-top: 4px;">Tap "All Tracks" to reset filters.</p>
           </div>
         `;
         return;
       }
 
       container.innerHTML = filtered.map(t => {
-        const { status, note, docs, hasCustomNote } = getTrackData(t);
-        const docKeys = Object.keys(docs);
-        const docsReadyCount = docKeys.filter(k => docs[k]).length;
-        const docsTotal = docKeys.length;
+        const { status, note, docsList, credentials, hasCustomNote } = getTrackData(t);
+        const docsReadyCount = docsList.filter(d => d.ready).length;
+        const docsTotal = docsList.length;
         const daysLeft = calculateDaysLeft(t.deadline);
+
+        // Credentials component rendering
+        let credsHtml = "";
+        if (credentials && (credentials.email || credentials.username)) {
+          const isAI = (credentials.created_by || "").toLowerCase().includes("ai");
+          const badgeClass = isAI ? "badge-ai" : "badge-user";
+          const badgeText = isAI ? "🤖 Created by AI Agent" : "👤 Added by Fuad";
+          const idLabel = credentials.id_label || "Candidate ID";
+          const rawPass = credentials.password || "";
+          const safePass = rawPass.replace(/'/g, "\'");
+          const isPassRevealed = revealedPasswords[t.id];
+
+          credsHtml = `
+            <div class="credentials-box has-creds">
+              <div class="cred-head">
+                <span class="cred-badge ${badgeClass}">${badgeText}</span>
+                <button class="btn-text-edit" onclick="openCredModal('${t.id}')">Edit ✏️</button>
+              </div>
+              <div class="cred-rows">
+                <div class="cred-row">
+                  <span class="cred-label">Login / Email</span>
+                  <div class="cred-val-wrap">
+                    <span>${escapeHtml(credentials.email || "fuadahmedt@gmail.com")}</span>
+                    <button class="btn-cred-mini" onclick="copyText('${credentials.email}', 'Email copied!')" title="Copy Email">📋</button>
+                  </div>
+                </div>
+                ${credentials.username ? `
+                <div class="cred-row">
+                  <span class="cred-label">${escapeHtml(idLabel)}</span>
+                  <div class="cred-val-wrap">
+                    <span style="color:#60a5fa;">${escapeHtml(credentials.username)}</span>
+                    <button class="btn-cred-mini" onclick="copyText('${credentials.username}', 'Candidate ID copied!')" title="Copy ID">📋</button>
+                  </div>
+                </div>` : ''}
+                <div class="cred-row">
+                  <span class="cred-label">Password</span>
+                  <div class="cred-val-wrap">
+                    <span id="pass-${t.id}" style="letter-spacing:${isPassRevealed ? 'normal' : '2px'};">${isPassRevealed ? escapeHtml(rawPass) : '••••••••••••'}</span>
+                    <button class="btn-cred-mini" id="pass-btn-${t.id}" onclick="togglePasswordVisibility('${t.id}', '${safePass}')" title="Show/Hide Password">${isPassRevealed ? '🙈' : '👁️'}</button>
+                    <button class="btn-cred-mini" onclick="copyText('${safePass}', 'Password copied!')" title="Copy Password">📋</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+        } else {
+          credsHtml = `
+            <button class="btn-add-cred" onclick="openCredModal('${t.id}')">
+              <span>🔑</span>
+              <span>+ Add Portal Login Credentials</span>
+            </button>
+          `;
+        }
 
         return `
           <article class="track-card ${hasCustomNote ? 'has-notes' : ''}">
@@ -1535,27 +2348,30 @@
                 </div>
               </div>
 
-              <!-- Interactive Document Checklist -->
+              <!-- Interactive Scholarship-Specific Document Checklist -->
               <div class="doc-checklist-trigger" onclick="toggleDocAccordion('${t.id}')">
                 <span>📄 Document Readiness</span>
                 <span class="doc-fraction">${docsReadyCount}/${docsTotal} Ready ▾</span>
               </div>
               <div class="doc-accordion-body" id="doc-acc-${t.id}">
-                ${docKeys.map(k => `
+                ${docsList.map(d => `
                   <label class="doc-check-row">
-                    <input type="checkbox" ${docs[k] ? 'checked' : ''} onchange="toggleDocItem('${t.id}', '${k}', this.checked)">
-                    <span>${docLabels[k]}</span>
+                    <input type="checkbox" ${d.ready ? 'checked' : ''} onchange="toggleDocItem('${t.id}', '${d.id}', this.checked)">
+                    <span style="${d.ready ? 'color: #e2e8f0;' : 'color: #94a3b8;'}">${escapeHtml(d.label)}</span>
                   </label>
                 `).join('')}
               </div>
+
+              <!-- Portal Account Credentials -->
+              ${credsHtml}
 
               <!-- Interactive Notes & Reminders -->
               <div class="note-card-box">
                 <div class="note-card-header">
                   <span class="note-tag">${hasCustomNote ? '📌 Personal Reminder' : '💡 Research Note'}</span>
-                  <button class="btn-text-edit" onclick="openNoteModal('${t.id}', '${t.university.replace(/'/g, "\\'")}')">Edit Note</button>
+                  <button class="btn-text-edit" onclick="openNoteModal('${t.id}', '${t.university.replace(/'/g, "\'")}')">Edit Note</button>
                 </div>
-                <p class="note-body-text">${note || 'No custom notes yet. Tap Edit Note to add reminders.'}</p>
+                <p class="note-body-text">${escapeHtml(note || 'No custom notes yet. Tap Edit Note to add reminders.')}</p>
               </div>
             </div>
 
@@ -1609,14 +2425,15 @@
             <span style="font-family:monospace; color:var(--text-3);">${grouped[c.id].length}</span>
           </div>
           ${grouped[c.id].map(t => {
-            const { note } = getTrackData(t);
+            const { note, credentials } = getTrackData(t);
             return `
               <div class="kanban-card" onclick="openStatusPicker('${t.id}')">
                 <div style="font-size: 11px; color: var(--text-2); margin-bottom: 2px;">${t.flag} ${t.country}</div>
                 <div class="kanban-card-title">${t.university}</div>
                 <div style="font-size: 11px; color: #34d399; margin-bottom: 4px;">${t.benefits}</div>
                 <div style="font-size: 11px; color: #fbbf24; font-family: monospace;">Due: ${t.deadline}</div>
-                ${note ? `<div style="margin-top:6px; font-size:10.5px; color:var(--text-2); border-top:1px dashed var(--ks-hairline); padding-top:4px;">📌 ${note.slice(0, 50)}...</div>` : ''}
+                ${credentials ? `<div style="font-size:10px; color:#a5b4fc; margin-top:4px;">🔑 ${escapeHtml(credentials.username || credentials.email)}</div>` : ''}
+                ${note ? `<div style="margin-top:6px; font-size:10.5px; color:var(--text-2); border-top:1px dashed var(--ks-hairline); padding-top:4px;">📌 ${escapeHtml(note.slice(0, 48))}...</div>` : ''}
               </div>
             `;
           }).join('')}
@@ -1631,7 +2448,7 @@
       const sorted = [...filtered].sort((a, b) => (a.deadline || "9999").localeCompare(b.deadline || "9999"));
 
       container.innerHTML = sorted.map(t => {
-        const { status, note } = getTrackData(t);
+        const { status, note, credentials } = getTrackData(t);
         const daysLeft = calculateDaysLeft(t.deadline);
 
         return `
@@ -1642,7 +2459,8 @@
                 ${getStatusBadgeHtml(status, t.id)}
               </div>
               <div style="font-size:12.5px; color:var(--text-2);">${t.program} • <span style="color:#34d399;">${t.benefits}</span></div>
-              ${note ? `<div style="font-size:11px; color:#fbbf24; margin-top:4px;">📌 ${note}</div>` : ''}
+              ${credentials ? `<div style="font-size:11px; color:#a5b4fc; margin-top:2px;">🔑 Portal ID: ${escapeHtml(credentials.username || credentials.email)} (${credentials.created_by})</div>` : ''}
+              ${note ? `<div style="font-size:11px; color:#fbbf24; margin-top:4px;">📌 ${escapeHtml(note)}</div>` : ''}
             </div>
 
             <div class="timeline-countdown">
@@ -1700,17 +2518,108 @@
       }
     }
 
-    function toggleDocItem(trackId, docKey, isChecked) {
+    function toggleDocItem(trackId, docId, isChecked) {
       const state = getAppState();
       if (!state[trackId]) state[trackId] = {};
       if (!state[trackId].docs) {
-        const t = masterTracks.find(item => item.id === trackId);
-        state[trackId].docs = Object.assign({}, t ? t.default_docs : {});
+        state[trackId].docs = {};
       }
-      state[trackId].docs[docKey] = isChecked;
+      state[trackId].docs[docId] = isChecked;
       saveAppState(state);
       render();
-      showToast(`Checklist updated for ${docKey}!`);
+      showToast(`Checklist updated!`);
+    }
+
+    // Password Visibility Toggle on Card
+    function togglePasswordVisibility(trackId, password) {
+      const el = document.getElementById(`pass-${trackId}`);
+      const btn = document.getElementById(`pass-btn-${trackId}`);
+      if (!el) return;
+      if (revealedPasswords[trackId]) {
+        el.textContent = "••••••••••••";
+        el.style.letterSpacing = "2px";
+        if (btn) btn.textContent = "👁️";
+        delete revealedPasswords[trackId];
+      } else {
+        el.textContent = password;
+        el.style.letterSpacing = "normal";
+        if (btn) btn.textContent = "🙈";
+        revealedPasswords[trackId] = true;
+      }
+    }
+
+    // Portal Credential Editor Modal Handlers
+    function openCredModal(trackId) {
+      targetTrackForCred = trackId;
+      const t = masterTracks.find(item => item.id === trackId);
+      if (!t) return;
+
+      const { credentials } = getTrackData(t);
+      document.getElementById("credModalTitle").textContent = `🔑 Portal Credentials: ${t.university}`;
+      document.getElementById("credModalSub").textContent = `Manage login credentials for ${t.university} (${t.country})`;
+
+      const isAI = credentials && (credentials.created_by || "").toLowerCase().includes("ai");
+      if (isAI || !credentials) {
+        document.getElementById("credCreatorAI").checked = true;
+      } else {
+        document.getElementById("credCreatorUser").checked = true;
+      }
+
+      document.getElementById("credEmail").value = (credentials && credentials.email) ? credentials.email : "fuadahmedt@gmail.com";
+      document.getElementById("credUsername").value = (credentials && credentials.username) ? credentials.username : "";
+      document.getElementById("credPassword").value = (credentials && credentials.password) ? credentials.password : "";
+      document.getElementById("credPortalUrl").value = (credentials && credentials.portal_url) ? credentials.portal_url : t.portal_url;
+
+      document.getElementById("btnDeleteCred").style.display = credentials ? "block" : "none";
+      document.getElementById("credModal").style.display = "flex";
+      document.getElementById("credPassword").type = "password";
+    }
+
+    function closeCredModal() {
+      document.getElementById("credModal").style.display = "none";
+      targetTrackForCred = null;
+    }
+
+    function toggleCredModalPasswordVisibility() {
+      const input = document.getElementById("credPassword");
+      input.type = (input.type === "password") ? "text" : "password";
+    }
+
+    function saveCredForm(event) {
+      event.preventDefault();
+      if (!targetTrackForCred) return;
+
+      const created_by = document.querySelector('input[name="credCreator"]:checked').value;
+      const email = document.getElementById("credEmail").value.trim();
+      const username = document.getElementById("credUsername").value.trim();
+      const password = document.getElementById("credPassword").value.trim();
+      const portal_url = document.getElementById("credPortalUrl").value.trim();
+
+      const state = getAppState();
+      if (!state[targetTrackForCred]) state[targetTrackForCred] = {};
+      state[targetTrackForCred].credentials = {
+        created_by,
+        email,
+        username,
+        password,
+        portal_url
+      };
+      saveAppState(state);
+      closeCredModal();
+      render();
+      showToast(`Credentials saved for ${targetTrackForCred}!`);
+    }
+
+    function deleteCurrentCred() {
+      if (!targetTrackForCred) return;
+      const state = getAppState();
+      if (state[targetTrackForCred]) {
+        state[targetTrackForCred].credentials = null;
+        saveAppState(state);
+      }
+      closeCredModal();
+      render();
+      showToast("Credentials removed.");
     }
 
     // Smart agy Prompt Generator
@@ -1740,18 +2649,19 @@
       if (!targetTrackForAgy) return;
       const t = masterTracks.find(item => item.id === targetTrackForAgy);
       if (!t) return;
+      const { credentials } = getTrackData(t);
 
       let prompt = "";
       if (agyPromptMode === "login") {
-        if (t.id.includes("france")) {
-          prompt = `agy "/browser Navigate to https://etudesenfrance.diplomatie.gouv.fr/connexion, log in with candidate ID ET26-00453 (Password: FuadFrance2027!#), and verify if the program cart intake for UGA MoSIG (ID 61801) is unlocked for submission."`;
-        } else if (t.id.includes("russia")) {
-          prompt = `agy "/browser Open https://od.globaluni.ru/en/ with Candidate ID 396112 and check Stage 1 portfolio verification status."`;
+        if (credentials && credentials.username && credentials.password) {
+          prompt = `agy "/browser Navigate to ${credentials.portal_url || t.portal_url}, log in using Candidate ID '${credentials.username}' and Password '${credentials.password}', and check application review status and missing documents."`;
+        } else if (credentials && credentials.email && credentials.password) {
+          prompt = `agy "/browser Navigate to ${credentials.portal_url || t.portal_url}, log in using Email '${credentials.email}' and Password '${credentials.password}', and check application review status."`;
         } else {
           prompt = `agy "/browser Navigate to ${t.portal_url}, inspect the admission portal for ${t.university} (${t.program}), and check application opening dates and required document upload slots."`;
         }
       } else if (agyPromptMode === "apply") {
-        prompt = `agy "/browser Open ${t.portal_url} and begin application for Fuad Ahmed. Use verified dossier in APPLICANT_DOSSIER.md (Legal name: TUBA, FUAD AHMED, DOB: 16/02/1999, Passport: E00340202, BSc Computer Science at St. Mary's University with 3.20 Major GPA, English Medium of Instruction exempt from IELTS). Attach 3-page combined degree and CV."`;
+        prompt = `agy "/browser Open ${t.portal_url} and begin application for Fuad Ahmed. Use verified dossier in APPLICANT_DOSSIER.md (Legal name: TUBA, FUAD AHMED, DOB: 16/02/1999, Passport: E00340202, BSc Computer Science at St. Mary's University with 3.20 Major GPA, English Medium of Instruction exempt from IELTS). Attach combined degree, CV, and transcripts."`;
       } else if (agyPromptMode === "sop") {
         prompt = `agy "Review ${t.university} MSc Computer Science curriculum (${t.program}) and draft a tailored 2-page academic Statement of Purpose emphasizing Fuad's 4+ years background in Distributed Systems, Cloud Computing, and Backend Architecture."`;
       }
@@ -1900,6 +2810,7 @@
         closeNoteModal();
         closeProfileModal();
         closeExportModal();
+        closeCredModal();
       }
     });
 
@@ -1908,3 +2819,4 @@
   </script>
 </body>
 </html>
+
