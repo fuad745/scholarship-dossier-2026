@@ -1,0 +1,163 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Fuad Ahmed//Scholarship and Visa Application Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Fuad Ahmed - Scholarships & Visa Milestones (2026-2027)
+X-WR-TIMEZONE:Africa/Addis_Ababa
+
+BEGIN:VEVENT
+SUMMARY:🇨🇳 China CSC Follow-up: Profs. Zhang, Yang & Xiao (HIT, BIT, USTC)
+UID:csc-followup-batch1-20261012@fuad745
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+DESCRIPTION:Check inbox for replies from Prof. Weizhe Zhang (HIT), Assoc. Prof. Song Yang (BIT), and Prof. Mingjun Xiao (USTC). If no response, send polite follow-up email.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT9H
+ACTION:DISPLAY
+DESCRIPTION:Reminder: Send China CSC follow-up emails
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+SUMMARY:🇨🇳 China CSC Follow-up: Profs. Shi, Zhang & Zhao (HIT, BIT, USTC)
+UID:csc-followup-batch2-20261013@fuad745
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+DESCRIPTION:Check inbox for replies from Prof. Shaohuai Shi (HIT), Prof. Meihui Zhang (BIT), and Prof. Gongming Zhao (USTC). If no response, send polite follow-up email.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT9H
+ACTION:DISPLAY
+DESCRIPTION:Reminder: Send China CSC batch 2 follow-up emails
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+SUMMARY:🇮🇹 Italy UNIPD: University of Padua Portal Opens
+UID:italy-unipd-opens-20261102@fuad745
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+DESCRIPTION:Application portal for Fall 2027 opens at apply.unipd.it. Submit application for MSc Computer Engineering / Data Science (Veneto ESU Scholarship).
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT9H
+ACTION:DISPLAY
+DESCRIPTION:Reminder: Padua application opens today!
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+SUMMARY:🇮🇹 Italy Polimi: Politecnico di Milano Round 1 Deadline
+UID:italy-polimi-r1-20261115@fuad745
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+DESCRIPTION:DEADLINE: Politecnico di Milano Round 1 closes today for MSc Computer Science and Engineering (DSU Lombardia Scholarship).
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT24H
+ACTION:DISPLAY
+DESCRIPTION:URGENT: Polimi Round 1 closes in 24 hours!
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+SUMMARY:🇭🇺 Hungary: Stipendium Hungaricum DreamApply Portal Opens
+UID:hungary-stipendium-opens-20261115@fuad745
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+DESCRIPTION:Stipendium Hungaricum portal opens at apply.stipendiumhungaricum.hu. Select ELTE and BME Master of Science in Computer Science (100% Tuition + Housing + Stipend).
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT9H
+ACTION:DISPLAY
+DESCRIPTION:Reminder: Hungary scholarship portal is now open
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+SUMMARY:🇫🇷 France Eiffel: Contact CentraleSupélec & UGA Coordinators
+UID:france-eiffel-outreach-20261115@fuad745
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+DESCRIPTION:Email academic directors at CentraleSupélec (MSc AI) and UGA MoSIG with French CV & SOP for institutional Eiffel Excellence Scholarship nomination (€1,181/mo).
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT9H
+ACTION:DISPLAY
+DESCRIPTION:Reminder: Reach out for Eiffel Scholarship institutional nomination
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+SUMMARY:🇷🇺 Russia Open Doors: Stage 1 Portfolio Results Announced
+UID:russia-opendoors-results-20261120@fuad745
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+DESCRIPTION:Check Open Doors personal account (Candidate 396112) for Stage 1 portfolio verification results (Target: 93/100 points). Prepare for Stage 2 online Olympiad.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT9H
+ACTION:DISPLAY
+DESCRIPTION:Reminder: Check Russian Open Doors Stage 1 results
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+SUMMARY:🇨🇦 Canada: University of Manitoba UMGF Fellowship Deadline
+UID:canada-manitoba-umgf-20261201@fuad745
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+DESCRIPTION:Priority deadline for University of Manitoba Graduate Fellowship ($28,000 CAD) for MSc in Computer Science.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT24H
+ACTION:DISPLAY
+DESCRIPTION:Reminder: University of Manitoba UMGF deadline
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+SUMMARY:🇮🇹 Italy Trento: University of Trento Application Portal Opens
+UID:italy-trento-opens-20261201@fuad745
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+DESCRIPTION:University of Trento application opens at unitn.it/en/apply. Submit MSc Computer Science dossier for DSU Trentino full scholarship.
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT9H
+ACTION:DISPLAY
+DESCRIPTION:Reminder: University of Trento portal opens
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+SUMMARY:🇷🇼 Rwanda ALU: Mastercard Foundation Scholars Priority Deadline
+UID:rwanda-alu-mastercard-20261215@fuad745
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+DESCRIPTION:Priority application cutoff for African Leadership University Mastercard Foundation Scholars (100% Tuition + Housing + Flights + Laptop + Stipend).
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT24H
+ACTION:DISPLAY
+DESCRIPTION:Reminder: ALU Mastercard Foundation priority deadline
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+SUMMARY:🇫🇷 France EEF: Études en France Program Cart Finalization Deadline
+UID:france-eef-cart-deadline-20270301@fuad745
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+DESCRIPTION:Final deadline to submit 4 target programs (IDs 61801, 61800, 60987, 60589) in program cart on Études en France (ET26-00453).
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT48H
+ACTION:DISPLAY
+DESCRIPTION:CRITICAL: France Études en France program cart deadline in 48 hours!
+END:VALARM
+END:VEVENT
+
+END:VCALENDAR

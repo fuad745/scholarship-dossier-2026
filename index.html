@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#0b0f19">
+  <title>Fuad Ahmed | Global Opportunities & Scholarship Dossier</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: rgba(18, 24, 38, 0.75);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --card-hover: rgba(30, 41, 59, 0.9);
+      --accent: #3b82f6;
+      --accent-glow: rgba(59, 130, 246, 0.25);
+      --emerald: #10b981;
+      --emerald-glow: rgba(16, 185, 129, 0.2);
+      --amber: #f59e0b;
+      --amber-glow: rgba(245, 158, 11, 0.2);
+      --purple: #8b5cf6;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-sub: #64748b;
+      --safe-top: env(safe-area-inset-top, 0px);
+      --safe-bottom: env(safe-area-inset-bottom, 0px);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      background-color: var(--bg);
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.12) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(139, 92, 246, 0.10) 0px, transparent 50%),
+        radial-gradient(at 50% 50%, rgba(16, 185, 129, 0.05) 0px, transparent 50%);
+      background-attachment: fixed;
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      min-height: 100vh;
+      padding-top: calc(var(--safe-top) + 12px);
+      padding-bottom: calc(var(--safe-bottom) + 80px);
+    }
+
+    /* Container */
+    .app-container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    /* Header */
+    header {
+      padding: 16px 0 20px;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .badge-sync {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 600;
+      color: #34d399;
+      letter-spacing: 0.3px;
+    }
+
+    .badge-sync::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      background: #10b981;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #10b981;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
+    }
+
+    .header-actions {
+      display: flex;
+      gap: 8px;
+    }
+
+    .btn-action {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--card-border);
+      color: var(--text-main);
+      padding: 7px 14px;
+      border-radius: 10px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+
+    .btn-action:hover, .btn-action:active {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.2);
+      transform: translateY(-1px);
+    }
+
+    .title-area h1 {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 4px;
+    }
+
+    .title-area p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* KPI Highlights Bar */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin: 18px 0;
+    }
+
+    @media (min-width: 640px) {
+      .kpi-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .kpi-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      backdrop-filter: blur(12px);
+      padding: 12px 14px;
+      border-radius: 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .kpi-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-sub);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+
+    .kpi-val {
+      font-size: 18px;
+      font-weight: 800;
+      color: #ffffff;
+      display: flex;
+      align-items: baseline;
+      gap: 4px;
+    }
+
+    .kpi-sub {
+      font-size: 11px;
+      color: #38bdf8;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* Search and Filter Tabs */
+    .sticky-controls {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(9, 13, 22, 0.85);
+      backdrop-filter: blur(16px);
+      padding: 10px 0;
+      margin: 0 -16px 16px;
+      padding-left: 16px;
+      padding-right: 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .search-box {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 10px 14px;
+      color: #ffffff;
+      font-size: 14px;
+      outline: none;
+      transition: all 0.2s;
+      font-family: inherit;
+    }
+
+    .search-box:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-glow);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .filter-scroll {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 10px 0 2px;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .filter-scroll::-webkit-scrollbar {
+      display: none;
+    }
+
+    .filter-chip {
+      flex: 0 0 auto;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--card-border);
+      color: var(--text-muted);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+
+    .filter-chip.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #ffffff;
+      box-shadow: 0 0 12px var(--accent-glow);
+    }
+
+    /* France Special Highlight Card */
+    .special-banner {
+      background: linear-gradient(135deg, rgba(30, 58, 138, 0.45) 0%, rgba(15, 23, 42, 0.7) 100%);
+      border: 1px solid rgba(59, 130, 246, 0.35);
+      border-radius: 16px;
+      padding: 18px;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .special-badge {
+      display: inline-block;
+      background: #2563eb;
+      color: #fff;
+      font-size: 10px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      padding: 3px 8px;
+      border-radius: 6px;
+      margin-bottom: 8px;
+    }
+
+    .special-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .eef-id-box {
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px dashed rgba(59, 130, 246, 0.4);
+      padding: 6px 12px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      font-weight: 700;
+      color: #93c5fd;
+    }
+
+    .copy-btn {
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      color: #ffffff;
+      padding: 3px 7px;
+      border-radius: 4px;
+      font-size: 11px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .copy-btn:active {
+      transform: scale(0.95);
+    }
+
+    .target-programs-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+      margin: 14px 0 10px;
+    }
+
+    @media (min-width: 640px) {
+      .target-programs-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .program-pill {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 8px 12px;
+      border-radius: 10px;
+      font-size: 12px;
+    }
+
+    .program-pill strong {
+      color: #ffffff;
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .alert-reminder {
+      background: rgba(245, 158, 11, 0.12);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      color: #fde68a;
+      padding: 10px 12px;
+      border-radius: 10px;
+      font-size: 12px;
+      line-height: 1.4;
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+      margin-top: 10px;
+    }
+
+    /* Opportunity Cards Grid */
+    .opportunities-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    @media (min-width: 768px) {
+      .opportunities-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      backdrop-filter: blur(14px);
+      border-radius: 18px;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+      position: relative;
+    }
+
+    .card:active {
+      transform: scale(0.99);
+    }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 12px;
+      gap: 8px;
+    }
+
+    .country-tag {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .status-pill {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      letter-spacing: 0.3px;
+      white-space: nowrap;
+    }
+
+    .status-completed { background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
+    .status-ready { background: rgba(59, 130, 246, 0.2); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.3); }
+    .status-sent { background: rgba(139, 92, 246, 0.2); color: #a78bfa; border: 1px solid rgba(139, 92, 246, 0.3); }
+    .status-upcoming { background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+
+    .card-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 4px;
+      line-height: 1.3;
+    }
+
+    .card-subtitle {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      line-height: 1.4;
+    }
+
+    .meta-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 14px;
+    }
+
+    .pill-funding {
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      color: #6ee7b7;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 8px;
+      border-radius: 8px;
+    }
+
+    .pill-lang {
+      background: rgba(59, 130, 246, 0.1);
+      border: 1px solid rgba(59, 130, 246, 0.25);
+      color: #93c5fd;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 8px;
+      border-radius: 8px;
+    }
+
+    .card-details {
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
+      padding: 10px 12px;
+      margin-bottom: 14px;
+      font-size: 12px;
+    }
+
+    .detail-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 3px 0;
+      color: var(--text-muted);
+    }
+
+    .detail-row strong {
+      color: var(--text-main);
+    }
+
+    .card-actions {
+      display: flex;
+      gap: 8px;
+      margin-top: auto;
+    }
+
+    .btn-portal {
+      flex: 1;
+      background: var(--accent);
+      color: #ffffff;
+      padding: 9px 12px;
+      border-radius: 10px;
+      font-size: 12px;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: background 0.15s;
+    }
+
+    .btn-portal:hover {
+      background: #2563eb;
+    }
+
+    .btn-notes {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--card-border);
+      color: var(--text-muted);
+      padding: 9px 12px;
+      border-radius: 10px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    /* Modal / Drawer */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(8px);
+      z-index: 100;
+      display: none;
+      align-items: flex-end;
+      justify-content: center;
+    }
+
+    @media (min-width: 640px) {
+      .modal-overlay {
+        align-items: center;
+        padding: 20px;
+      }
+    }
+
+    .modal-sheet {
+      background: #111827;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      width: 100%;
+      max-width: 540px;
+      border-radius: 24px 24px 0 0;
+      padding: 20px;
+      max-height: 85vh;
+      overflow-y: auto;
+    }
+
+    @media (min-width: 640px) {
+      .modal-sheet {
+        border-radius: 20px;
+      }
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .modal-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .close-btn {
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      color: #ffffff;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .profile-item {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 10px 14px;
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .profile-info {
+      font-size: 12px;
+    }
+
+    .profile-info small {
+      display: block;
+      color: var(--text-sub);
+      text-transform: uppercase;
+      font-size: 10px;
+      margin-bottom: 2px;
+    }
+
+    .profile-info span {
+      font-weight: 700;
+      color: #ffffff;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* Toast */
+    .toast {
+      position: fixed;
+      bottom: calc(var(--safe-bottom) + 24px);
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: #10b981;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 13px;
+      padding: 10px 20px;
+      border-radius: 999px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+      z-index: 200;
+      transition: transform 0.25s ease, opacity 0.25s ease;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="app-container">
+    <!-- Header -->
+    <header>
+      <div class="top-bar">
+        <span class="badge-sync">LIVE SYNCHRONIZED</span>
+        <div class="header-actions">
+          <button class="btn-action" onclick="openProfileModal()">👤 Copy Profile</button>
+          <a class="btn-action" href="./scholarship_deadlines.ics" download="scholarship_deadlines.ics">📅 Calendar (.ics)</a>
+        </div>
+      </div>
+      <div class="title-area">
+        <h1>Fuad Ahmed</h1>
+        <p>Global Master's Scholarships & Visa Opportunities (2026–2027) • BSc Computer Science (3.20 GPA, MOI Exempted)</p>
+      </div>
+    </header>
+
+    <!-- KPI Summary Grid -->
+    <div class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-label">Active Tracks</div>
+        <div class="kpi-val" id="kpi-total">14 <span class="kpi-sub">options</span></div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Top Priority (P1)</div>
+        <div class="kpi-val" id="kpi-p1">6 <span class="kpi-sub">routes</span></div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">English (IELTS)</div>
+        <div class="kpi-val">EXEMPT <span class="kpi-sub">MOI</span></div>
+      </div>
+      <div class="kpi-card" style="cursor: pointer;" onclick="copyText('ET26-00453', 'Candidate EEF ID copied!')">
+        <div class="kpi-label">France EEF ID</div>
+        <div class="kpi-val" style="color: #60a5fa;">ET26-00453 <span class="kpi-sub">📋</span></div>
+      </div>
+    </div>
+
+    <!-- France Highlight Banner -->
+    <div class="special-banner">
+      <div class="special-header">
+        <div>
+          <span class="special-badge">🇫🇷 Priority P1 • France Dossier Validated</span>
+          <h2 style="font-size: 18px; font-weight: 800; color: #fff; margin-top: 4px;">Campus France & Études en France (EEF)</h2>
+          <p style="font-size: 12px; color: #cbd5e1; margin-top: 2px;">All personal info, 3-page degree transcript, CV, and MOI approved.</p>
+        </div>
+        <div class="eef-id-box">
+          <span>ET26-00453</span>
+          <button class="copy-btn" onclick="copyText('ET26-00453', 'EEF ID ET26-00453 copied!')">Copy ID</button>
+        </div>
+      </div>
+
+      <div class="target-programs-grid">
+        <div class="program-pill">
+          <strong>1. UGA - MoSIG Computer Science (M1)</strong>
+          <span style="color: #93c5fd; font-family: monospace;">ID: 61801</span> • Exonération Partielle (~€243/yr)
+        </div>
+        <div class="program-pill">
+          <strong>2. UGA - Cloud Computing & Data Infra (M2)</strong>
+          <span style="color: #93c5fd; font-family: monospace;">ID: 61800</span> • Exonération Partielle (~€243/yr)
+        </div>
+        <div class="program-pill">
+          <strong>3. Université de Lille - Computer Sciences (M1)</strong>
+          <span style="color: #93c5fd; font-family: monospace;">ID: 60987</span> • Exonération Partielle (~€243/yr)
+        </div>
+        <div class="program-pill">
+          <strong>4. CentraleSupélec / Paris-Saclay - MSc AI</strong>
+          <span style="color: #93c5fd; font-family: monospace;">ID: 60589</span> • Eiffel Excellence Candidate (€1,181/mo)
+        </div>
+      </div>
+
+      <div class="alert-reminder">
+        <span>🔔</span>
+        <div>
+          <strong>Active Intake Reminder:</strong> The portal returned <em>"Out of period for process Autres"</em>. Central administration is setting the 2026/2027 calendar. <strong>Check portal every Monday & Friday</strong> to submit cart choices immediately when unlocked.
+        </div>
+      </div>
+    </div>
+
+    <!-- Sticky Controls: Search & Tabs -->
+    <div class="sticky-controls">
+      <input type="text" class="search-box" id="searchInput" placeholder="🔍 Search university, country, funding, or status..." oninput="handleSearch()">
+      <div class="filter-scroll" id="filterTabs">
+        <button class="filter-chip active" onclick="setFilter('all')">All Opportunities</button>
+        <button class="filter-chip" onclick="setFilter('france')">🇫🇷 France</button>
+        <button class="filter-chip" onclick="setFilter('italy')">🇮🇹 Italy (DSU)</button>
+        <button class="filter-chip" onclick="setFilter('china')">🇨🇳 China (CSC)</button>
+        <button class="filter-chip" onclick="setFilter('russia')">🇷🇺 Russia</button>
+        <button class="filter-chip" onclick="setFilter('p1')">⭐ Top Priority (P1)</button>
+        <button class="filter-chip" onclick="setFilter('work')">💼 Work Track</button>
+      </div>
+    </div>
+
+    <!-- Opportunities Cards Container -->
+    <div class="opportunities-grid" id="cardsGrid">
+      <!-- Generated dynamically -->
+    </div>
+  </div>
+
+  <!-- Profile Copy Modal -->
+  <div class="modal-overlay" id="profileModal" onclick="closeModalOnBg(event)">
+    <div class="modal-sheet">
+      <div class="modal-header">
+        <div class="modal-title">👤 Fuad Ahmed — Verified Profile</div>
+        <button class="close-btn" onclick="closeProfileModal()">✕</button>
+      </div>
+      <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 14px;">Tap any button to copy instantly into application forms.</p>
+
+      <div class="profile-item">
+        <div class="profile-info">
+          <small>Full Legal Name (Passport)</small>
+          <span>TUBA, FUAD AHMED</span>
+        </div>
+        <button class="btn-action" onclick="copyText('TUBA, FUAD AHMED', 'Full legal name copied!')">Copy</button>
+      </div>
+
+      <div class="profile-item">
+        <div class="profile-info">
+          <small>Passport Number (ICS Ethiopia)</small>
+          <span>E00340202</span>
+        </div>
+        <button class="btn-action" onclick="copyText('E00340202', 'Passport number copied!')">Copy</button>
+      </div>
+
+      <div class="profile-item">
+        <div class="profile-info">
+          <small>Date of Birth</small>
+          <span>16/02/1999</span>
+        </div>
+        <button class="btn-action" onclick="copyText('16/02/1999', 'DOB copied!')">Copy</button>
+      </div>
+
+      <div class="profile-item">
+        <div class="profile-info">
+          <small>Primary Email</small>
+          <span>fuadahmedt@gmail.com</span>
+        </div>
+        <button class="btn-action" onclick="copyText('fuadahmedt@gmail.com', 'Email copied!')">Copy</button>
+      </div>
+
+      <div class="profile-item">
+        <div class="profile-info">
+          <small>Phone / WhatsApp</small>
+          <span>+251925278350</span>
+        </div>
+        <button class="btn-action" onclick="copyText('+251925278350', 'Phone number copied!')">Copy</button>
+      </div>
+
+      <div class="profile-item">
+        <div class="profile-info">
+          <small>Undergraduate Degree</small>
+          <span>BSc Computer Science (St. Mary's Univ)</span>
+        </div>
+        <button class="btn-action" onclick="copyText('St. Mary\'s University, Addis Ababa - BSc Computer Science (GPA: 3.20)', 'Degree copied!')">Copy</button>
+      </div>
+
+      <div class="profile-item">
+        <div class="profile-info">
+          <small>France EEF Candidate ID</small>
+          <span>ET26-00453</span>
+        </div>
+        <button class="btn-action" onclick="copyText('ET26-00453', 'France EEF ID copied!')">Copy</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">Copied to clipboard!</div>
+
+  <script>
+    // Embedded Data Fallback for offline & local file:// execution
+    const fallbackTracks = [
+      {
+        id: "france-campus-france",
+        country: "France",
+        flag: "🇫🇷",
+        university: "Université Paris-Saclay / UGA / Lille",
+        program: "MSc Computer Science: Distributed Systems, Cloud & AI",
+        funding: "France Excellence Eiffel Scholarship + Partial Tuition Waivers",
+        benefits: "€1,181/mo Cash + Flights OR Tuition reduced to €243/yr",
+        language_requirement: "MOI Accepted (NO IELTS)",
+        target_intake: "Fall 2027 (Starts Sept 2027)",
+        deadline: "2026-12-15",
+        status: "DOSSIER_PROFILE_COMPLETED",
+        priority: "P1",
+        portal_url: "https://etudesenfrance.diplomatie.gouv.fr/connexion",
+        notes: "Candidate ID: ET26-00453. Target Programs: UGA MoSIG (ID 61801), UGA Cloud (ID 61800), Lille (ID 60987), CentraleSupélec AI (ID 60589). Monitoring intake opening twice weekly."
+      },
+      {
+        id: "italy-trento",
+        country: "Italy",
+        flag: "🇮🇹",
+        university: "University of Trento",
+        program: "MSc Computer Science / Software Engineering",
+        funding: "DSU Trentino Full Scholarship",
+        benefits: "100% Free Tuition + Free Dorm + €7,200/yr Cash + Meals",
+        language_requirement: "MOI Accepted (NO IELTS)",
+        target_intake: "Fall 2027 (Sept/Oct 2027)",
+        deadline: "2027-02-20",
+        status: "READY_TO_APPLY",
+        priority: "P1",
+        portal_url: "https://www.unitn.it/en/apply",
+        notes: "Top CS ranking in Italy. Guaranteed need-based DSU award. Portal opens Dec 1, 2026."
+      },
+      {
+        id: "italy-polimi",
+        country: "Italy",
+        flag: "🇮🇹",
+        university: "Politecnico di Milano",
+        program: "MSc Computer Science and Engineering",
+        funding: "DSU Lombardia Scholarship",
+        benefits: "100% Tuition + Housing + €7,650/yr Cash + Meals",
+        language_requirement: "MOI Accepted (Degree taught in English)",
+        target_intake: "Fall 2027 (Starts Sept 2027)",
+        deadline: "2026-11-15",
+        status: "ROUND_1_ACTIVE",
+        priority: "P1",
+        portal_url: "https://www.polimi.it/en/international-prospective-students",
+        notes: "URGENT: Round 1 closes Nov 15, 2026! Ranked #1 in Italy."
+      },
+      {
+        id: "italy-padua",
+        country: "Italy",
+        flag: "🇮🇹",
+        university: "University of Padua (UNIPD)",
+        program: "MSc Computer Engineering / Data Science",
+        funding: "Veneto ESU Scholarship + Excellence Grant",
+        benefits: "100% Tuition + Housing Subsidy + €7,000/yr Cash + Meals",
+        language_requirement: "MOI Accepted (NO IELTS)",
+        target_intake: "Fall 2027 (Starts Oct 2027)",
+        deadline: "2027-02-02",
+        status: "DOSSIER_PREPARATION",
+        priority: "P1",
+        portal_url: "https://apply.unipd.it/",
+        notes: "Application opens November 2, 2026. Automatic consideration for €8,000/yr grant."
+      },
+      {
+        id: "italy-unical",
+        country: "Italy",
+        flag: "🇮🇹",
+        university: "University of Calabria (UniCal)",
+        program: "MSc Computer Science (AI & Cloud)",
+        funding: "UniCal Extra-EU Full Award",
+        benefits: "100% Tuition + Free Dorm + €6,000/yr Cash + Meals",
+        language_requirement: "MOI Accepted (NO IELTS)",
+        target_intake: "Fall 2027 (Starts Oct 2027)",
+        deadline: "2027-04-30",
+        status: "UPCOMING",
+        priority: "P1",
+        portal_url: "https://unical.portaleamministrazionetrasparente.it/",
+        notes: "120 full-ride scholarships for non-EU; very high Ethiopian success rate."
+      },
+      {
+        id: "china-hit",
+        country: "China",
+        flag: "🇨🇳",
+        university: "Harbin Institute of Technology (HIT)",
+        program: "MSc Computer Science & Technology",
+        funding: "Chinese Government Scholarship (CSC Type B)",
+        benefits: "100% Tuition + Free Dorm + 3,000 RMB/mo + Medical",
+        language_requirement: "MOI Accepted (NO IELTS)",
+        target_intake: "Fall 2027 (Starts Sept 2027)",
+        deadline: "2027-02-15",
+        status: "PROFESSORS_CONTACTED",
+        priority: "P1",
+        portal_url: "http://studyathit.hit.edu.cn/",
+        notes: "Profs. Weizhe Zhang & Shaohuai Shi contacted. Follow-up: Oct 12 & 13."
+      },
+      {
+        id: "china-bit",
+        country: "China",
+        flag: "🇨🇳",
+        university: "Beijing Institute of Technology (BIT)",
+        program: "MSc Computer Science",
+        funding: "CSC Type B / BIT Fellowship",
+        benefits: "100% Tuition + Free Dorm + 3,000 RMB/mo + Medical",
+        language_requirement: "MOI Accepted (NO IELTS)",
+        target_intake: "Fall 2027 (Starts Sept 2027)",
+        deadline: "2027-02-15",
+        status: "PROFESSORS_CONTACTED",
+        priority: "P1",
+        portal_url: "https://isc.bit.edu.cn/",
+        notes: "Assoc. Prof. Song Yang & Prof. Meihui Zhang contacted. Follow-up: Oct 12 & 13."
+      },
+      {
+        id: "china-ustc",
+        country: "China",
+        flag: "🇨🇳",
+        university: "Univ. of Science & Technology of China (USTC)",
+        program: "MSc Computer Science",
+        funding: "CSC Type B / USTC Fellowship",
+        benefits: "100% Tuition + Free Dorm + 3,000 RMB/mo + Medical",
+        language_requirement: "MOI Accepted (NO IELTS)",
+        target_intake: "Fall 2027 (Starts Sept 2027)",
+        deadline: "2027-03-15",
+        status: "PROFESSORS_CONTACTED",
+        priority: "P1",
+        portal_url: "https://isa.ustc.edu.cn/",
+        notes: "Profs. Mingjun Xiao & Gongming Zhao contacted. Follow-up: Oct 12 & 13."
+      },
+      {
+        id: "russia-opendoors",
+        country: "Russia",
+        flag: "🇷🇺",
+        university: "ITMO University & HSE University",
+        program: "MSc Software Engineering & Data Science",
+        funding: "Russian Open Doors Olympiad / State Quota",
+        benefits: "100% Free Tuition + Subsidized Housing + Monthly Stipend",
+        language_requirement: "MOI Accepted (NO IELTS)",
+        target_intake: "Fall 2027 (Starts Sept 2027)",
+        deadline: "2026-11-01",
+        status: "PORTFOLIO_SUBMITTED",
+        priority: "P1",
+        portal_url: "https://od.globaluni.ru/en/",
+        notes: "Candidate ID: 396112. Portfolio submitted with verified 93/100 points! Stage 1 results due mid-November."
+      },
+      {
+        id: "hungary-stipendium",
+        country: "Hungary",
+        flag: "🇭🇺",
+        university: "ELTE & BME (Budapest)",
+        program: "MSc Computer Science / Software Engineering",
+        funding: "Stipendium Hungaricum Scholarship",
+        benefits: "100% Tuition + Housing + 43,700 HUF/mo + Medical + Schengen",
+        language_requirement: "MOI Accepted (NO IELTS)",
+        target_intake: "Fall 2027 (Starts Sept 2027)",
+        deadline: "2027-01-15",
+        status: "UPCOMING",
+        priority: "P2",
+        portal_url: "https://apply.stipendiumhungaricum.hu/",
+        notes: "DreamApply portal opens Nov 15, 2026. Partner quota for Ethiopian applicants."
+      },
+      {
+        id: "canada-manitoba",
+        country: "Canada",
+        flag: "🇨🇦",
+        university: "University of Manitoba",
+        program: "MSc in Computer Science",
+        funding: "Univ of Manitoba Graduate Fellowship (UMGF)",
+        benefits: "Up to $28,000 CAD Fellowship ($14,000/yr for 2 yrs)",
+        language_requirement: "MOI Exemption Form (NO IELTS)",
+        target_intake: "Fall 2027 (Sept 2027)",
+        deadline: "2026-12-01",
+        status: "RESEARCHING_ADVISORS",
+        priority: "P2",
+        portal_url: "https://umanitoba.ca/admissions",
+        notes: "Priority deadline Dec 1, 2026. Researching faculty advisors."
+      },
+      {
+        id: "rwanda-alu",
+        country: "Rwanda",
+        flag: "🇷🇼",
+        university: "African Leadership University (ALU)",
+        program: "Tech & Entrepreneurial Leadership",
+        funding: "Mastercard Foundation Scholars Program",
+        benefits: "100% Tuition + Housing + Flights + Laptop + Living Allowance",
+        language_requirement: "English Medium (NO IELTS)",
+        target_intake: "Spring 2027 & Fall 2027",
+        deadline: "2026-12-15",
+        status: "APPLICATIONS_OPEN",
+        priority: "P2",
+        portal_url: "https://www.alueducation.com/",
+        notes: "Zero visa refusal risk for Ethiopians. Applications open now."
+      },
+      {
+        id: "romania-work-visa",
+        country: "Romania",
+        flag: "🇷🇴",
+        university: "Food Delivery & Fleet Driver (Glovo/Bolt)",
+        program: "Non-EU Labor Migration Route",
+        funding: "D/AM2 Work Visa Quota",
+        benefits: "Earn €700–€1,200/mo + Legal EU Residency + Schengen Access",
+        language_requirement: "Basic English (No Certificate Needed)",
+        target_intake: "Rolling 2026–2027",
+        deadline: "Year-Round",
+        status: "EMPLOYER_RESEARCH",
+        priority: "Work Track",
+        portal_url: "https://workinromania.gov.ro/",
+        notes: "Commercial backup to enter EU legally with 2 years driving experience."
+      }
+    ];
+
+    let allTracks = fallbackTracks;
+    let activeFilter = 'all';
+
+    // Try fetching live applications.json if hosted on web server
+    fetch('./applications.json')
+      .then(res => res.json())
+      .then(data => {
+        if (data && data.active_tracks && data.active_tracks.length > 0) {
+          allTracks = data.active_tracks.map(t => {
+            const fb = fallbackTracks.find(f => f.id === t.id);
+            return {
+              ...t,
+              flag: fb ? fb.flag : '🌐'
+            };
+          });
+          renderCards();
+        }
+      })
+      .catch(() => {
+        // Fallback array active
+        renderCards();
+      });
+
+    function getStatusBadge(status) {
+      const s = (status || '').toUpperCase();
+      if (s.includes('COMPLETED') || s.includes('SUBMITTED') || s.includes('93')) {
+        return `<span class="status-pill status-completed">✅ ${status.replace(/_/g, ' ')}</span>`;
+      } else if (s.includes('READY') || s.includes('ACTIVE') || s.includes('OPEN')) {
+        return `<span class="status-pill status-ready">⚡ ${status.replace(/_/g, ' ')}</span>`;
+      } else if (s.includes('SENT') || s.includes('CONTACTED')) {
+        return `<span class="status-pill status-sent">📤 ${status.replace(/_/g, ' ')}</span>`;
+      } else {
+        return `<span class="status-pill status-upcoming">⏳ ${status.replace(/_/g, ' ')}</span>`;
+      }
+    }
+
+    function renderCards() {
+      const container = document.getElementById('cardsGrid');
+      const searchVal = document.getElementById('searchInput').value.toLowerCase().trim();
+
+      const filtered = allTracks.filter(t => {
+        // Filter tabs
+        if (activeFilter === 'france' && !t.country.toLowerCase().includes('france')) return false;
+        if (activeFilter === 'italy' && !t.country.toLowerCase().includes('italy')) return false;
+        if (activeFilter === 'china' && !t.country.toLowerCase().includes('china')) return false;
+        if (activeFilter === 'russia' && !t.country.toLowerCase().includes('russia')) return false;
+        if (activeFilter === 'p1' && t.priority !== 'P1') return false;
+        if (activeFilter === 'work' && !t.id.includes('work') && !t.funding.toLowerCase().includes('labor')) return false;
+
+        // Search text
+        if (searchVal) {
+          const hay = `${t.country} ${t.university} ${t.program} ${t.funding} ${t.status} ${t.notes}`.toLowerCase();
+          if (!hay.includes(searchVal)) return false;
+        }
+
+        return true;
+      });
+
+      if (filtered.length === 0) {
+        container.innerHTML = `
+          <div style="grid-column: 1 / -1; text-align: center; padding: 40px 20px; color: var(--text-muted);">
+            <div style="font-size: 36px; margin-bottom: 8px;">🔍</div>
+            <p style="font-size: 14px;">No matching opportunities found for "${searchVal}".</p>
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = filtered.map(t => `
+        <div class="card">
+          <div>
+            <div class="card-top">
+              <div class="country-tag">
+                <span>${t.flag || '🌐'}</span>
+                <span>${t.country}</span>
+              </div>
+              ${getStatusBadge(t.status)}
+            </div>
+
+            <div class="card-title">${t.university}</div>
+            <div class="card-subtitle">${t.program}</div>
+
+            <div class="meta-pills">
+              <span class="pill-funding">💰 ${t.funding}</span>
+              <span class="pill-lang">🗣️ ${t.language_requirement}</span>
+            </div>
+
+            <div class="card-details">
+              <div class="detail-row">
+                <span>Target Intake:</span>
+                <strong>${t.target_intake}</strong>
+              </div>
+              <div class="detail-row">
+                <span>Deadline:</span>
+                <strong style="color: #f59e0b;">${t.deadline}</strong>
+              </div>
+              <div class="detail-row">
+                <span>Benefits:</span>
+                <span style="color: #6ee7b7; font-weight: 600;">${t.benefits}</span>
+              </div>
+              ${t.notes ? `
+                <div style="margin-top: 8px; padding-top: 6px; border-top: 1px dashed rgba(255,255,255,0.08); font-size: 11px; color: #cbd5e1; line-height: 1.4;">
+                  💡 ${t.notes}
+                </div>
+              ` : ''}
+            </div>
+          </div>
+
+          <div class="card-actions">
+            <a href="${t.portal_url}" target="_blank" rel="noopener" class="btn-portal">
+              Open Portal ↗
+            </a>
+            <button class="btn-notes" onclick="copyText('${t.university} (${t.country}) - ${t.program} | Deadline: ${t.deadline}', 'Opportunity details copied!')">
+              Copy
+            </button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function setFilter(f) {
+      activeFilter = f;
+      document.querySelectorAll('.filter-chip').forEach(b => b.classList.remove('active'));
+      event.target.classList.add('active');
+      renderCards();
+    }
+
+    function handleSearch() {
+      renderCards();
+    }
+
+    // Modal
+    function openProfileModal() {
+      document.getElementById('profileModal').style.display = 'flex';
+    }
+
+    function closeProfileModal() {
+      document.getElementById('profileModal').style.display = 'none';
+    }
+
+    function closeModalOnBg(e) {
+      if (e.target.id === 'profileModal') closeProfileModal();
+    }
+
+    // Toast & Copy
+    function copyText(txt, msg = 'Copied to clipboard!') {
+      navigator.clipboard.writeText(txt).then(() => {
+        const toast = document.getElementById('toast');
+        toast.textContent = msg;
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 2200);
+      });
+    }
+
+    // Initial render
+    renderCards();
+  </script>
+</body>
+</html>
