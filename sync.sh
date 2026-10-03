@@ -19,23 +19,12 @@ echo "========================================================"
 echo "🔄 $DEVICE_TAG Starting Application Dossier Synchronization..."
 echo "========================================================"
 
-# Step 1: Pull remote changes first to prevent divergence
-echo "📥 [1/4] Pulling latest updates from GitHub (main)..."
-if git remote get-url origin >/dev/null 2>&1; then
-    # Stash any unstaged uncommitted local changes temporarily if needed
-    git pull --rebase origin main || {
-        echo "⚠️ Note: Merge or rebase in progress, resolving..."
-    }
-else
-    echo "⚠️ Remote 'origin' not configured yet."
-fi
-
-# Step 2: Show current status
-echo "🔍 [2/4] Checking local working tree..."
+# Step 1: Check status
+echo "🔍 [1/4] Checking local working tree..."
 git status --short
 
-# Step 3: Stage and commit local changes
-echo "📦 [3/4] Staging and committing local changes..."
+# Step 2: Stage and commit local changes first (clean tree for rebase)
+echo "📦 [2/4] Staging and committing local changes..."
 git add -A
 if git diff-index --quiet HEAD -- 2>/dev/null; then
     echo "✨ Working tree clean. Nothing new to commit locally."
@@ -49,6 +38,14 @@ else
     fi
     git commit -m "$COMMIT_MSG"
     echo "✅ Committed: $COMMIT_MSG"
+fi
+
+# Step 3: Pull remote changes with rebase now that working tree is committed
+echo "📥 [3/4] Pulling latest updates from GitHub (main)..."
+if git remote get-url origin >/dev/null 2>&1; then
+    git pull --rebase origin main
+else
+    echo "⚠️ Remote 'origin' not configured yet."
 fi
 
 # Step 4: Push to GitHub
