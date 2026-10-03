@@ -252,10 +252,11 @@
       "target_intake": "Fall 2027 (Starting Sept 2027)",
       "deadline": "2026-12-15",
       "portal_open": "2026-10-01",
-      "status": "ACCOUNT_CREATED_AWAITING_ACTIVATION",
+      "eef_candidate_id": "ET26-00453",
+      "status": "ACCOUNT_ACTIVATED_LOGGED_IN",
       "priority": "P1",
-      "portal_url": "https://pastel.diplomatie.gouv.fr/etudesenfrance/",
-      "notes": "1 master profile for up to 7 universities. In-person interview at Alliance Éthio-Française Piassa, Addis Ababa."
+      "portal_url": "https://etudesenfrance.diplomatie.gouv.fr/connexion",
+      "notes": "Official EEF ID: ET26-00453. In-person interview at Alliance Éthio-Française Piassa, Addis Ababa. 1 master profile for up to 7 universities."
     }
   ],
   "china_professors": [
