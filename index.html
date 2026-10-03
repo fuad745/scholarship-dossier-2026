@@ -6,8 +6,12 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="theme-color" content="#0c1017">
-  <title>Fuad Ahmed | Scholarship & Visa Operations Center</title>
+  <title>Fuad Ahmed • Scholarship & Visa Command Center</title>
   
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" type="image/svg+xml" href="./icon.svg">
+  <link rel="apple-touch-icon" href="./icon.svg">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -17,7 +21,7 @@
       --ks-ink: #0c1017;
       --ks-paper: #121824;
       --ks-paper-raised: #182232;
-      --ks-paper-highlight: #222e44;
+      --ks-paper-highlight: #202c40;
       --ks-hairline: rgba(255, 255, 255, 0.08);
       --ks-hairline-strong: rgba(255, 255, 255, 0.16);
       
@@ -25,14 +29,15 @@
       --text-2: #94a3b8;
       --text-3: #64748b;
       
-      --accent-blue: #3b82f6;
-      --accent-blue-soft: rgba(59, 130, 246, 0.15);
+      --blue: #3b82f6;
+      --blue-soft: rgba(59, 130, 246, 0.15);
       --emerald: #10b981;
-      --emerald-soft: rgba(16, 185, 129, 0.14);
+      --emerald-soft: rgba(16, 185, 129, 0.15);
       --amber: #f59e0b;
-      --amber-soft: rgba(245, 158, 11, 0.14);
+      --amber-soft: rgba(245, 158, 11, 0.15);
+      --red: #ef4444;
+      --red-soft: rgba(239, 68, 68, 0.15);
       --purple: #8b5cf6;
-      --purple-soft: rgba(139, 92, 246, 0.14);
 
       --radius-sm: 8px;
       --radius-md: 12px;
@@ -56,51 +61,50 @@
       font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
       min-height: 100vh;
       line-height: 1.5;
-      padding-top: calc(var(--safe-top) + 16px);
+      padding-top: calc(var(--safe-top) + 14px);
       padding-bottom: calc(var(--safe-bottom) + 90px);
       -webkit-font-smoothing: antialiased;
     }
 
     .container {
-      max-width: 1120px;
+      max-width: 1160px;
       margin: 0 auto;
       padding: 0 16px;
     }
 
-    /* Utilitarian Navigation Bar */
-    .nav-bar {
+    /* Top Navigation */
+    .top-nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-bottom: 16px;
+      padding-bottom: 14px;
       border-bottom: 1px solid var(--ks-hairline);
-      margin-bottom: 20px;
+      margin-bottom: 18px;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 10px;
     }
 
-    .brand-wrap {
+    .brand-group {
       display: flex;
       align-items: center;
       gap: 10px;
     }
 
-    .live-pulse {
+    .status-indicator {
       display: inline-flex;
       align-items: center;
       gap: 6px;
       padding: 4px 10px;
       background: var(--emerald-soft);
-      border: 1px solid rgba(16, 185, 129, 0.3);
+      border: 1px solid rgba(16, 185, 129, 0.35);
       border-radius: var(--radius-full);
       font-size: 11px;
       font-weight: 700;
       color: #34d399;
       letter-spacing: 0.4px;
-      text-transform: uppercase;
     }
 
-    .live-pulse::before {
+    .status-indicator::before {
       content: "";
       width: 6px;
       height: 6px;
@@ -109,17 +113,17 @@
       box-shadow: 0 0 6px var(--emerald);
     }
 
-    .tool-actions {
+    .nav-actions {
       display: flex;
       gap: 8px;
       flex-wrap: wrap;
     }
 
-    .btn-tool {
+    .btn-nav {
       background: var(--ks-paper);
       border: 1px solid var(--ks-hairline);
       color: var(--text-1);
-      padding: 7px 13px;
+      padding: 7px 12px;
       border-radius: var(--radius-sm);
       font-size: 12px;
       font-weight: 600;
@@ -131,299 +135,287 @@
       transition: all 0.15s ease;
     }
 
-    .btn-tool:hover, .btn-tool:active {
+    .btn-nav:hover, .btn-nav:active {
       background: var(--ks-paper-raised);
       border-color: var(--ks-hairline-strong);
       transform: translateY(-1px);
     }
 
-    /* Purpose Header: Distill & Clarify */
-    .hero-banner {
-      margin-bottom: 24px;
+    /* Mission Header */
+    .header-section {
+      margin-bottom: 20px;
     }
 
-    .hero-title-row {
+    .title-row {
       display: flex;
       justify-content: space-between;
-      align-items: flex-end;
+      align-items: flex-start;
       flex-wrap: wrap;
       gap: 12px;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
-    .hero-title-row h1 {
-      font-size: 26px;
+    .title-row h1 {
+      font-size: 24px;
       font-weight: 800;
-      letter-spacing: -0.6px;
+      letter-spacing: -0.5px;
       color: #ffffff;
     }
 
-    .hero-mode-pill {
+    .badge-workflow {
       font-family: 'JetBrains Mono', monospace;
       font-size: 11px;
-      background: rgba(59, 130, 246, 0.12);
-      border: 1px solid rgba(59, 130, 246, 0.25);
+      background: var(--blue-soft);
+      border: 1px solid rgba(59, 130, 246, 0.3);
       color: #93c5fd;
       padding: 4px 10px;
       border-radius: var(--radius-full);
       font-weight: 600;
     }
 
-    .hero-banner p {
+    .subtitle-text {
       font-size: 13.5px;
       color: var(--text-2);
-      max-width: 820px;
+      max-width: 860px;
     }
 
-    /* Instrument Strip: Big Numbers, Zero Slop */
-    .metrics-strip {
+    /* Instrument Strip: Pipeline KPI Counters */
+    .pipeline-strip {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-      margin-bottom: 24px;
-    }
-
-    @media (min-width: 680px) {
-      .metrics-strip {
-        grid-template-columns: repeat(4, 1fr);
-      }
-    }
-
-    .metric-cell {
-      background: var(--ks-paper);
-      border: 1px solid var(--ks-hairline);
-      border-radius: var(--radius-md);
-      padding: 14px 16px;
-      position: relative;
-    }
-
-    .metric-cell.interactive {
-      cursor: pointer;
-      transition: border-color 0.15s;
-    }
-
-    .metric-cell.interactive:hover {
-      border-color: var(--accent-blue);
-    }
-
-    .metric-kicker {
-      font-size: 11px;
-      font-weight: 700;
-      color: var(--text-3);
-      text-transform: uppercase;
-      letter-spacing: 0.6px;
-      margin-bottom: 4px;
-    }
-
-    .metric-num {
-      font-size: 20px;
-      font-weight: 800;
-      color: #ffffff;
-      font-family: 'JetBrains Mono', monospace;
-      display: flex;
-      align-items: baseline;
-      gap: 6px;
-    }
-
-    .metric-sub {
-      font-size: 11px;
-      font-weight: 600;
-      color: var(--text-2);
-    }
-
-    /* Special Command Hub: France EEF */
-    .command-hub {
-      background: var(--ks-paper);
-      border: 1px solid rgba(59, 130, 246, 0.3);
-      border-radius: var(--radius-lg);
-      padding: 20px;
-      margin-bottom: 24px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .command-hub-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-bottom: 14px;
-    }
-
-    .tag-accent {
-      font-size: 11px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.6px;
-      background: var(--accent-blue-soft);
-      border: 1px solid rgba(59, 130, 246, 0.35);
-      color: #93c5fd;
-      padding: 3px 8px;
-      border-radius: var(--radius-sm);
-      display: inline-block;
-      margin-bottom: 6px;
-    }
-
-    .eef-badge {
-      display: inline-flex;
-      align-items: center;
       gap: 8px;
-      background: var(--ks-ink);
-      border: 1px dashed rgba(59, 130, 246, 0.4);
-      padding: 6px 12px;
-      border-radius: var(--radius-sm);
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 13px;
-      font-weight: 700;
-      color: #60a5fa;
-    }
-
-    .eef-programs-list {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 8px;
-      margin: 12px 0;
-    }
-
-    @media (min-width: 640px) {
-      .eef-programs-list {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    .eef-item {
-      background: var(--ks-paper-raised);
-      border: 1px solid var(--ks-hairline);
-      border-radius: var(--radius-sm);
-      padding: 10px 12px;
-      font-size: 12.5px;
-    }
-
-    .eef-item strong {
-      color: #ffffff;
-      display: block;
-      font-size: 13px;
-    }
-
-    .eef-item .code {
-      font-family: 'JetBrains Mono', monospace;
-      color: #93c5fd;
-      font-weight: 600;
-      font-size: 11.5px;
-    }
-
-    .alert-box {
-      background: var(--amber-soft);
-      border: 1px solid rgba(245, 158, 11, 0.3);
-      color: #fde68a;
-      padding: 10px 14px;
-      border-radius: var(--radius-sm);
-      font-size: 12.5px;
-      display: flex;
-      gap: 8px;
-      margin-top: 12px;
-      line-height: 1.4;
-    }
-
-    /* Search & Segmented Controls */
-    .controls-panel {
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      background: rgba(12, 16, 23, 0.95);
-      backdrop-filter: blur(12px);
-      padding: 12px 0 10px;
-      border-bottom: 1px solid var(--ks-hairline);
       margin-bottom: 20px;
     }
 
-    .search-wrapper {
+    @media (min-width: 640px) {
+      .pipeline-strip {
+        grid-template-columns: repeat(5, 1fr);
+      }
+    }
+
+    .pipeline-box {
+      background: var(--ks-paper);
+      border: 1px solid var(--ks-hairline);
+      border-radius: var(--radius-md);
+      padding: 10px 14px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .pipeline-box:hover {
+      border-color: var(--ks-hairline-strong);
+      background: var(--ks-paper-raised);
+    }
+
+    .pipeline-box.active-filter {
+      border-color: #ffffff;
+      background: var(--ks-paper-highlight);
+    }
+
+    .pipeline-kicker {
+      font-size: 10.5px;
+      font-weight: 700;
+      color: var(--text-3);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 2px;
+    }
+
+    .pipeline-count {
+      font-size: 19px;
+      font-weight: 800;
+      font-family: 'JetBrains Mono', monospace;
+      display: flex;
+      align-items: baseline;
+      gap: 4px;
+    }
+
+    /* View Mode Switcher */
+    .view-switcher-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .view-modes-group {
+      display: flex;
+      background: var(--ks-paper);
+      border: 1px solid var(--ks-hairline);
+      border-radius: var(--radius-sm);
+      padding: 3px;
+      gap: 2px;
+    }
+
+    .btn-view-mode {
+      background: transparent;
+      border: none;
+      color: var(--text-2);
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .btn-view-mode.active {
+      background: var(--ks-paper-raised);
+      color: #ffffff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+    }
+
+    /* Controls Panel */
+    .search-row {
       position: relative;
       margin-bottom: 10px;
     }
 
-    .search-input {
+    .search-field {
       width: 100%;
       background: var(--ks-paper);
       border: 1px solid var(--ks-hairline);
       border-radius: var(--radius-md);
-      padding: 11px 16px 11px 40px;
+      padding: 10px 14px 10px 38px;
       color: #ffffff;
-      font-size: 14px;
+      font-size: 13.5px;
       font-family: inherit;
       outline: none;
-      transition: all 0.15s ease;
+      transition: border-color 0.15s;
     }
 
-    .search-input:focus {
-      border-color: var(--accent-blue);
+    .search-field:focus {
+      border-color: var(--blue);
       background: var(--ks-paper-raised);
     }
 
-    .search-icon {
+    .search-ico {
       position: absolute;
-      left: 14px;
+      left: 12px;
       top: 50%;
       transform: translateY(-50%);
       font-size: 14px;
       color: var(--text-3);
-      pointer-events: none;
     }
 
-    .filter-track {
+    .filter-pills {
       display: flex;
       gap: 6px;
       overflow-x: auto;
       scrollbar-width: none;
-      -webkit-overflow-scrolling: touch;
       padding-bottom: 2px;
+      margin-bottom: 18px;
     }
 
-    .filter-track::-webkit-scrollbar {
-      display: none;
-    }
+    .filter-pills::-webkit-scrollbar { display: none; }
 
-    .filter-btn {
+    .btn-filter-pill {
       flex: 0 0 auto;
       background: var(--ks-paper);
       border: 1px solid var(--ks-hairline);
       color: var(--text-2);
-      padding: 6px 14px;
+      padding: 5px 12px;
       border-radius: var(--radius-full);
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 600;
       cursor: pointer;
-      white-space: nowrap;
-      transition: all 0.15s ease;
+      transition: all 0.15s;
     }
 
-    .filter-btn:hover {
-      color: var(--text-1);
-      border-color: var(--ks-hairline-strong);
-    }
-
-    .filter-btn.active {
+    .btn-filter-pill.active {
       background: #ffffff;
-      border-color: #ffffff;
       color: var(--ks-ink);
       font-weight: 700;
+      border-color: #ffffff;
     }
 
-    /* Cards Grid */
-    .cards-grid {
+    /* France Command Hub */
+    .france-hub {
+      background: var(--ks-paper);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      border-radius: var(--radius-lg);
+      padding: 16px 18px;
+      margin-bottom: 22px;
+    }
+
+    .france-hub-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .eef-tag {
+      background: var(--ks-ink);
+      border: 1px dashed rgba(59, 130, 246, 0.4);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      font-weight: 700;
+      color: #60a5fa;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .program-code-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: 640px) {
+      .program-code-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .prog-item {
+      background: var(--ks-paper-raised);
+      border: 1px solid var(--ks-hairline);
+      padding: 8px 12px;
+      border-radius: var(--radius-sm);
+      font-size: 12px;
+    }
+
+    .prog-item strong {
+      color: #ffffff;
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .alert-banner {
+      background: var(--amber-soft);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      color: #fde68a;
+      padding: 9px 12px;
+      border-radius: var(--radius-sm);
+      font-size: 12px;
+      display: flex;
+      gap: 8px;
+      line-height: 1.4;
+    }
+
+    /* Card Grid */
+    .grid-layout {
       display: grid;
       grid-template-columns: 1fr;
       gap: 16px;
     }
 
     @media (min-width: 768px) {
-      .cards-grid {
+      .grid-layout {
         grid-template-columns: repeat(2, 1fr);
       }
     }
 
-    .opp-card {
+    .track-card {
       background: var(--ks-paper);
       border: 1px solid var(--ks-hairline);
       border-radius: var(--radius-lg);
@@ -431,136 +423,174 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      transition: border-color 0.15s ease, transform 0.15s ease;
+      transition: all 0.15s ease;
       position: relative;
     }
 
-    .opp-card:hover {
+    .track-card:hover {
       border-color: var(--ks-hairline-strong);
     }
 
-    .opp-card.has-user-note {
+    .track-card.has-notes {
       border-left: 3px solid var(--amber);
     }
 
-    .card-meta-header {
+    .card-top-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 10px;
-      gap: 8px;
+      margin-bottom: 8px;
     }
 
-    .country-indicator {
-      display: flex;
-      align-items: center;
-      gap: 6px;
+    .country-title {
       font-size: 12px;
       font-weight: 700;
       color: var(--text-2);
       text-transform: uppercase;
       letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
     }
 
-    .badge-status {
+    /* 5-Stage Status Pill (Clickable) */
+    .status-picker-trigger {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
       font-size: 11px;
       font-weight: 700;
       padding: 3px 8px;
       border-radius: var(--radius-sm);
-      letter-spacing: 0.3px;
+      cursor: pointer;
       font-family: 'JetBrains Mono', monospace;
+      border: 1px solid transparent;
+      transition: all 0.15s ease;
     }
 
-    .st-done { background: var(--emerald-soft); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
-    .st-ready { background: var(--accent-blue-soft); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.3); }
-    .st-sent { background: var(--purple-soft); color: #a78bfa; border: 1px solid rgba(139, 92, 246, 0.3); }
-    .st-wait { background: var(--amber-soft); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+    .status-picker-trigger:hover {
+      filter: brightness(1.15);
+      transform: scale(1.02);
+    }
 
-    .card-uni {
-      font-size: 17px;
+    .st-not-started { background: rgba(148, 163, 184, 0.12); color: #cbd5e1; border-color: rgba(148, 163, 184, 0.25); }
+    .st-started { background: var(--blue-soft); color: #60a5fa; border-color: rgba(59, 130, 246, 0.3); }
+    .st-needs-docs { background: var(--amber-soft); color: #fbbf24; border-color: rgba(245, 158, 11, 0.35); }
+    .st-finished { background: var(--emerald-soft); color: #34d399; border-color: rgba(16, 185, 129, 0.35); }
+    .st-failed { background: var(--red-soft); color: #f87171; border-color: rgba(239, 68, 68, 0.35); }
+
+    .uni-heading {
+      font-size: 16.5px;
       font-weight: 800;
       color: #ffffff;
       line-height: 1.3;
-      margin-bottom: 2px;
+      margin-bottom: 3px;
     }
 
-    .card-degree {
-      font-size: 13px;
+    .program-desc {
+      font-size: 12.5px;
       color: var(--text-2);
-      margin-bottom: 14px;
-      line-height: 1.4;
+      margin-bottom: 12px;
     }
 
-    /* Metrics Grid inside Card */
-    .card-specs-table {
+    /* Specs Table */
+    .specs-grid {
       background: var(--ks-ink);
       border: 1px solid var(--ks-hairline);
       border-radius: var(--radius-md);
-      padding: 12px;
+      padding: 10px 12px;
       margin-bottom: 12px;
       font-size: 12px;
     }
 
-    .spec-row {
+    .spec-item {
       display: flex;
       justify-content: space-between;
-      padding: 3px 0;
-      gap: 10px;
+      padding: 2.5px 0;
+      gap: 8px;
     }
 
-    .spec-k {
+    .spec-label {
       color: var(--text-3);
       font-weight: 600;
     }
 
-    .spec-v {
-      color: var(--text-1);
+    .spec-value {
       font-weight: 600;
       text-align: right;
     }
 
-    .spec-v.green {
-      color: #34d399;
-      font-weight: 700;
+    /* Interactive Document Checklist Badge & Accordion */
+    .doc-checklist-trigger {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--ks-paper-raised);
+      border: 1px solid var(--ks-hairline);
+      padding: 7px 10px;
+      border-radius: var(--radius-sm);
+      font-size: 11.5px;
+      cursor: pointer;
+      margin-bottom: 10px;
     }
 
-    .spec-v.amber {
-      color: #fbbf24;
+    .doc-fraction {
       font-family: 'JetBrains Mono', monospace;
       font-weight: 700;
+      color: #60a5fa;
     }
 
-    /* Reminder Note Area on Card */
-    .note-box {
+    .doc-accordion-body {
+      display: none;
+      background: var(--ks-ink);
+      border: 1px solid var(--ks-hairline);
+      border-radius: var(--radius-sm);
+      padding: 8px 12px;
+      margin-bottom: 10px;
+      font-size: 12px;
+    }
+
+    .doc-check-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 0;
+      color: var(--text-2);
+      cursor: pointer;
+    }
+
+    .doc-check-row input {
+      accent-color: var(--emerald);
+      cursor: pointer;
+    }
+
+    /* Interactive Note Box */
+    .note-card-box {
       background: var(--ks-paper-raised);
       border: 1px solid var(--ks-hairline);
       border-radius: var(--radius-sm);
-      padding: 10px 12px;
+      padding: 9px 12px;
       margin-bottom: 14px;
       font-size: 12px;
-      position: relative;
     }
 
-    .note-box-header {
+    .note-card-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 4px;
     }
 
-    .note-kicker {
-      font-size: 10.5px;
+    .note-tag {
+      font-size: 10px;
       font-weight: 700;
       color: #fbbf24;
-      display: flex;
-      align-items: center;
-      gap: 4px;
       text-transform: uppercase;
       letter-spacing: 0.4px;
     }
 
-    .btn-edit-note {
-      background: transparent;
+    .btn-text-edit {
+      background: none;
       border: none;
       color: #93c5fd;
       font-size: 11px;
@@ -569,67 +599,143 @@
       text-decoration: underline;
     }
 
-    .note-content-text {
+    .note-body-text {
       color: #e2e8f0;
-      line-height: 1.45;
-      font-size: 12px;
+      line-height: 1.4;
+      font-size: 11.5px;
     }
 
-    /* Card Action Footer */
-    .card-actions-bar {
+    /* Card Action Bar */
+    .card-footer-actions {
       display: flex;
-      gap: 8px;
+      gap: 6px;
       margin-top: auto;
     }
 
-    .btn-primary-action {
+    .btn-action-portal {
       flex: 1;
-      background: var(--accent-blue);
+      background: var(--blue);
       color: #ffffff;
       font-weight: 700;
       font-size: 12px;
-      padding: 9px 12px;
+      padding: 8px 12px;
       border-radius: var(--radius-sm);
       text-decoration: none;
       text-align: center;
-      display: flex;
+      display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 5px;
-      border: none;
-      cursor: pointer;
-      transition: background 0.15s ease;
+      gap: 4px;
     }
 
-    .btn-primary-action:hover {
-      background: #2563eb;
-    }
-
-    .btn-secondary-action {
+    .btn-action-tool {
       background: var(--ks-paper-raised);
       border: 1px solid var(--ks-hairline);
-      color: var(--text-2);
+      color: var(--text-1);
       font-weight: 600;
-      font-size: 12px;
-      padding: 9px 12px;
+      font-size: 11.5px;
+      padding: 8px 10px;
       border-radius: var(--radius-sm);
       cursor: pointer;
-      display: flex;
+      display: inline-flex;
       align-items: center;
       gap: 4px;
       transition: all 0.15s;
     }
 
-    .btn-secondary-action:hover {
-      color: var(--text-1);
+    .btn-action-tool:hover {
       border-color: var(--ks-hairline-strong);
+      background: var(--ks-paper-highlight);
     }
 
-    /* Note Editor Modal */
-    .modal-overlay {
+    /* Kanban Pipeline View */
+    .kanban-board {
+      display: none;
+      grid-template-columns: repeat(5, minmax(240px, 1fr));
+      gap: 12px;
+      overflow-x: auto;
+      padding-bottom: 16px;
+      scrollbar-width: thin;
+    }
+
+    .kanban-col {
+      background: var(--ks-paper);
+      border: 1px solid var(--ks-hairline);
+      border-radius: var(--radius-md);
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      min-height: 380px;
+    }
+
+    .kanban-col-header {
+      font-size: 12px;
+      font-weight: 800;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--ks-hairline);
+    }
+
+    .kanban-card {
+      background: var(--ks-paper-raised);
+      border: 1px solid var(--ks-hairline);
+      border-radius: var(--radius-sm);
+      padding: 10px;
+      font-size: 12px;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .kanban-card:hover {
+      border-color: var(--blue);
+      transform: translateY(-1px);
+    }
+
+    .kanban-card-title {
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 4px;
+      font-size: 13px;
+    }
+
+    /* Timeline Countdown View */
+    .timeline-view {
+      display: none;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .timeline-row {
+      background: var(--ks-paper);
+      border: 1px solid var(--ks-hairline);
+      border-radius: var(--radius-md);
+      padding: 14px 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .timeline-countdown {
+      text-align: right;
+    }
+
+    .countdown-days {
+      font-size: 20px;
+      font-weight: 800;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--amber);
+    }
+
+    /* Modals & Popovers */
+    .modal-backdrop {
       position: fixed;
       inset: 0;
-      background: rgba(0, 0, 0, 0.75);
+      background: rgba(0, 0, 0, 0.78);
       backdrop-filter: blur(8px);
       z-index: 100;
       display: none;
@@ -638,30 +744,32 @@
       padding: 16px;
     }
 
-    .modal-dialog {
+    .modal-box {
       background: #111827;
       border: 1px solid var(--ks-hairline-strong);
       width: 100%;
-      max-width: 500px;
+      max-width: 520px;
       border-radius: var(--radius-lg);
       padding: 20px;
       box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+      max-height: 90vh;
+      overflow-y: auto;
     }
 
-    .modal-dialog-header {
+    .modal-head {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 12px;
     }
 
-    .modal-dialog-title {
+    .modal-title {
       font-size: 17px;
       font-weight: 800;
       color: #ffffff;
     }
 
-    .btn-close-x {
+    .btn-close {
       background: transparent;
       border: none;
       color: var(--text-3);
@@ -669,33 +777,47 @@
       cursor: pointer;
     }
 
-    .note-textarea {
-      width: 100%;
-      min-height: 120px;
+    .prompt-tab-row {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 12px;
+      background: var(--ks-ink);
+      padding: 3px;
+      border-radius: var(--radius-sm);
+    }
+
+    .btn-prompt-tab {
+      flex: 1;
+      background: transparent;
+      border: none;
+      color: var(--text-2);
+      padding: 6px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .btn-prompt-tab.active {
+      background: var(--ks-paper-raised);
+      color: #fff;
+    }
+
+    .prompt-preview-box {
       background: var(--ks-ink);
       border: 1px solid var(--ks-hairline);
       border-radius: var(--radius-sm);
-      color: #ffffff;
       padding: 12px;
-      font-size: 13.5px;
-      font-family: inherit;
-      outline: none;
-      resize: vertical;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: #93c5fd;
+      line-height: 1.5;
       margin-bottom: 14px;
-    }
-
-    .note-textarea:focus {
-      border-color: var(--accent-blue);
-    }
-
-    .modal-btn-row {
-      display: flex;
-      justify-content: flex-end;
-      gap: 8px;
+      word-break: break-word;
     }
 
     /* Toast */
-    .toast-pill {
+    .toast-msg {
       position: fixed;
       bottom: calc(var(--safe-bottom) + 20px);
       left: 50%;
@@ -713,7 +835,7 @@
       pointer-events: none;
     }
 
-    .toast-pill.show {
+    .toast-msg.show {
       transform: translateX(-50%) translateY(0);
       opacity: 1;
     }
@@ -722,218 +844,325 @@
 <body>
 
   <div class="container">
-    <!-- Navigation & Utility Strip -->
-    <nav class="nav-bar">
-      <div class="brand-wrap">
-        <span class="live-pulse">GIT SYNCED (`main`)</span>
+    <!-- Top Nav -->
+    <nav class="top-nav">
+      <div class="brand-group">
+        <span class="status-indicator">GIT SYNCED (`main`)</span>
       </div>
-      <div class="tool-actions">
-        <button class="btn-tool" onclick="openProfileModal()">👤 Copy Profile</button>
-        <button class="btn-tool" onclick="exportNotes()">💾 Backup Notes</button>
-        <a class="btn-tool" href="./scholarship_deadlines.ics" download="scholarship_deadlines.ics">📅 Calendar (.ics)</a>
+      <div class="nav-actions">
+        <button class="btn-nav" onclick="openProfileModal()">👤 Profile</button>
+        <button class="btn-nav" onclick="openExportModal()">💾 Export & Sync State</button>
+        <a class="btn-nav" href="./scholarship_deadlines.ics" download="scholarship_deadlines.ics">📅 Calendar (.ics)</a>
       </div>
     </nav>
 
-    <!-- Operational Header: Operative & Distilled -->
-    <header class="hero-banner">
-      <div class="hero-title-row">
-        <h1>Fuad Ahmed • Scholarship & Visa Tracker</h1>
-        <span class="hero-mode-pill">⚡ AGY-CLI + BROWSER HUB</span>
+    <!-- Mission Header -->
+    <header class="header-section">
+      <div class="title-row">
+        <h1>Fuad Ahmed • Scholarship Command Center</h1>
+        <span class="badge-workflow">⚡ AGY-CLI + BROWSER HUB</span>
       </div>
-      <p>
-        BSc Computer Science, St. Mary's University (3.20 GPA, MOI English Exempted) • Central command center to track admissions, deadlines, candidate identifiers, and personal reminders.
+      <p class="subtitle-text">
+        BSc Computer Science (3.20 GPA, MOI Exempted). Live operations dashboard to track application stages, document readiness, portal credentials, and automated <code>agy</code> browser prompts.
       </p>
     </header>
 
-    <!-- Instrument Metrics Strip -->
-    <section class="metrics-strip" aria-label="Key operational metrics">
-      <div class="metric-cell">
-        <div class="metric-kicker">Tracked Options</div>
-        <div class="metric-num" id="metric-total">14 <span class="metric-sub">universities</span></div>
+    <!-- 5-Stage Pipeline Metric Strip (Clickable Filters) -->
+    <section class="pipeline-strip" aria-label="Pipeline Stages">
+      <div class="pipeline-box" id="pipe-all" onclick="filterByStage('all')">
+        <div class="pipeline-kicker">All Tracks</div>
+        <div class="pipeline-count" id="count-all">14</div>
       </div>
-      <div class="metric-cell interactive" onclick="setFilter('p1')">
-        <div class="metric-kicker">Top Priority (P1)</div>
-        <div class="metric-num" style="color: #60a5fa;">6 <span class="metric-sub">target routes</span></div>
+      <div class="pipeline-box" id="pipe-started" onclick="filterByStage('STARTED')">
+        <div class="pipeline-kicker" style="color: #60a5fa;">🔵 In Progress</div>
+        <div class="pipeline-count" style="color: #60a5fa;" id="count-started">0</div>
       </div>
-      <div class="metric-cell interactive" onclick="setFilter('notes')">
-        <div class="metric-kicker">My Active Reminders</div>
-        <div class="metric-num" id="metric-notes" style="color: #fbbf24;">0 <span class="metric-sub">notes saved</span></div>
+      <div class="pipeline-box" id="pipe-needs-docs" onclick="filterByStage('NEEDS_DOCS')">
+        <div class="pipeline-kicker" style="color: #fbbf24;">🟠 Needs Docs</div>
+        <div class="pipeline-count" style="color: #fbbf24;" id="count-needs-docs">0</div>
       </div>
-      <div class="metric-cell interactive" onclick="copyText('ET26-00453', 'France Candidate ID ET26-00453 copied!')">
-        <div class="metric-kicker">France EEF ID</div>
-        <div class="metric-num" style="color: #34d399;">ET26-00453 <span class="metric-sub">📋</span></div>
+      <div class="pipeline-box" id="pipe-finished" onclick="filterByStage('FINISHED')">
+        <div class="pipeline-kicker" style="color: #34d399;">🟢 Finished</div>
+        <div class="pipeline-count" style="color: #34d399;" id="count-finished">0</div>
+      </div>
+      <div class="pipeline-box" id="pipe-not-started" onclick="filterByStage('NOT_STARTED')">
+        <div class="pipeline-kicker" style="color: #94a3b8;">⚪ Not Started</div>
+        <div class="pipeline-count" style="color: #94a3b8;" id="count-not-started">0</div>
       </div>
     </section>
 
-    <!-- Specialized Command Hub: France Études en France -->
-    <section class="command-hub" aria-label="France EEF Dossier Operations">
-      <div class="command-hub-header">
+    <!-- Specialized Command: France EEF -->
+    <section class="france-hub">
+      <div class="france-hub-top">
         <div>
-          <span class="tag-accent">Priority P1 • Official French Republic Intake</span>
-          <h2 style="font-size: 18px; font-weight: 800; color: #fff;">Campus France & Études en France (EEF)</h2>
-          <p style="font-size: 12.5px; color: var(--text-2); margin-top: 2px;">
-            Personal Identity, 3-page degree & transcript scan, Grade 12 National Exam, and CV verified.
-          </p>
+          <span style="font-size: 11px; font-weight: 800; color: #93c5fd; text-transform: uppercase;">Priority P1 • Republic of France</span>
+          <h2 style="font-size: 17px; font-weight: 800; color: #fff;">Études en France & Eiffel Excellence</h2>
         </div>
-        <div class="eef-badge">
+        <div class="eef-tag">
           <span>ET26-00453</span>
-          <button class="btn-tool" style="padding: 3px 8px; font-size: 11px;" onclick="copyText('ET26-00453', 'France EEF Candidate ID copied!')">Copy ID</button>
+          <button class="btn-nav" style="padding: 2px 7px; font-size: 11px;" onclick="copyText('ET26-00453', 'Candidate EEF ID copied!')">Copy</button>
         </div>
       </div>
 
-      <div class="eef-programs-list">
-        <div class="eef-item">
-          <strong>1. UGA - MoSIG Computer Science (M1)</strong>
-          <span class="code">ID: 61801</span> • Exonération Partielle (~€243/year nominal fee)
+      <div class="program-code-grid">
+        <div class="prog-item">
+          <strong>1. Université Grenoble Alpes (MoSIG M1)</strong>
+          <span style="color:#93c5fd; font-family: monospace;">ID: 61801</span> • Exonération Partielle (~€243/yr fee waiver)
         </div>
-        <div class="eef-item">
-          <strong>2. UGA - Cloud Computing & Data Infrastructures (M2)</strong>
-          <span class="code">ID: 61800</span> • Exonération Partielle (~€243/year) + Research Stipend
+        <div class="prog-item">
+          <strong>2. Université Grenoble Alpes (Cloud M2)</strong>
+          <span style="color:#93c5fd; font-family: monospace;">ID: 61800</span> • Exonération Partielle (~€243/yr) + Lab Stipend
         </div>
-        <div class="eef-item">
-          <strong>3. Université de Lille - Master Informatique (M1)</strong>
-          <span class="code">ID: 60987</span> • Exonération Partielle (~€243/year) + Mobility Grant
+        <div class="prog-item">
+          <strong>3. Université de Lille (CS M1)</strong>
+          <span style="color:#93c5fd; font-family: monospace;">ID: 60987</span> • Exonération Partielle (~€243/yr fee waiver)
         </div>
-        <div class="eef-item">
-          <strong>4. CentraleSupélec / Paris-Saclay - MSc AI</strong>
-          <span class="code">ID: 60589</span> • Campus France Eiffel Excellence Candidate (€1,181/mo)
+        <div class="prog-item">
+          <strong>4. CentraleSupélec / Paris-Saclay (MSc AI)</strong>
+          <span style="color:#93c5fd; font-family: monospace;">ID: 60589</span> • Eiffel Excellence Candidate (€1,181/mo)
         </div>
       </div>
 
-      <div class="alert-box">
-        <span style="font-size: 15px;">🔔</span>
+      <div class="alert-banner">
+        <span>🔔</span>
         <div>
-          <strong>Cart Intake Window Notice:</strong> When submitting cart choices, the portal returned <em>"Out of period for process Autres"</em>. Central administration is updating the 2026/2027 calendar. <strong>Check portal every Monday & Friday</strong> to submit the 4 target programs as soon as unlocked.
+          <strong>Cart Intake Status:</strong> Portal intake is temporarily closed for process <em>Autres</em> while the ministry sets the 2026/2027 calendar. <strong>Check portal twice weekly (Mon & Fri)</strong> to submit target programs immediately when opened.
         </div>
       </div>
     </section>
 
-    <!-- Controls Panel: Search & Segmented Filters -->
-    <div class="controls-panel">
-      <div class="search-wrapper">
-        <span class="search-icon">🔍</span>
-        <input type="text" class="search-input" id="searchInput" placeholder="Filter by country, university, degree, program ID, or notes..." oninput="handleSearch()">
+    <!-- View Switcher & Controls -->
+    <div class="view-switcher-bar">
+      <!-- 3 Views Toggle -->
+      <div class="view-modes-group">
+        <button class="btn-view-mode active" id="btn-view-grid" onclick="setViewMode('grid')">🗂️ Cards View</button>
+        <button class="btn-view-mode" id="btn-view-kanban" onclick="setViewMode('kanban')">📊 Kanban Pipeline</button>
+        <button class="btn-view-mode" id="btn-view-timeline" onclick="setViewMode('timeline')">⏳ Deadlines Timeline</button>
       </div>
-      <div class="filter-track" id="filterBar">
-        <button class="filter-btn active" onclick="setFilter('all')">All Opportunities</button>
-        <button class="filter-btn" onclick="setFilter('notes')">📌 My Notes & Reminders</button>
-        <button class="filter-btn" onclick="setFilter('france')">🇫🇷 France</button>
-        <button class="filter-btn" onclick="setFilter('italy')">🇮🇹 Italy (DSU)</button>
-        <button class="filter-btn" onclick="setFilter('china')">🇨🇳 China (CSC)</button>
-        <button class="filter-btn" onclick="setFilter('russia')">🇷🇺 Russia</button>
-        <button class="filter-btn" onclick="setFilter('p1')">⭐ Top Priority (P1)</button>
-        <button class="filter-btn" onclick="setFilter('work')">💼 Work Track</button>
-      </div>
+
+      <!-- Quick Action -->
+      <button class="btn-nav" onclick="filterByNotesOnly()">📌 Notes Only</button>
     </div>
 
-    <!-- Main Grid of Application Cards -->
-    <main class="cards-grid" id="cardsContainer" aria-label="Tracked scholarships and opportunities">
-      <!-- Injected via JavaScript -->
-    </main>
+    <!-- Search & Filter Pills -->
+    <div class="search-row">
+      <span class="search-ico">🔍</span>
+      <input type="text" class="search-field" id="searchInput" placeholder="Search country, university, degree, program ID, or notes..." oninput="handleSearch()">
+    </div>
+
+    <div class="filter-pills" id="countryFilters">
+      <button class="btn-filter-pill active" onclick="setCountryFilter('all')">All Countries</button>
+      <button class="btn-filter-pill" onclick="setCountryFilter('france')">🇫🇷 France</button>
+      <button class="btn-filter-pill" onclick="setCountryFilter('italy')">🇮🇹 Italy</button>
+      <button class="btn-filter-pill" onclick="setCountryFilter('china')">🇨🇳 China</button>
+      <button class="btn-filter-pill" onclick="setCountryFilter('russia')">🇷🇺 Russia</button>
+      <button class="btn-filter-pill" onclick="setCountryFilter('p1')">⭐ Priority P1</button>
+      <button class="btn-filter-pill" onclick="setCountryFilter('work')">💼 Work Track</button>
+    </div>
+
+    <!-- VIEW A: Cards Grid -->
+    <div class="grid-layout" id="viewCardsGrid">
+      <!-- Injected by JS -->
+    </div>
+
+    <!-- VIEW B: Kanban Board -->
+    <div class="kanban-board" id="viewKanbanBoard">
+      <!-- Injected by JS -->
+    </div>
+
+    <!-- VIEW C: Deadlines Timeline -->
+    <div class="timeline-view" id="viewTimeline">
+      <!-- Injected by JS -->
+    </div>
+  </div>
+
+  <!-- Smart agy Automation Prompt Modal -->
+  <div class="modal-backdrop" id="agyModal" onclick="closeModalOnBg(event, 'agyModal')">
+    <div class="modal-box">
+      <div class="modal-head">
+        <div class="modal-title" id="agyModalTitle">🤖 agy Browser Automation Prompt</div>
+        <button class="btn-close" onclick="closeAgyModal()">✕</button>
+      </div>
+      <p style="font-size: 12px; color: var(--text-2); margin-bottom: 12px;">
+        Copy this command and paste it directly into <code>agy</code> on your PC or Termux mobile:
+      </p>
+
+      <div class="prompt-tab-row">
+        <button class="btn-prompt-tab active" id="tab-login" onclick="setPromptMode('login')">Check & Login</button>
+        <button class="btn-prompt-tab" id="tab-apply" onclick="setPromptMode('apply')">Autofill Form</button>
+        <button class="btn-prompt-tab" id="tab-sop" onclick="setPromptMode('sop')">Draft SOP / Email</button>
+      </div>
+
+      <div class="prompt-preview-box" id="agyPromptBox">
+        <!-- Injected prompt -->
+      </div>
+
+      <div style="display: flex; justify-content: flex-end; gap: 8px;">
+        <button class="btn-nav" onclick="closeAgyModal()">Close</button>
+        <button class="btn-action-portal" style="flex:none; padding: 7px 18px;" onclick="copyAgyPrompt()">Copy agy Command 📋</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Status Picker Modal -->
+  <div class="modal-backdrop" id="statusPickerModal" onclick="closeModalOnBg(event, 'statusPickerModal')">
+    <div class="modal-box" style="max-width: 400px;">
+      <div class="modal-head">
+        <div class="modal-title">Change Application Status</div>
+        <button class="btn-close" onclick="closeStatusPicker()">✕</button>
+      </div>
+      <p style="font-size: 12px; color: var(--text-2); margin-bottom: 14px;" id="statusPickerSub">Select new status for this scholarship:</p>
+
+      <div style="display: flex; flex-direction: column; gap: 8px;">
+        <button class="status-picker-trigger st-not-started" style="justify-content: flex-start; padding: 10px 14px;" onclick="selectStatus('NOT_STARTED')">
+          ⚪ NOT STARTED — Opportunity identified, haven't begun
+        </button>
+        <button class="status-picker-trigger st-started" style="justify-content: flex-start; padding: 10px 14px;" onclick="selectStatus('STARTED')">
+          🔵 IN PROGRESS — Account made, form in draft, or outreach sent
+        </button>
+        <button class="status-picker-trigger st-needs-docs" style="justify-content: flex-start; padding: 10px 14px;" onclick="selectStatus('NEEDS_DOCS')">
+          🟠 NEEDS DOCUMENTS — Blocked on specific transcript/SOP/stamp
+        </button>
+        <button class="status-picker-trigger st-finished" style="justify-content: flex-start; padding: 10px 14px;" onclick="selectStatus('FINISHED')">
+          🟢 FINISHED / SUBMITTED — Application submitted or validated
+        </button>
+        <button class="status-picker-trigger st-failed" style="justify-content: flex-start; padding: 10px 14px;" onclick="selectStatus('FAILED')">
+          🔴 FAILED / CLOSED — Deadline passed or quota full
+        </button>
+      </div>
+    </div>
   </div>
 
   <!-- Note Editor Modal -->
-  <div class="modal-overlay" id="noteModal" onclick="closeModalOnBg(event, 'noteModal')">
-    <div class="modal-dialog">
-      <div class="modal-dialog-header">
-        <div class="modal-dialog-title" id="noteModalTitle">Edit Reminder Note</div>
-        <button class="btn-close-x" onclick="closeNoteModal()">✕</button>
+  <div class="modal-backdrop" id="noteModal" onclick="closeModalOnBg(event, 'noteModal')">
+    <div class="modal-box">
+      <div class="modal-head">
+        <div class="modal-title" id="noteModalTitle">Edit Reminder Note</div>
+        <button class="btn-close" onclick="closeNoteModal()">✕</button>
       </div>
-      <p style="font-size: 12px; color: var(--text-2); margin-bottom: 12px;" id="noteModalSub">
-        Add custom instructions, next actions, or reminders for this opportunity. Saved automatically to your browser storage.
+      <p style="font-size: 12px; color: var(--text-2); margin-bottom: 12px;">
+        Saved directly to your browser and exportable to GitHub.
       </p>
-      <textarea class="note-textarea" id="noteInput" placeholder="Type your reminder or notes here (e.g. Check portal next Monday; email professor; attach St. Mary's MOI letter)..."></textarea>
-      <div class="modal-btn-row">
-        <button class="btn-tool" onclick="deleteCurrentNote()">Clear Note</button>
-        <button class="btn-primary-action" style="flex: none; padding: 7px 18px;" onclick="saveCurrentNote()">Save Reminder</button>
+      <textarea id="noteInput" style="width:100%; min-height:120px; background:var(--ks-ink); border:1px solid var(--ks-hairline); border-radius:var(--radius-sm); color:#fff; padding:12px; font-size:13.5px; font-family:inherit; outline:none; resize:vertical; margin-bottom:14px;"></textarea>
+      <div style="display: flex; justify-content: flex-end; gap: 8px;">
+        <button class="btn-nav" onclick="clearCurrentNote()">Clear Note</button>
+        <button class="btn-action-portal" style="flex:none; padding: 7px 18px;" onclick="saveCurrentNote()">Save Reminder</button>
       </div>
     </div>
   </div>
 
-  <!-- Profile Copy Modal -->
-  <div class="modal-overlay" id="profileModal" onclick="closeModalOnBg(event, 'profileModal')">
-    <div class="modal-dialog" style="max-width: 540px;">
-      <div class="modal-dialog-header">
-        <div class="modal-dialog-title">👤 Fuad Ahmed — Profile & Credentials</div>
-        <button class="btn-close-x" onclick="closeProfileModal()">✕</button>
+  <!-- Profile Modal -->
+  <div class="modal-backdrop" id="profileModal" onclick="closeModalOnBg(event, 'profileModal')">
+    <div class="modal-box" style="max-width: 520px;">
+      <div class="modal-head">
+        <div class="modal-title">👤 Fuad Ahmed — Verified Credentials</div>
+        <button class="btn-close" onclick="closeProfileModal()">✕</button>
       </div>
-      <p style="font-size: 12px; color: var(--text-2); margin-bottom: 14px;">
-        Tap any item to copy directly into forms when applying with <code>agy cli + browser</code>.
-      </p>
+      <p style="font-size: 12px; color: var(--text-2); margin-bottom: 14px;">Tap any button to copy for form filling:</p>
 
       <div style="display: flex; flex-direction: column; gap: 8px;">
-        <div class="eef-item" style="display: flex; justify-content: space-between; align-items: center;">
-          <div>
-            <span style="font-size: 10px; color: var(--text-3); text-transform: uppercase;">Legal Name</span>
-            <div style="font-weight: 700; color: #fff;">TUBA, FUAD AHMED</div>
-          </div>
-          <button class="btn-tool" onclick="copyText('TUBA, FUAD AHMED', 'Legal name copied!')">Copy</button>
+        <div class="prog-item" style="display: flex; justify-content: space-between; align-items: center;">
+          <div><small style="color:var(--text-3);">Legal Name</small><div style="font-weight:700;">TUBA, FUAD AHMED</div></div>
+          <button class="btn-nav" onclick="copyText('TUBA, FUAD AHMED', 'Legal name copied!')">Copy</button>
         </div>
-
-        <div class="eef-item" style="display: flex; justify-content: space-between; align-items: center;">
-          <div>
-            <span style="font-size: 10px; color: var(--text-3); text-transform: uppercase;">Passport Number</span>
-            <div style="font-weight: 700; color: #fff; font-family: monospace;">E00340202 (Exp: 15/04/2036)</div>
-          </div>
-          <button class="btn-tool" onclick="copyText('E00340202', 'Passport number copied!')">Copy</button>
+        <div class="prog-item" style="display: flex; justify-content: space-between; align-items: center;">
+          <div><small style="color:var(--text-3);">Passport (ICS Ethiopia)</small><div style="font-weight:700; font-family:monospace;">E00340202 (Exp: 15/04/2036)</div></div>
+          <button class="btn-nav" onclick="copyText('E00340202', 'Passport copied!')">Copy</button>
         </div>
-
-        <div class="eef-item" style="display: flex; justify-content: space-between; align-items: center;">
-          <div>
-            <span style="font-size: 10px; color: var(--text-3); text-transform: uppercase;">Date of Birth</span>
-            <div style="font-weight: 700; color: #fff; font-family: monospace;">16/02/1999 (Adama, Ethiopia)</div>
-          </div>
-          <button class="btn-tool" onclick="copyText('16/02/1999', 'Date of birth copied!')">Copy</button>
+        <div class="prog-item" style="display: flex; justify-content: space-between; align-items: center;">
+          <div><small style="color:var(--text-3);">Date of Birth</small><div style="font-weight:700; font-family:monospace;">16/02/1999 (Adama, Ethiopia)</div></div>
+          <button class="btn-nav" onclick="copyText('16/02/1999', 'DOB copied!')">Copy</button>
         </div>
-
-        <div class="eef-item" style="display: flex; justify-content: space-between; align-items: center;">
-          <div>
-            <span style="font-size: 10px; color: var(--text-3); text-transform: uppercase;">Undergraduate Degree</span>
-            <div style="font-weight: 700; color: #fff;">BSc Computer Science (GPA: 3.20 / 4.00)</div>
-          </div>
-          <button class="btn-tool" onclick="copyText('St. Mary\'s University, Addis Ababa - BSc Computer Science (GPA: 3.20)', 'Degree copied!')">Copy</button>
+        <div class="prog-item" style="display: flex; justify-content: space-between; align-items: center;">
+          <div><small style="color:var(--text-3);">Degree & Major</small><div style="font-weight:700;">BSc Computer Science (GPA: 3.20 / 4.00)</div></div>
+          <button class="btn-nav" onclick="copyText('St. Mary\'s University, Addis Ababa - BSc Computer Science (GPA: 3.20)', 'Degree copied!')">Copy</button>
         </div>
-
-        <div class="eef-item" style="display: flex; justify-content: space-between; align-items: center;">
-          <div>
-            <span style="font-size: 10px; color: var(--text-3); text-transform: uppercase;">Primary Email</span>
-            <div style="font-weight: 700; color: #fff; font-family: monospace;">fuadahmedt@gmail.com</div>
-          </div>
-          <button class="btn-tool" onclick="copyText('fuadahmedt@gmail.com', 'Email copied!')">Copy</button>
+        <div class="prog-item" style="display: flex; justify-content: space-between; align-items: center;">
+          <div><small style="color:var(--text-3);">Email & Phone</small><div style="font-weight:700; font-family:monospace;">fuadahmedt@gmail.com | +251 925 278 350</div></div>
+          <button class="btn-nav" onclick="copyText('fuadahmedt@gmail.com', 'Email copied!')">Copy</button>
         </div>
-
-        <div class="eef-item" style="display: flex; justify-content: space-between; align-items: center;">
-          <div>
-            <span style="font-size: 10px; color: var(--text-3); text-transform: uppercase;">France Candidate ID</span>
-            <div style="font-weight: 700; color: #60a5fa; font-family: monospace;">ET26-00453</div>
-          </div>
-          <button class="btn-tool" onclick="copyText('ET26-00453', 'France EEF ID copied!')">Copy</button>
+        <div class="prog-item" style="display: flex; justify-content: space-between; align-items: center;">
+          <div><small style="color:var(--text-3);">France EEF Candidate ID</small><div style="font-weight:700; color:#60a5fa; font-family:monospace;">ET26-00453</div></div>
+          <button class="btn-nav" onclick="copyText('ET26-00453', 'France EEF ID copied!')">Copy</button>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Toast Feedback -->
-  <div class="toast-pill" id="toastPill">Copied to clipboard!</div>
+  <!-- Export State Modal -->
+  <div class="modal-backdrop" id="exportModal" onclick="closeModalOnBg(event, 'exportModal')">
+    <div class="modal-box">
+      <div class="modal-head">
+        <div class="modal-title">💾 Export State & Sync to Git</div>
+        <button class="btn-close" onclick="closeExportModal()">✕</button>
+      </div>
+      <p style="font-size: 12px; color: var(--text-2); margin-bottom: 12px;">
+        Here is your synchronized state containing custom statuses, notes, and document readiness. You can copy it or download as JSON:
+      </p>
+      <div class="prompt-preview-box" id="exportJsonBox" style="max-height: 220px; overflow-y: auto;"></div>
+      <div style="display: flex; justify-content: flex-end; gap: 8px;">
+        <button class="btn-nav" onclick="downloadStateJson()">Download JSON</button>
+        <button class="btn-action-portal" style="flex:none; padding:7px 16px;" onclick="copyExportJson()">Copy to Clipboard 📋</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast-msg" id="toastMsg">Copied!</div>
 
   <script>
-    // Master Fallback Dataset
-    const defaultTracks = [
+    // Master Dataset with Initial 5-Stage Statuses & Document Checklists
+    const masterTracks = [
       {
         id: "france-campus-france",
         country: "France",
         flag: "🇫🇷",
         university: "Université Paris-Saclay / UGA / Lille",
         program: "MSc Computer Science: Distributed Systems, Cloud & AI",
-        funding: "France Excellence Eiffel Scholarship + Partial Fee Waivers",
-        benefits: "€1,181/mo Cash + Flights OR Tuition down to €243/yr",
+        funding: "Eiffel Excellence Scholarship + Fee Waivers",
+        benefits: "€1,181/mo Cash + Flights OR Tuition reduced to €243/yr",
         language: "MOI Accepted (NO IELTS)",
         intake: "Fall 2027 (Starts Sept 2027)",
         deadline: "2026-12-15",
-        status: "DOSSIER_COMPLETED",
+        status: "FINISHED", // Dossier completed
         priority: "P1",
         portal_url: "https://etudesenfrance.diplomatie.gouv.fr/connexion",
+        default_docs: { passport: true, degree: true, moi: true, sop: true, recs: true },
         default_note: "Candidate ID: ET26-00453. Target Programs: UGA MoSIG (61801), UGA Cloud (61800), Lille (60987), CentraleSupélec AI (60589). Monitoring intake cart twice weekly (Mon & Fri)."
+      },
+      {
+        id: "italy-polimi",
+        country: "Italy",
+        flag: "🇮🇹",
+        university: "Politecnico di Milano",
+        program: "MSc Computer Science and Engineering",
+        funding: "DSU Lombardia Scholarship",
+        benefits: "100% Tuition + Housing + €7,650/yr Cash + Meals",
+        language: "MOI Accepted (English Taught)",
+        intake: "Fall 2027 (Starts Sept 2027)",
+        deadline: "2026-11-15",
+        status: "STARTED", // R1 active
+        priority: "P1",
+        portal_url: "https://www.polimi.it/en/international-prospective-students",
+        default_docs: { passport: true, degree: true, moi: true, sop: true, recs: true },
+        default_note: "URGENT: Round 1 closes Nov 15, 2026! Submit master portfolio & MOI."
+      },
+      {
+        id: "italy-padua",
+        country: "Italy",
+        flag: "🇮🇹",
+        university: "University of Padua (UNIPD)",
+        program: "MSc Computer Engineering / Data Science",
+        funding: "Veneto ESU Scholarship + Excellence Grant",
+        benefits: "100% Tuition + Housing Subsidy + €7,000/yr Cash + Meals",
+        language: "MOI Accepted (NO IELTS)",
+        intake: "Fall 2027 (Starts Oct 2027)",
+        deadline: "2027-02-02",
+        status: "NEEDS_DOCS", // Waiting portal & physical stamp
+        priority: "P1",
+        portal_url: "https://apply.unipd.it/",
+        default_docs: { passport: true, degree: true, moi: false, sop: true, recs: true },
+        default_note: "Portal opens Nov 2, 2026. Automatic consideration for €8,000/yr merit grant."
       },
       {
         id: "italy-trento",
@@ -946,42 +1175,11 @@
         language: "MOI Accepted (NO IELTS)",
         intake: "Fall 2027 (Sept/Oct 2027)",
         deadline: "2027-02-20",
-        status: "READY_TO_APPLY",
+        status: "NOT_STARTED", // Opens Dec 1
         priority: "P1",
         portal_url: "https://www.unitn.it/en/apply",
+        default_docs: { passport: true, degree: true, moi: true, sop: false, recs: true },
         default_note: "Top CS ranking in Italy. Guaranteed need-based DSU award. Portal opens Dec 1, 2026."
-      },
-      {
-        id: "italy-polimi",
-        country: "Italy",
-        flag: "🇮🇹",
-        university: "Politecnico di Milano",
-        program: "MSc Computer Science and Engineering",
-        funding: "DSU Lombardia Scholarship",
-        benefits: "100% Tuition + Housing + €7,650/yr Cash + Meals",
-        language: "MOI Accepted (Degree taught in English)",
-        intake: "Fall 2027 (Starts Sept 2027)",
-        deadline: "2026-11-15",
-        status: "ROUND_1_ACTIVE",
-        priority: "P1",
-        portal_url: "https://www.polimi.it/en/international-prospective-students",
-        default_note: "URGENT: Round 1 closes Nov 15, 2026! Submit master portfolio & MOI."
-      },
-      {
-        id: "italy-padua",
-        country: "Italy",
-        flag: "🇮🇹",
-        university: "University of Padua (UNIPD)",
-        program: "MSc Computer Engineering / Data Science",
-        funding: "Veneto ESU Scholarship + Padua International Excellence",
-        benefits: "100% Tuition + Housing Subsidy + €7,000/yr Cash + Meals",
-        language: "MOI Accepted (NO IELTS)",
-        intake: "Fall 2027 (Starts Oct 2027)",
-        deadline: "2027-02-02",
-        status: "DOSSIER_PREPARATION",
-        priority: "P1",
-        portal_url: "https://apply.unipd.it/",
-        default_note: "Portal opens Nov 2, 2026. Automatic consideration for €8,000/yr merit grant."
       },
       {
         id: "china-hit",
@@ -989,14 +1187,15 @@
         flag: "🇨🇳",
         university: "Harbin Institute of Technology (HIT)",
         program: "MSc Computer Science & Technology",
-        funding: "Chinese Government Scholarship (CSC Type B - 10213)",
+        funding: "Chinese Government Scholarship (CSC Type B)",
         benefits: "100% Tuition + Free Dorm + 3,000 RMB/mo + Medical",
         language: "MOI Accepted (NO IELTS)",
         intake: "Fall 2027 (Starts Sept 2027)",
         deadline: "2027-02-15",
-        status: "PROFESSORS_CONTACTED",
+        status: "STARTED", // 2 profs contacted
         priority: "P1",
         portal_url: "http://studyathit.hit.edu.cn/",
+        default_docs: { passport: true, degree: true, moi: true, sop: true, recs: true },
         default_note: "Profs. Weizhe Zhang (Distributed) & Shaohuai Shi (ML) contacted. Follow-up: Oct 12 & 13."
       },
       {
@@ -1005,14 +1204,15 @@
         flag: "🇨🇳",
         university: "Beijing Institute of Technology (BIT)",
         program: "MSc Computer Science",
-        funding: "CSC Type B (10007) / BIT Fellowship",
+        funding: "CSC Type B / BIT Fellowship",
         benefits: "100% Tuition + Free Dorm + 3,000 RMB/mo + Medical",
         language: "MOI Accepted (NO IELTS)",
         intake: "Fall 2027 (Starts Sept 2027)",
         deadline: "2027-02-15",
-        status: "PROFESSORS_CONTACTED",
+        status: "STARTED", // 2 profs contacted
         priority: "P1",
         portal_url: "https://isc.bit.edu.cn/",
+        default_docs: { passport: true, degree: true, moi: true, sop: true, recs: true },
         default_note: "Assoc. Prof. Song Yang (Edge) & Prof. Meihui Zhang (DB) contacted. Follow-up: Oct 12 & 13."
       },
       {
@@ -1021,14 +1221,15 @@
         flag: "🇨🇳",
         university: "Univ. of Science & Technology of China (USTC)",
         program: "MSc Computer Science",
-        funding: "CSC Type B (10358) / USTC Fellowship",
+        funding: "CSC Type B / USTC Fellowship",
         benefits: "100% Tuition + Free Dorm + 3,000 RMB/mo + Medical",
         language: "MOI Accepted (NO IELTS)",
         intake: "Fall 2027 (Starts Sept 2027)",
         deadline: "2027-03-15",
-        status: "PROFESSORS_CONTACTED",
+        status: "STARTED", // 2 profs contacted
         priority: "P1",
         portal_url: "https://isa.ustc.edu.cn/",
+        default_docs: { passport: true, degree: true, moi: true, sop: true, recs: true },
         default_note: "Profs. Mingjun Xiao (Algorithms) & Gongming Zhao (Cloud) contacted. Follow-up: Oct 12 & 13."
       },
       {
@@ -1042,9 +1243,10 @@
         language: "MOI Accepted (NO IELTS)",
         intake: "Fall 2027 (Starts Sept 2027)",
         deadline: "2026-11-01",
-        status: "PORTFOLIO_SUBMITTED",
+        status: "FINISHED", // 93 Pts submitted
         priority: "P1",
         portal_url: "https://od.globaluni.ru/en/",
+        default_docs: { passport: true, degree: true, moi: true, sop: true, recs: true },
         default_note: "Candidate ID: 396112. Portfolio submitted with verified 93/100 points! Stage 1 results due mid-November."
       },
       {
@@ -1058,9 +1260,10 @@
         language: "MOI Accepted (NO IELTS)",
         intake: "Fall 2027 (Starts Oct 2027)",
         deadline: "2027-04-30",
-        status: "UPCOMING",
+        status: "NOT_STARTED",
         priority: "P1",
         portal_url: "https://unical.portaleamministrazionetrasparente.it/",
+        default_docs: { passport: true, degree: true, moi: true, sop: false, recs: true },
         default_note: "120 full-ride awards for non-EU; very high Ethiopian success rate."
       },
       {
@@ -1074,9 +1277,10 @@
         language: "MOI Accepted (NO IELTS)",
         intake: "Fall 2027 (Starts Sept 2027)",
         deadline: "2027-01-15",
-        status: "UPCOMING",
+        status: "NOT_STARTED", // Opens Nov 15
         priority: "P2",
         portal_url: "https://apply.stipendiumhungaricum.hu/",
+        default_docs: { passport: true, degree: true, moi: true, sop: false, recs: true },
         default_note: "DreamApply portal opens Nov 15, 2026. Partner quota for Ethiopian applicants."
       },
       {
@@ -1090,9 +1294,10 @@
         language: "MOI Exemption Form (NO IELTS)",
         intake: "Fall 2027 (Sept 2027)",
         deadline: "2026-12-01",
-        status: "RESEARCHING_ADVISORS",
+        status: "NEEDS_DOCS", // Needs supervisor agreement
         priority: "P2",
         portal_url: "https://umanitoba.ca/admissions",
+        default_docs: { passport: true, degree: true, moi: true, sop: false, recs: true },
         default_note: "Priority cutoff Dec 1, 2026. Identifying potential supervisor for UMGF nomination."
       },
       {
@@ -1106,9 +1311,10 @@
         language: "English Medium (NO IELTS)",
         intake: "Spring 2027 & Fall 2027",
         deadline: "2026-12-15",
-        status: "APPLICATIONS_OPEN",
+        status: "STARTED",
         priority: "P2",
         portal_url: "https://www.alueducation.com/",
+        default_docs: { passport: true, degree: true, moi: true, sop: true, recs: true },
         default_note: "Pan-African scholarship. Zero visa refusal risk for Ethiopians. Applications open now."
       },
       {
@@ -1122,17 +1328,18 @@
         language: "Basic English (No Certificate Needed)",
         intake: "Rolling 2026–2027",
         deadline: "Year-Round",
-        status: "EMPLOYER_RESEARCH",
+        status: "NOT_STARTED",
         priority: "Work Track",
         portal_url: "https://workinromania.gov.ro/",
+        default_docs: { passport: true, degree: false, moi: false, sop: false, recs: false },
         default_note: "Commercial backup to enter EU legally with 2 years driving experience."
       }
     ];
 
-    // Local Storage Notes Management
-    const STORAGE_KEY = "fuad_scholarship_user_notes_v1";
+    // Storage Management (State v2)
+    const STORAGE_KEY = "fuad_scholarship_state_v2";
 
-    function getUserNotes() {
+    function getAppState() {
       try {
         const stored = localStorage.getItem(STORAGE_KEY);
         return stored ? JSON.parse(stored) : {};
@@ -1141,253 +1348,526 @@
       }
     }
 
-    function saveUserNotes(notes) {
+    function saveAppState(state) {
       try {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(notes));
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
       } catch (e) {
-        console.error("Storage save failed", e);
-      }
-      updateNotesMetric();
-    }
-
-    let activeFilter = 'all';
-    let currentEditTrackId = null;
-
-    // Load Live applications.json or fallback
-    let tracks = defaultTracks;
-    fetch('./applications.json')
-      .then(r => r.json())
-      .then(data => {
-        if (data && data.active_tracks && data.active_tracks.length > 0) {
-          tracks = data.active_tracks.map(t => {
-            const def = defaultTracks.find(d => d.id === t.id);
-            return {
-              id: t.id,
-              country: t.country,
-              flag: def ? def.flag : '🌐',
-              university: t.university,
-              program: t.program,
-              funding: t.funding,
-              benefits: t.benefits,
-              language: t.language_requirement,
-              intake: t.target_intake,
-              deadline: t.deadline,
-              status: t.status,
-              priority: t.priority,
-              portal_url: t.portal_url,
-              default_note: t.notes || (def ? def.default_note : "")
-            };
-          });
-          renderApp();
-        }
-      })
-      .catch(() => {
-        renderApp();
-      });
-
-    function getStatusBadge(status) {
-      const s = (status || "").toUpperCase();
-      if (s.includes("COMPLETED") || s.includes("SUBMITTED") || s.includes("93")) {
-        return `<span class="badge-status st-done">COMPLETED</span>`;
-      } else if (s.includes("READY") || s.includes("ACTIVE") || s.includes("OPEN")) {
-        return `<span class="badge-status st-ready">ACTIVE</span>`;
-      } else if (s.includes("SENT") || s.includes("CONTACTED")) {
-        return `<span class="badge-status st-sent">OUTREACH SENT</span>`;
-      } else {
-        return `<span class="badge-status st-wait">UPCOMING</span>`;
+        console.error(e);
       }
     }
 
-    function renderApp() {
-      const container = document.getElementById("cardsContainer");
-      const searchVal = document.getElementById("searchInput").value.toLowerCase().trim();
-      const userNotes = getUserNotes();
+    let currentViewMode = "grid"; // "grid" | "kanban" | "timeline"
+    let currentStageFilter = "all"; // "all" | "NOT_STARTED" | "STARTED" | "NEEDS_DOCS" | "FINISHED" | "FAILED"
+    let currentCountryFilter = "all";
+    let filterNotesOnlyActive = false;
 
-      const filtered = tracks.filter(t => {
-        const note = userNotes[t.id] || t.default_note || "";
+    let targetTrackForStatus = null;
+    let targetTrackForNote = null;
+    let targetTrackForAgy = null;
+    let agyPromptMode = "login"; // "login" | "apply" | "sop"
 
-        if (activeFilter === "notes" && !userNotes[t.id]) return false;
-        if (activeFilter === "france" && !t.country.toLowerCase().includes("france")) return false;
-        if (activeFilter === "italy" && !t.country.toLowerCase().includes("italy")) return false;
-        if (activeFilter === "china" && !t.country.toLowerCase().includes("china")) return false;
-        if (activeFilter === "russia" && !t.country.toLowerCase().includes("russia")) return false;
-        if (activeFilter === "p1" && t.priority !== "P1") return false;
-        if (activeFilter === "work" && !t.id.includes("work") && !t.funding.toLowerCase().includes("labor")) return false;
+    const docLabels = {
+      passport: "Biometric Passport (E00340202)",
+      degree: "3-Page Combined Degree & Transcripts",
+      moi: "St. Mary's English MOI Certificate",
+      sop: "Tailored SOP / Study Plan",
+      recs: "Recommendation Letters (St. Mary's)"
+    };
 
-        if (searchVal) {
-          const haystack = `${t.country} ${t.university} ${t.program} ${t.funding} ${t.status} ${t.id} ${note}`.toLowerCase();
-          if (!haystack.includes(searchVal)) return false;
+    function getTrackData(t) {
+      const state = getAppState();
+      const trackState = state[t.id] || {};
+      const status = trackState.status || t.status;
+      const note = (trackState.note !== undefined) ? trackState.note : t.default_note;
+      const docs = Object.assign({}, t.default_docs, trackState.docs || {});
+      return { status, note, docs, hasCustomNote: (trackState.note && trackState.note.trim().length > 0) };
+    }
+
+    function getStatusBadgeHtml(status, trackId) {
+      const s = status.toUpperCase();
+      let cls = "st-not-started";
+      let text = "⚪ NOT STARTED";
+
+      if (s === "STARTED") { cls = "st-started"; text = "🔵 IN PROGRESS"; }
+      else if (s === "NEEDS_DOCS") { cls = "st-needs-docs"; text = "🟠 NEEDS DOCS"; }
+      else if (s === "FINISHED") { cls = "st-finished"; text = "🟢 FINISHED"; }
+      else if (s === "FAILED") { cls = "st-failed"; text = "🔴 FAILED"; }
+
+      return `<button class="status-picker-trigger ${cls}" onclick="openStatusPicker('${trackId}')">${text} ▾</button>`;
+    }
+
+    function calculateDaysLeft(deadlineStr) {
+      if (!deadlineStr || deadlineStr.includes("Year") || deadlineStr.includes("Rolling")) return "Rolling";
+      try {
+        const target = new Date(deadlineStr);
+        const now = new Date();
+        const diff = target - now;
+        const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
+        if (days < 0) return "Passed";
+        if (days === 0) return "Due Today";
+        return `${days}d left`;
+      } catch (e) {
+        return deadlineStr;
+      }
+    }
+
+    function render() {
+      updateKpis();
+
+      if (currentViewMode === "grid") {
+        document.getElementById("viewCardsGrid").style.display = "grid";
+        document.getElementById("viewKanbanBoard").style.display = "none";
+        document.getElementById("viewTimeline").style.display = "none";
+        renderCardsGrid();
+      } else if (currentViewMode === "kanban") {
+        document.getElementById("viewCardsGrid").style.display = "none";
+        document.getElementById("viewKanbanBoard").style.display = "grid";
+        document.getElementById("viewTimeline").style.display = "none";
+        renderKanban();
+      } else if (currentViewMode === "timeline") {
+        document.getElementById("viewCardsGrid").style.display = "none";
+        document.getElementById("viewKanbanBoard").style.display = "none";
+        document.getElementById("viewTimeline").style.display = "flex";
+        renderTimeline();
+      }
+    }
+
+    function filterTracks(list) {
+      const search = document.getElementById("searchInput").value.toLowerCase().trim();
+
+      return list.filter(t => {
+        const { status, note } = getTrackData(t);
+
+        // Stage filter
+        if (currentStageFilter !== "all" && status !== currentStageFilter) return false;
+
+        // Country filter
+        if (currentCountryFilter === "france" && !t.country.toLowerCase().includes("france")) return false;
+        if (currentCountryFilter === "italy" && !t.country.toLowerCase().includes("italy")) return false;
+        if (currentCountryFilter === "china" && !t.country.toLowerCase().includes("china")) return false;
+        if (currentCountryFilter === "russia" && !t.country.toLowerCase().includes("russia")) return false;
+        if (currentCountryFilter === "p1" && t.priority !== "P1") return false;
+        if (currentCountryFilter === "work" && !t.id.includes("work")) return false;
+
+        // Notes only
+        if (filterNotesOnlyActive && !note) return false;
+
+        // Search text
+        if (search) {
+          const haystack = `${t.country} ${t.university} ${t.program} ${t.funding} ${t.id} ${note} ${status}`.toLowerCase();
+          if (!haystack.includes(search)) return false;
         }
 
         return true;
       });
+    }
+
+    function updateKpis() {
+      let countStarted = 0, countNeedsDocs = 0, countFinished = 0, countNotStarted = 0;
+
+      masterTracks.forEach(t => {
+        const { status } = getTrackData(t);
+        if (status === "STARTED") countStarted++;
+        else if (status === "NEEDS_DOCS") countNeedsDocs++;
+        else if (status === "FINISHED") countFinished++;
+        else countNotStarted++;
+      });
+
+      document.getElementById("count-all").textContent = masterTracks.length;
+      document.getElementById("count-started").textContent = countStarted;
+      document.getElementById("count-needs-docs").textContent = countNeedsDocs;
+      document.getElementById("count-finished").textContent = countFinished;
+      document.getElementById("count-not-started").textContent = countNotStarted;
+    }
+
+    function renderCardsGrid() {
+      const container = document.getElementById("viewCardsGrid");
+      const filtered = filterTracks(masterTracks);
 
       if (filtered.length === 0) {
         container.innerHTML = `
           <div style="grid-column: 1 / -1; text-align: center; padding: 48px 20px; color: var(--text-2); background: var(--ks-paper); border-radius: var(--radius-lg); border: 1px dashed var(--ks-hairline);">
-            <div style="font-size: 32px; margin-bottom: 8px;">🔍</div>
-            <p style="font-size: 14px; font-weight: 600;">No matching opportunities found.</p>
-            <p style="font-size: 12px; color: var(--text-3); margin-top: 4px;">Try searching for a different country, or tap "All Opportunities".</p>
+            <div style="font-size: 30px; margin-bottom: 8px;">🔍</div>
+            <p style="font-size: 14px; font-weight: 700;">No opportunities match your filter.</p>
+            <p style="font-size: 12px; color: var(--text-3); margin-top: 4px;">Tap "All Opportunities" to reset filters.</p>
           </div>
         `;
         return;
       }
 
       container.innerHTML = filtered.map(t => {
-        const customNote = userNotes[t.id];
-        const displayNote = customNote || t.default_note || "No specific notes yet. Tap to add a reminder.";
-        const isCustom = Boolean(customNote);
-
-        // Prebuilt prompt for AGY CLI
-        const agyPrompt = `agy "Open browser and check status for ${t.university} (${t.program}) on portal: ${t.portal_url}"`;
+        const { status, note, docs, hasCustomNote } = getTrackData(t);
+        const docKeys = Object.keys(docs);
+        const docsReadyCount = docKeys.filter(k => docs[k]).length;
+        const docsTotal = docKeys.length;
+        const daysLeft = calculateDaysLeft(t.deadline);
 
         return `
-          <article class="opp-card ${isCustom ? 'has-user-note' : ''}">
+          <article class="track-card ${hasCustomNote ? 'has-notes' : ''}">
             <div>
-              <div class="card-meta-header">
-                <div class="country-indicator">
+              <div class="card-top-row">
+                <div class="country-title">
                   <span>${t.flag}</span>
                   <span>${t.country}</span>
                 </div>
-                ${getStatusBadge(t.status)}
+                ${getStatusBadgeHtml(status, t.id)}
               </div>
 
-              <h3 class="card-uni">${t.university}</h3>
-              <p class="card-degree">${t.program}</p>
+              <h3 class="uni-heading">${t.university}</h3>
+              <p class="program-desc">${t.program}</p>
 
-              <div class="card-specs-table">
-                <div class="spec-row">
-                  <span class="spec-k">Financial Award</span>
-                  <span class="spec-v green">${t.benefits}</span>
+              <div class="specs-grid">
+                <div class="spec-item">
+                  <span class="spec-label">Financial Value</span>
+                  <span class="spec-value" style="color:#34d399;">${t.benefits}</span>
                 </div>
-                <div class="spec-row">
-                  <span class="spec-k">Target Intake</span>
-                  <span class="spec-v">${t.intake}</span>
+                <div class="spec-item">
+                  <span class="spec-label">Target Intake</span>
+                  <span class="spec-value">${t.intake}</span>
                 </div>
-                <div class="spec-row">
-                  <span class="spec-k">Cutoff Deadline</span>
-                  <span class="spec-v amber">${t.deadline}</span>
+                <div class="spec-item">
+                  <span class="spec-label">Deadline</span>
+                  <span class="spec-value" style="color:#fbbf24; font-family:monospace;">${t.deadline} (${daysLeft})</span>
                 </div>
-                <div class="spec-row">
-                  <span class="spec-k">Language Policy</span>
-                  <span class="spec-v" style="color: #93c5fd;">${t.language}</span>
+                <div class="spec-item">
+                  <span class="spec-label">Language Policy</span>
+                  <span class="spec-value" style="color:#93c5fd;">${t.language}</span>
                 </div>
+              </div>
+
+              <!-- Interactive Document Checklist -->
+              <div class="doc-checklist-trigger" onclick="toggleDocAccordion('${t.id}')">
+                <span>📄 Document Readiness</span>
+                <span class="doc-fraction">${docsReadyCount}/${docsTotal} Ready ▾</span>
+              </div>
+              <div class="doc-accordion-body" id="doc-acc-${t.id}">
+                ${docKeys.map(k => `
+                  <label class="doc-check-row">
+                    <input type="checkbox" ${docs[k] ? 'checked' : ''} onchange="toggleDocItem('${t.id}', '${k}', this.checked)">
+                    <span>${docLabels[k]}</span>
+                  </label>
+                `).join('')}
               </div>
 
               <!-- Interactive Notes & Reminders -->
-              <div class="note-box">
-                <div class="note-box-header">
-                  <span class="note-kicker">${isCustom ? '📌 My Reminder Note' : '💡 Research Note'}</span>
-                  <button class="btn-edit-note" onclick="openNoteModal('${t.id}', '${t.university.replace(/'/g, "\\'")}')">
-                    ${isCustom ? 'Edit Note' : '+ Add Note'}
-                  </button>
+              <div class="note-card-box">
+                <div class="note-card-header">
+                  <span class="note-tag">${hasCustomNote ? '📌 Personal Reminder' : '💡 Research Note'}</span>
+                  <button class="btn-text-edit" onclick="openNoteModal('${t.id}', '${t.university.replace(/'/g, "\\'")}')">Edit Note</button>
                 </div>
-                <p class="note-content-text" id="note-text-${t.id}">${displayNote}</p>
+                <p class="note-body-text">${note || 'No custom notes yet. Tap Edit Note to add reminders.'}</p>
               </div>
             </div>
 
-            <!-- Action Bar -->
-            <div class="card-actions-bar">
-              <a href="${t.portal_url}" target="_blank" rel="noopener" class="btn-primary-action">
+            <!-- Card Actions -->
+            <div class="card-footer-actions">
+              <a href="${t.portal_url}" target="_blank" rel="noopener" class="btn-action-portal">
                 Open Portal ↗
               </a>
-              <button class="btn-secondary-action" title="Copy agy CLI command" onclick="copyText('${agyPrompt.replace(/"/g, '&quot;')}', 'Copied agy CLI browser command!')">
-                🤖 agy
+              <button class="btn-action-tool" onclick="openAgyModal('${t.id}')" title="Copy agy automation command">
+                🤖 agy Prompt
               </button>
-              <button class="btn-secondary-action" title="Copy summary" onclick="copyText('${t.university} (${t.country}) | ${t.program} | Deadline: ${t.deadline} | Status: ${t.status}', 'Opportunity info copied!')">
+              <button class="btn-action-tool" onclick="copyText('${t.university} (${t.country}) | ${t.program} | Deadline: ${t.deadline}', 'Opportunity summary copied!')" title="Copy summary">
                 📋
               </button>
             </div>
           </article>
         `;
       }).join('');
-
-      updateNotesMetric();
     }
 
-    function updateNotesMetric() {
-      const userNotes = getUserNotes();
-      const count = Object.keys(userNotes).length;
-      const el = document.getElementById("metric-notes");
+    function renderKanban() {
+      const container = document.getElementById("viewKanbanBoard");
+      const filtered = filterTracks(masterTracks);
+
+      const columns = [
+        { id: "NOT_STARTED", label: "⚪ NOT STARTED", count: 0 },
+        { id: "STARTED", label: "🔵 IN PROGRESS", count: 0 },
+        { id: "NEEDS_DOCS", label: "🟠 NEEDS DOCS", count: 0 },
+        { id: "FINISHED", label: "🟢 FINISHED", count: 0 },
+        { id: "FAILED", label: "🔴 FAILED", count: 0 }
+      ];
+
+      const grouped = {
+        NOT_STARTED: [],
+        STARTED: [],
+        NEEDS_DOCS: [],
+        FINISHED: [],
+        FAILED: []
+      };
+
+      filtered.forEach(t => {
+        const { status } = getTrackData(t);
+        const col = grouped[status] || grouped.NOT_STARTED;
+        col.push(t);
+      });
+
+      container.innerHTML = columns.map(c => `
+        <div class="kanban-col">
+          <div class="kanban-col-header">
+            <span>${c.label}</span>
+            <span style="font-family:monospace; color:var(--text-3);">${grouped[c.id].length}</span>
+          </div>
+          ${grouped[c.id].map(t => {
+            const { note } = getTrackData(t);
+            return `
+              <div class="kanban-card" onclick="openStatusPicker('${t.id}')">
+                <div style="font-size: 11px; color: var(--text-2); margin-bottom: 2px;">${t.flag} ${t.country}</div>
+                <div class="kanban-card-title">${t.university}</div>
+                <div style="font-size: 11px; color: #34d399; margin-bottom: 4px;">${t.benefits}</div>
+                <div style="font-size: 11px; color: #fbbf24; font-family: monospace;">Due: ${t.deadline}</div>
+                ${note ? `<div style="margin-top:6px; font-size:10.5px; color:var(--text-2); border-top:1px dashed var(--ks-hairline); padding-top:4px;">📌 ${note.slice(0, 50)}...</div>` : ''}
+              </div>
+            `;
+          }).join('')}
+        </div>
+      `).join('');
+    }
+
+    function renderTimeline() {
+      const container = document.getElementById("viewTimeline");
+      const filtered = filterTracks(masterTracks);
+
+      const sorted = [...filtered].sort((a, b) => (a.deadline || "9999").localeCompare(b.deadline || "9999"));
+
+      container.innerHTML = sorted.map(t => {
+        const { status, note } = getTrackData(t);
+        const daysLeft = calculateDaysLeft(t.deadline);
+
+        return `
+          <div class="timeline-row">
+            <div>
+              <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
+                <span>${t.flag} <strong>${t.university}</strong> (${t.country})</span>
+                ${getStatusBadgeHtml(status, t.id)}
+              </div>
+              <div style="font-size:12.5px; color:var(--text-2);">${t.program} • <span style="color:#34d399;">${t.benefits}</span></div>
+              ${note ? `<div style="font-size:11px; color:#fbbf24; margin-top:4px;">📌 ${note}</div>` : ''}
+            </div>
+
+            <div class="timeline-countdown">
+              <div class="countdown-days">${daysLeft}</div>
+              <div style="font-size:11px; color:var(--text-3); font-family:monospace;">Cutoff: ${t.deadline}</div>
+              <div style="margin-top:6px; display:flex; gap:6px;">
+                <a href="${t.portal_url}" target="_blank" class="btn-nav" style="padding:4px 8px; font-size:11px;">Portal ↗</a>
+                <button class="btn-nav" style="padding:4px 8px; font-size:11px;" onclick="openAgyModal('${t.id}')">🤖 agy</button>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // View Switching
+    function setViewMode(mode) {
+      currentViewMode = mode;
+      document.querySelectorAll(".btn-view-mode").forEach(b => b.classList.remove("active"));
+      if (mode === "grid") document.getElementById("btn-view-grid").classList.add("active");
+      if (mode === "kanban") document.getElementById("btn-view-kanban").classList.add("active");
+      if (mode === "timeline") document.getElementById("btn-view-timeline").classList.add("active");
+      render();
+    }
+
+    // Status Picker
+    function openStatusPicker(trackId) {
+      targetTrackForStatus = trackId;
+      const t = masterTracks.find(item => item.id === trackId);
+      document.getElementById("statusPickerSub").textContent = `Select new status for ${t ? t.university : trackId}:`;
+      document.getElementById("statusPickerModal").style.display = "flex";
+    }
+
+    function closeStatusPicker() {
+      document.getElementById("statusPickerModal").style.display = "none";
+      targetTrackForStatus = null;
+    }
+
+    function selectStatus(newStatus) {
+      if (!targetTrackForStatus) return;
+      const state = getAppState();
+      if (!state[targetTrackForStatus]) state[targetTrackForStatus] = {};
+      state[targetTrackForStatus].status = newStatus;
+      saveAppState(state);
+      closeStatusPicker();
+      render();
+      showToast(`Status updated to ${newStatus.replace('_', ' ')}!`);
+    }
+
+    // Document Checklist Toggle
+    function toggleDocAccordion(trackId) {
+      const el = document.getElementById(`doc-acc-${trackId}`);
       if (el) {
-        el.innerHTML = `${count} <span class="metric-sub">${count === 1 ? 'note' : 'notes'} saved</span>`;
+        el.style.display = (el.style.display === "block") ? "none" : "block";
       }
     }
 
-    // Modal Operations
-    function openNoteModal(trackId, title) {
-      currentEditTrackId = trackId;
-      const userNotes = getUserNotes();
-      const current = userNotes[trackId] || "";
-      
-      document.getElementById("noteModalTitle").textContent = `Reminder for ${title}`;
-      document.getElementById("noteInput").value = current;
+    function toggleDocItem(trackId, docKey, isChecked) {
+      const state = getAppState();
+      if (!state[trackId]) state[trackId] = {};
+      if (!state[trackId].docs) {
+        const t = masterTracks.find(item => item.id === trackId);
+        state[trackId].docs = Object.assign({}, t ? t.default_docs : {});
+      }
+      state[trackId].docs[docKey] = isChecked;
+      saveAppState(state);
+      render();
+      showToast(`Checklist updated for ${docKey}!`);
+    }
+
+    // Smart agy Prompt Generator
+    function openAgyModal(trackId) {
+      targetTrackForAgy = trackId;
+      const t = masterTracks.find(item => item.id === trackId);
+      document.getElementById("agyModalTitle").textContent = `🤖 agy Prompt: ${t ? t.university : trackId}`;
+      updateAgyPromptContent();
+      document.getElementById("agyModal").style.display = "flex";
+    }
+
+    function closeAgyModal() {
+      document.getElementById("agyModal").style.display = "none";
+      targetTrackForAgy = null;
+    }
+
+    function setPromptMode(mode) {
+      agyPromptMode = mode;
+      document.querySelectorAll(".btn-prompt-tab").forEach(b => b.classList.remove("active"));
+      if (mode === "login") document.getElementById("tab-login").classList.add("active");
+      if (mode === "apply") document.getElementById("tab-apply").classList.add("active");
+      if (mode === "sop") document.getElementById("tab-sop").classList.add("active");
+      updateAgyPromptContent();
+    }
+
+    function updateAgyPromptContent() {
+      if (!targetTrackForAgy) return;
+      const t = masterTracks.find(item => item.id === targetTrackForAgy);
+      if (!t) return;
+
+      let prompt = "";
+      if (agyPromptMode === "login") {
+        if (t.id.includes("france")) {
+          prompt = `agy "/browser Navigate to https://etudesenfrance.diplomatie.gouv.fr/connexion, log in with candidate ID ET26-00453 (Password: FuadFrance2027!#), and verify if the program cart intake for UGA MoSIG (ID 61801) is unlocked for submission."`;
+        } else if (t.id.includes("russia")) {
+          prompt = `agy "/browser Open https://od.globaluni.ru/en/ with Candidate ID 396112 and check Stage 1 portfolio verification status."`;
+        } else {
+          prompt = `agy "/browser Navigate to ${t.portal_url}, inspect the admission portal for ${t.university} (${t.program}), and check application opening dates and required document upload slots."`;
+        }
+      } else if (agyPromptMode === "apply") {
+        prompt = `agy "/browser Open ${t.portal_url} and begin application for Fuad Ahmed. Use verified dossier in APPLICANT_DOSSIER.md (Legal name: TUBA, FUAD AHMED, DOB: 16/02/1999, Passport: E00340202, BSc Computer Science at St. Mary's University with 3.20 Major GPA, English Medium of Instruction exempt from IELTS). Attach 3-page combined degree and CV."`;
+      } else if (agyPromptMode === "sop") {
+        prompt = `agy "Review ${t.university} MSc Computer Science curriculum (${t.program}) and draft a tailored 2-page academic Statement of Purpose emphasizing Fuad's 4+ years background in Distributed Systems, Cloud Computing, and Backend Architecture."`;
+      }
+
+      document.getElementById("agyPromptBox").textContent = prompt;
+    }
+
+    function copyAgyPrompt() {
+      const text = document.getElementById("agyPromptBox").textContent;
+      copyText(text, "agy prompt copied! Paste into terminal.");
+      closeAgyModal();
+    }
+
+    // Notes
+    function openNoteModal(trackId, uniName) {
+      targetTrackForNote = trackId;
+      const { note } = getTrackData(masterTracks.find(item => item.id === trackId));
+      document.getElementById("noteModalTitle").textContent = `Reminder for ${uniName}`;
+      document.getElementById("noteInput").value = note || "";
       document.getElementById("noteModal").style.display = "flex";
       document.getElementById("noteInput").focus();
     }
 
     function closeNoteModal() {
       document.getElementById("noteModal").style.display = "none";
-      currentEditTrackId = null;
+      targetTrackForNote = null;
     }
 
     function saveCurrentNote() {
-      if (!currentEditTrackId) return;
-      const val = document.getElementById("noteInput").value.trim();
-      const notes = getUserNotes();
-      if (val) {
-        notes[currentEditTrackId] = val;
-        copyToast("Reminder note saved!");
-      } else {
-        delete notes[currentEditTrackId];
-        copyToast("Note removed.");
-      }
-      saveUserNotes(notes);
+      if (!targetTrackForNote) return;
+      const text = document.getElementById("noteInput").value.trim();
+      const state = getAppState();
+      if (!state[targetTrackForNote]) state[targetTrackForNote] = {};
+      state[targetTrackForNote].note = text;
+      saveAppState(state);
       closeNoteModal();
-      renderApp();
+      render();
+      showToast("Reminder note saved!");
     }
 
-    function deleteCurrentNote() {
-      if (!currentEditTrackId) return;
-      const notes = getUserNotes();
-      delete notes[currentEditTrackId];
-      saveUserNotes(notes);
+    function clearCurrentNote() {
+      if (!targetTrackForNote) return;
+      const state = getAppState();
+      if (state[targetTrackForNote]) delete state[targetTrackForNote].note;
+      saveAppState(state);
       closeNoteModal();
-      renderApp();
-      copyToast("Note cleared.");
+      render();
+      showToast("Note cleared.");
     }
 
-    function exportNotes() {
-      const notes = getUserNotes();
-      const keys = Object.keys(notes);
-      if (keys.length === 0) {
-        alert("You haven't saved any custom notes yet. Tap '+ Add Note' on any scholarship card to write a reminder!");
-        return;
-      }
-      let exportText = "# Fuad Ahmed - My Scholarship Notes & Reminders\n\n";
-      keys.forEach(k => {
-        const t = tracks.find(item => item.id === k);
-        const name = t ? t.university : k;
-        exportText += `## ${name} (${k})\n${notes[k]}\n\n`;
-      });
+    // Export State
+    function openExportModal() {
+      const state = getAppState();
+      const exportObj = {
+        exported_at: new Date().toISOString(),
+        candidate: "Fuad Ahmed",
+        state: state
+      };
+      document.getElementById("exportJsonBox").textContent = JSON.stringify(exportObj, null, 2);
+      document.getElementById("exportModal").style.display = "flex";
+    }
 
-      const blob = new Blob([exportText], { type: "text/markdown" });
+    function closeExportModal() {
+      document.getElementById("exportModal").style.display = "none";
+    }
+
+    function copyExportJson() {
+      const txt = document.getElementById("exportJsonBox").textContent;
+      copyText(txt, "State JSON copied! Ready to sync to repository.");
+    }
+
+    function downloadStateJson() {
+      const txt = document.getElementById("exportJsonBox").textContent;
+      const blob = new Blob([txt], { type: "application/json" });
       const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
       a.href = url;
-      a.download = `fuad_scholarship_notes_${new Date().toISOString().slice(0, 10)}.md`;
+      a.download = `scholarship_state_${new Date().toISOString().slice(0, 10)}.json`;
       a.click();
       URL.revokeObjectURL(url);
-      copyToast("Notes exported as Markdown file!");
+      showToast("State downloaded as JSON!");
     }
 
-    function openProfileModal() {
-      document.getElementById("profileModal").style.display = "flex";
+    // Filter Controls
+    function filterByStage(stage) {
+      currentStageFilter = stage;
+      document.querySelectorAll(".pipeline-box").forEach(b => b.classList.remove("active-filter"));
+      if (stage === "all") document.getElementById("pipe-all").classList.add("active-filter");
+      if (stage === "STARTED") document.getElementById("pipe-started").classList.add("active-filter");
+      if (stage === "NEEDS_DOCS") document.getElementById("pipe-needs-docs").classList.add("active-filter");
+      if (stage === "FINISHED") document.getElementById("pipe-finished").classList.add("active-filter");
+      if (stage === "NOT_STARTED") document.getElementById("pipe-not-started").classList.add("active-filter");
+      render();
     }
 
-    function closeProfileModal() {
-      document.getElementById("profileModal").style.display = "none";
+    function setCountryFilter(c) {
+      currentCountryFilter = c;
+      document.querySelectorAll(".btn-filter-pill").forEach(b => b.classList.remove("active"));
+      event.target.classList.add("active");
+      render();
     }
+
+    function filterByNotesOnly() {
+      filterNotesOnlyActive = !filterNotesOnlyActive;
+      event.target.classList.toggle("active", filterNotesOnlyActive);
+      render();
+      showToast(filterNotesOnlyActive ? "Showing opportunities with notes" : "Showing all");
+    }
+
+    function handleSearch() {
+      render();
+    }
+
+    // Modals Helpers
+    function openProfileModal() { document.getElementById("profileModal").style.display = "flex"; }
+    function closeProfileModal() { document.getElementById("profileModal").style.display = "none"; }
 
     function closeModalOnBg(e, modalId) {
       if (e.target.id === modalId) {
@@ -1395,44 +1875,36 @@
       }
     }
 
-    function setFilter(f) {
-      activeFilter = f;
-      document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
-      event.target.classList.add("active");
-      renderApp();
-    }
-
-    function handleSearch() {
-      renderApp();
-    }
-
     function copyText(txt, msg = "Copied to clipboard!") {
       navigator.clipboard.writeText(txt).then(() => {
-        copyToast(msg);
+        showToast(msg);
       });
     }
 
-    function copyToast(msg) {
-      const toast = document.getElementById("toastPill");
+    function showToast(msg) {
+      const toast = document.getElementById("toastMsg");
       toast.textContent = msg;
       toast.classList.add("show");
       setTimeout(() => toast.classList.remove("show"), 2200);
     }
 
-    // Keyboard navigation
+    // Keyboard Shortcuts
     document.addEventListener("keydown", (e) => {
       if (e.key === "/" && document.activeElement.tagName !== "TEXTAREA" && document.activeElement.tagName !== "INPUT") {
         e.preventDefault();
         document.getElementById("searchInput").focus();
       }
       if (e.key === "Escape") {
+        closeAgyModal();
+        closeStatusPicker();
         closeNoteModal();
         closeProfileModal();
+        closeExportModal();
       }
     });
 
-    // Initial render
-    renderApp();
+    // Initial Execution
+    render();
   </script>
 </body>
 </html>

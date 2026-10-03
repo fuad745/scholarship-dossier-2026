@@ -1,0 +1,18 @@
+{
+  "name": "Fuad Ahmed Scholarships & Opportunities",
+  "short_name": "Scholarships",
+  "description": "Global Master's Scholarships & Visa Command Center for Fuad Ahmed",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0c1017",
+  "theme_color": "#0c1017",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
