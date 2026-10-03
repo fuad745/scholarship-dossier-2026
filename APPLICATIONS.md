@@ -47,7 +47,7 @@ python3 track.py update italy-trento APPLIED
 | `canada-manitoba` | 🇨🇦 Canada | **University of Manitoba** | MSc in Computer Science | **UMGF Graduate Fellowship** | Up to $28,000 CAD Fellowship ($14k/yr) | MOI Waiver Request Form | **Fall 2027** & **Winter 2028** | **Dec 1, 2026** *(Priority)* | 🟡 Finding Supervisor | **P2** |
 | `rwanda-alu` | 🇷🇼 Rwanda | **African Leadership Univ. (ALU)** | Tech & Entrepreneurial Leadership | **Mastercard Foundation** | 100% Tuition + Housing + Flights + Laptop + Stipend | English Medium Degree | **Spring 2027** & **Fall 2027** | **Dec 15, 2026** *(Priority)* | 🟢 Applications Open | **P2** |
 | `romania-work-visa` | 🇷🇴 Romania | **Employment Track** | Courier / Fleet Driver | **Non-EU Labor Quota (D/AM2)** | €700–€1,200/mo + Legal EU Residency | Basic English (No test) | **Rolling 2026–2027** | **Open Year-Round** | 🟡 Fleet Sponsor Review | **Work** |
-| `france-campus-france` | 🇫🇷 France | **Paris-Saclay / UGA / Lille / Lorraine** | MSc Computer Science (Distributed Systems & Cloud) | **Eiffel Scholarship + Tuition Waiver** | €1,181/mo + Flights (if Eiffel) OR Tuition €243/yr | St. Mary's MOI Certificate | **Fall 2027** *(Starts Sept 2027)* | **Dec 15, 2026** *(Opens Oct 1)* | 🟢 Activated (`ET26-00453`) | **P1** |
+| `france-campus-france` | 🇫🇷 France | **Paris-Saclay / UGA / Lille / Lorraine** | MSc Computer Science (Distributed Systems & Cloud) | **Eiffel Scholarship + Tuition Waiver** | €1,181/mo + Flights (if Eiffel) OR Tuition €243/yr | St. Mary's MOI Certificate | **Fall 2027** *(Starts Sept 2027)* | **Dec 15, 2026** *(Opens Oct 1)* | 🟢 Profile Completed (`ET26-00453`) | **P1** |
 
 ---
 
