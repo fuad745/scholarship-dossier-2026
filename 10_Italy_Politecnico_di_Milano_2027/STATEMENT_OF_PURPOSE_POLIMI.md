@@ -3,7 +3,7 @@
 **Degree Program:** Laurea Magistrale (MSc) in Computer Science and Engineering (*Ingegneria Informatica*)  
 **Campus:** Milano Leonardo  
 **Applicant:** FUAD AHMED (TUBA, FUAD AHMED)  
-**Email:** `fuadahmedt@gmail.com` | **Phone:** `+251 925 278 350` | **Residence:** Addis Ababa, Ethiopia  
+**Email:** `fuadahmedt@gmail.com` | **Phone:** `+251 925 278 350` | **Residence:** Kolfe Keraniyo Sub City, Addis Ababa, Ethiopia  
 
 ---
 
@@ -34,4 +34,4 @@ I bring to Politecnico di Milano a proven track record of engineering perseveran
 Sincerely and respectfully,  
 **Fuad Ahmed (TUBA, FUAD AHMED)**  
 BSc in Computer Science, St. Mary’s University  
-Addis Ababa, Ethiopia • `fuadahmedt@gmail.com`
+Kolfe Keraniyo Sub City, Addis Ababa, Ethiopia • `fuadahmedt@gmail.com`
