@@ -23,7 +23,7 @@
 | **Passport Issue Date** | 16/04/2026 | |
 | **Passport Expiry Date** | **15/04/2036** | Valid for 10 full years |
 | **Issuing Authority** | Immigration and Citizenship Service (ICS), Ethiopia | Addis Ababa |
-| **Current Residential Address** | Addis Ababa, Ethiopia | Region: Addis Ababa |
+| **Current Residential Address** | Kolfe Keraniyo Sub City, Addis Ababa, Ethiopia | Sub-City: Kolfe Keraniyo, Region: Addis Ababa |
 | **Primary Email** | `fuadahmedt@gmail.com` | Primary application & portal email |
 | **Secondary / Git Email** | `fuadahmed745@gmail.com` | Git commits & fallback |
 | **Phone Number (WhatsApp/Telegram)**| **`+251 925 278 350`** | Mobile: `0925278350` |

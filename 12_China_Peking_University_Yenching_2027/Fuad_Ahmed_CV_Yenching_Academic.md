@@ -1,6 +1,6 @@
 # FUAD AHMED (TUBA, FUAD AHMED)
 **Candidate for Yenching Academy Fellowship • Peking University**  
-📍 Addis Ababa, Ethiopia | ✉️ [fuadahmedt@gmail.com](mailto:fuadahmedt@gmail.com) | 📱 +251 925 278 350  
+📍 Kolfe Keraniyo Sub City, Addis Ababa, Ethiopia | ✉️ [fuadahmedt@gmail.com](mailto:fuadahmedt@gmail.com) | 📱 +251 925 278 350  
 🌐 [GitHub: fuad745](https://github.com/fuad745) | 🔗 [LinkedIn: fuad-ahmed-tech](https://linkedin.com/in/fuad-ahmed-tech)
 
 ---

@@ -2,7 +2,7 @@
 ## Personal Statement & Research Proposal (2027 Intake)
 
 **Applicant:** FUAD AHMED (TUBA, FUAD AHMED)  
-**Email:** `fuadahmedt@gmail.com` | **Phone:** `+251 925 278 350` | **Residence:** Addis Ababa, Ethiopia  
+**Email:** `fuadahmedt@gmail.com` | **Phone:** `+251 925 278 350` | **Residence:** Kolfe Keraniyo Sub City, Addis Ababa, Ethiopia  
 **Host:** Peking University, Beijing, China  
 **Fellowship:** Yenching Academy Full Fellowship  
 **Research Track:** Law and Society / Economics & Management (Digital Infrastructure & Tech Policy)  
@@ -48,4 +48,4 @@ This research will produce actionable policy recommendations for Sino-African te
 Respectfully submitted,  
 **Fuad Ahmed (TUBA, FUAD AHMED)**  
 BSc in Computer Science, St. Mary’s University  
-Addis Ababa, Ethiopia • `fuadahmedt@gmail.com`
+Kolfe Keraniyo Sub City, Addis Ababa, Ethiopia • `fuadahmedt@gmail.com`

@@ -3,7 +3,7 @@
 **Division:** Computer, Electrical and Mathematical Sciences and Engineering (CEMSE)  
 **Degree Program:** Master of Science (MS) in Computer Science  
 **Applicant:** FUAD AHMED (TUBA, FUAD AHMED)  
-**Email:** `fuadahmedt@gmail.com` | **Phone:** `+251 925 278 350` | **Residence:** Addis Ababa, Ethiopia  
+**Email:** `fuadahmedt@gmail.com` | **Phone:** `+251 925 278 350` | **Residence:** Kolfe Keraniyo Sub City, Addis Ababa, Ethiopia  
 
 ---
 
@@ -36,4 +36,4 @@ I bring to KAUST exceptional technical tenacity, real-world systems architecture
 Respectfully submitted,  
 **Fuad Ahmed (TUBA, FUAD AHMED)**  
 BSc in Computer Science, St. Mary’s University  
-Addis Ababa, Ethiopia • `fuadahmedt@gmail.com`
+Kolfe Keraniyo Sub City, Addis Ababa, Ethiopia • `fuadahmedt@gmail.com`
