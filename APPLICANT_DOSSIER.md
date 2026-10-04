@@ -99,6 +99,7 @@
 | Portal / Authority | Identifier / Username | Password / Token | Status |
 | :--- | :--- | :--- | :--- |
 | **Saudi Arabia (KAUST Fellowship)** | App ID: **`341fe207-f417-4354-82e6-adfd09b23c53`**<br>Email: `fuadahmedt@gmail.com` | `FuadKaust2027!#` | **100% Filled & Uploaded** (0 Errors, Parked at Review Page for User Final Submission) |
+| **China (Peking University Yenching)** | Record ID: **`876644237548990213`**<br>Account ID: `876643523670060805`<br>Email: `fuadahmedt@gmail.com` | `FuadPku2027!#` | **100% Filled & Uploaded** (0 Errors, All 8 Sections Green, Parked at Review Page for User Final Submission) |
 | **France (Études en France)** | **`ET26-00453`** | `FuadFrance2027!#` | **100% Completed** (Dossier validated) |
 | **Russia (Open Doors Olympiad)** | `396112` | (Session Authenticated) | **Submitted (93/100 Points)** |
 | **Italy (Politecnico di Milano)** | Person Code: **`11281494`**<br>User Code: `TU9736` | `FuadPolimi2027`<br>2FA Key: `wcJ8wEGF3T` | **Form 100% Filled & Uploaded** (App ID: `337641`, Awaiting €50 PagoPA) |

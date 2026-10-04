@@ -43,16 +43,22 @@
 ---
 
 ### 🇨🇳 China: Peking University Yenching Academy (Priority P1)
-* **Status:** `DOSSIER_100%_COMPILED (READY TO SUBMIT - $0 APPLICATION FEE)`
+* **Status:** `100%_FILLED_AND_SAVED (READY FOR USER FINAL REVIEW & SUBMISSION)`
 * **Institution:** Peking University (PKU), Beijing, China (Top #1 in China / Top #14 Global)
-* **Degree Program:** Master’s in China Studies (Track: Economics & Management / Law & Society - Digital Governance)
+* **Degree Program:** Master’s in China Studies (Track: Law and Society / Digital Infrastructure & Tech Policy)
 * **Financial Award:** **100% Full Yenching Fellowship** (100% Tuition Waiver + Free Residential Campus Accommodation + **3,500 RMB/month cash stipend** + International Round-Trip Flights).
 * **Language Waiver:** **100% English MOI Accepted** (St. Mary's degree conducted in English).
 * **Application Fee:** **$0.00 (Free to apply)**.
-* **Portal:** [https://yenchingacademy.pku.edu.cn/](https://yenchingacademy.pku.edu.cn/)
-* **Application Deadline:** **November 27, 2026 at 12:00 noon Beijing Time (BJT)**.
-* **Dossier Artifacts:** Fully compiled in `12_China_Peking_University_Yenching_2027/` (`STATEMENT_OF_PURPOSE_AND_RESEARCH_PROPOSAL_YENCHING.pdf`, `Fuad_Ahmed_CV_Yenching_Academic.pdf`, degree scans).
-* **Immediate Next Action:** Execute portal registration and application submission via browser automation.
+* **Portal:** [https://apply.yca.pku.edu.cn/](https://apply.yca.pku.edu.cn/)
+* **Direct Review URL:** [https://apply.yca.pku.edu.cn/entryform/registerForm/864474322327055621/876644237548990213?modelcode=M100100](https://apply.yca.pku.edu.cn/entryform/registerForm/864474322327055621/876644237548990213?modelcode=M100100)
+* **Credentials:** Email: `fuadahmedt@gmail.com` | Password: `FuadPku2027!#` | Record ID: `876644237548990213` | Account ID: `876643523670060805`
+* **What is 100% Completed:**
+  * All 8 application sections filled, saved, and validated with green checkmarks (`已完成`).
+  * Contact and residential address confirmed: `Kolfe Keraniyo Sub City, Addis Ababa, Ethiopia`.
+  * Academic record entered: St. Mary's University BSc Computer Science (3.20 GPA, English MOI).
+  * Uploaded documents: `STATEMENT_OF_PURPOSE_AND_RESEARCH_PROPOSAL_YENCHING.pdf`, `Fuad_Ahmed_CV_Yenching_Academic.pdf`, 3-page BSc transcript/degree PDF, and passport.
+  * 2 Referees registered & requests dispatched: Dr. Tesfaye Assefa and Mr. Birhanu Getachew.
+* **Current State:** Parked on pre-submission **Review** page per user instruction (*"so i wana review before apllying ok"*). Fuad can review all sections and click the final "Submit" button before the November 27–30, 2026 cutoff ($0 fee).
 
 ---
 

@@ -615,10 +615,10 @@
       "target_intake": "Fall 2027 (Starts Sept 2027)",
       "deadline": "2026-11-27",
       "portal_open": "2026-08-15",
-      "status": "READY_TO_APPLY",
+      "status": "READY_FOR_SUBMISSION",
       "priority": "P1",
-      "portal_url": "https://yenchingacademy.pku.edu.cn/",
-      "notes": "$0 application fee. Prestigious fully funded fellowship. Hard cutoff 12:00 noon Beijing Time (Nov 27, 2026). Dossier 100% ready in 12_China_Peking_University_Yenching_2027/.",
+      "portal_url": "https://apply.yca.pku.edu.cn/entryform/registerForm/864474322327055621/876644237548990213?modelcode=M100100",
+      "notes": "$0 application fee. Form 100% completed, verified & saved. Zero validation errors. All 8 sections green. All documents uploaded. 2 recommendation requests sent. Parked at Review page for user final submission.",
       "required_documents": [
         {
           "id": "passport",
@@ -637,7 +637,7 @@
         },
         {
           "id": "recs",
-          "label": "2 Recommendation Letters (Assoc. Prof or higher)",
+          "label": "2 Recommendation Letters (Assoc. Prof or higher - Sent)",
           "ready": true
         },
         {
@@ -651,7 +651,14 @@
           "ready": true
         }
       ],
-      "credentials": null
+      "credentials": {
+        "email": "fuadahmedt@gmail.com",
+        "username": "876644237548990213",
+        "password": "FuadPku2027!#",
+        "id_label": "Yenching Record ID",
+        "notes": "Direct Review URL: https://apply.yca.pku.edu.cn/entryform/registerForm/864474322327055621/876644237548990213?modelcode=M100100. Account ID: 876643523670060805",
+        "created_by": "AI Agent"
+      }
     },
     {
       "id": "russia-open-doors",
