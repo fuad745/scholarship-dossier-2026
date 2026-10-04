@@ -23,10 +23,10 @@
       "target_intake": "Fall 2027 (Starts Aug/Sept 2027)",
       "deadline": "2027-01-15",
       "portal_open": "2026-09-01",
-      "status": "READY_TO_APPLY",
+      "status": "READY_FOR_SUBMISSION",
       "priority": "P1",
-      "portal_url": "https://admissions.kaust.edu.sa/",
-      "notes": "$0 application fee. 100% full-ride fellowship for all admitted MS students. World-class Shaheen III supercomputer & systems labs. Dossier 100% ready in 11_Saudi_Arabia_KAUST_Fellowship_2027/.",
+      "portal_url": "https://apply.kaust.edu.sa/apply/review",
+      "notes": "$0 application fee. Form 100% completed, verified & saved. Zero validation errors. All documents uploaded. 3 recommendation requests sent. Parked at Review page for user final submission.",
       "required_documents": [
         {
           "id": "passport",
@@ -50,11 +50,18 @@
         },
         {
           "id": "recs",
-          "label": "2 Academic Recommendation Letters",
+          "label": "3 Academic Recommendation Letters (Sent)",
           "ready": true
         }
       ],
-      "credentials": null
+      "credentials": {
+        "email": "fuadahmedt@gmail.com",
+        "username": "341fe207-f417-4354-82e6-adfd09b23c53",
+        "password": "FuadKaust2027!#",
+        "id_label": "Slate App ID",
+        "notes": "Direct Review URL: https://apply.kaust.edu.sa/apply/review. Activation PIN: 798019021",
+        "created_by": "AI Agent"
+      }
     },
     {
       "id": "emjm-emai",

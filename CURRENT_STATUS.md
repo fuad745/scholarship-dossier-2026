@@ -24,15 +24,21 @@
 ## 🎯 1. Detailed Breakdown by Country & Program
 
 ### 🇸🇦 Saudi Arabia: KAUST Fellowship (Priority P1)
-* **Status:** `DOSSIER_100%_COMPILED (READY TO SUBMIT - $0 APPLICATION FEE)`
+* **Status:** `100%_FILLED_AND_SAVED (READY FOR USER FINAL REVIEW & SUBMISSION)`
 * **Institution:** King Abdullah University of Science and Technology (KAUST), Thuwal, Saudi Arabia
 * **Degree Program:** Master of Science in Computer Science (CEMSE Division)
 * **Financial Award:** **100% Full Ride KAUST Fellowship** (100% Tuition Waiver + **$20,000 to $30,000/year tax-free cash stipend** + free private furnished housing + full medical/dental + round-trip annual flights).
 * **Language Waiver:** **100% English MOI Accepted** (St. Mary's degree conducted in English).
 * **Application Fee:** **$0.00 (Free to apply)**.
-* **Portal:** [https://admissions.kaust.edu.sa/](https://admissions.kaust.edu.sa/)
-* **Dossier Artifacts:** Fully compiled in `11_Saudi_Arabia_KAUST_Fellowship_2027/` (`STATEMENT_OF_PURPOSE_KAUST.pdf`, `Fuad_Ahmed_CV_KAUST_Academic.pdf`, 3-page degree/transcripts scan, and reference letters).
-* **Immediate Next Action:** Execute portal application via browser automation for `fuadahmedt@gmail.com`.
+* **Portal:** [https://apply.kaust.edu.sa/apply/review](https://apply.kaust.edu.sa/apply/review)
+* **Credentials:** Email: `fuadahmedt@gmail.com` | Password: `FuadKaust2027!#` | Slate App ID: `341fe207-f417-4354-82e6-adfd09b23c53`
+* **What is 100% Completed:**
+  * Biographical details with verified address (`Kolfe Keraniyo Sub City, Addis Ababa, Ethiopia`).
+  * Academic history from St. Mary's University (BSc CS, 3.20 GPA, English MOI waiver).
+  * Uploaded documents: `STATEMENT_OF_PURPOSE_KAUST.pdf`, `Fuad_Ahmed_CV_KAUST_Academic.pdf`, 3-page BSc transcript/degree PDF, and passport.
+  * 3 Referees registered and links dispatched: Dr. Tesfaye Assefa, Mr. Birhanu Getachew, Dr. Yared Semu.
+  * Electronic signature signed and saved. Zero validation errors.
+* **Current State:** Parked on pre-submission **Review** page per user instruction (*"i will review it and submit latter"*). Fuad can log in and click "Submit Application" ($0 fee).
 
 ---
 
