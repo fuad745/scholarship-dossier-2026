@@ -5,9 +5,10 @@
 > **Contact:** `fuadahmedt@gmail.com` | `+251 925 278 350`  
 > **Target Degree:** Laurea Magistrale in Computer Science and Engineering (*Ingegneria Informatica*)  
 > **Campus:** Milano Leonardo (Taught 100% in English)  
-> **Application Window (Round 1):** September 2026 – **November 15, 2026 (CLOSING SOON)**  
-> **Round 2 Window:** January 2027 – March 2, 2027  
-> **Portal URL:** [https://www.polimi.it/en/international-prospective-students](https://www.polimi.it/en/international-prospective-students)  
+> **Application Window (Round 1 Engineering):** **1st October – 1st December 2026 (11:59 PM CET)** *(Verified via Live Portal Audit)*  
+> **Application Fee:** **€50 (Early Bird)** until 1st December 2026 (€150 standard fee from 2nd December)  
+> **Direct Servizi Online Registration:** [https://aunicalogin.polimi.it/aunicalogin/getservizio.xml?id_servizio=376&lang=EN](https://aunicalogin.polimi.it/aunicalogin/getservizio.xml?id_servizio=376&lang=EN)  
+> **Admissions Outcomes:** Announced by end of May 2027  
 > **Target Scholarship:** **DSU Lombardia Full Scholarship (€7,650/yr Cash + Housing + Tuition Waiver)**
 
 ---

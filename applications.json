@@ -13,6 +13,50 @@
   "last_updated": "2026-10-03T14:30:00+03:00",
   "active_tracks": [
     {
+      "id": "emjm-emai",
+      "country": "EU Joint (Spain, Italy, Netherlands, Slovenia)",
+      "university": "Universitat Pompeu Fabra, Sapienza Rome, Radboud & Ljubljana",
+      "program": "Erasmus Mundus Joint Master in Artificial Intelligence (EMAI)",
+      "funding": "Erasmus Mundus Joint Scholarship",
+      "benefits": "100% Free Tuition + €1,400/mo Cash + €3,000/yr Travel + Full Insurance",
+      "language_requirement": "MOI Accepted (Degree taught in English)",
+      "target_intake": "Fall 2027 (Starts Sept 2027)",
+      "deadline": "2027-02-15",
+      "portal_open": "2026-11-01",
+      "status": "AWAITING_PORTAL",
+      "priority": "P1",
+      "portal_url": "https://www.upf.edu/web/emai/",
+      "notes": "Flagship EU AI Master. Integrates Sapienza University of Rome (target institution). Opens November 2026. €0 application fee.",
+      "required_documents": [
+        {
+          "id": "passport",
+          "label": "Biometric Passport (E00340202)",
+          "ready": true
+        },
+        {
+          "id": "degree",
+          "label": "3-Page Degree & Transcripts (Legalized)",
+          "ready": true
+        },
+        {
+          "id": "moi",
+          "label": "St. Mary's English MOI Certificate",
+          "ready": true
+        },
+        {
+          "id": "cv_sop",
+          "label": "Academic CV & AI Statement of Purpose",
+          "ready": true
+        },
+        {
+          "id": "recs",
+          "label": "2 Academic Recommendation Letters",
+          "ready": true
+        }
+      ],
+      "credentials": null
+    },
+    {
       "id": "emjm-genial",
       "country": "EU Joint (France, UK, Sweden)",
       "university": "Université de Lorraine, Leeds Beckett & LTU",
@@ -23,10 +67,10 @@
       "target_intake": "Fall 2027 (Starts Sept 2027)",
       "deadline": "2027-02-15",
       "portal_open": "2026-10-15",
-      "status": "READY_TO_APPLY",
-      "priority": "P1",
-      "portal_url": "http://genial.univ-lorraine.fr/application/",
-      "notes": "100% full-ride flagship EU scholarship. Focuses on distributed systems & green cloud infrastructure. €0 application fee.",
+      "status": "INACTIVE_CONSORTIUM_ENDED",
+      "priority": "ARCHIVED",
+      "portal_url": "https://genial-app.univ-lorraine.fr/",
+      "notes": "Verified via live browser audit: Erasmus+ project funding lifecycle ended 31-08-2025. Application platform closed; no 2027 intake.",
       "required_documents": [
         {
           "id": "passport",
@@ -168,12 +212,12 @@
       "benefits": "100% Tuition + Housing + €7,650/yr Cash + Meals",
       "language_requirement": "MOI Accepted (Degree taught in English)",
       "target_intake": "Fall 2027 (Semester 1, starts Sept 2027)",
-      "deadline": "2026-11-15",
-      "portal_open": "2026-09-15",
+      "deadline": "2026-12-01",
+      "portal_open": "2026-10-01",
       "status": "ROUND_1_ACTIVE",
       "priority": "P1",
-      "portal_url": "https://www.polimi.it/en/international-prospective-students",
-      "notes": "Round 1 closes Nov 15; Round 2 closes Mar 2, 2027. Ranked #1 in Italy.",
+      "portal_url": "https://aunicalogin.polimi.it/aunicalogin/getservizio.xml?id_servizio=376&lang=EN",
+      "notes": "Verified via live browser audit: Round 1 closes 1st December 2026 (Early Bird Fee €50). Round 2 closes 2nd March 2027. Ranked #1 in Italy. 100% prepared dossier in 10_Italy_Politecnico_di_Milano_2027/.",
       "required_documents": [
         {
           "id": "passport",

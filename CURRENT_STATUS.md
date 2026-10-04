@@ -25,20 +25,20 @@
 
 ## 🎯 1. Detailed Breakdown by Country & Program
 
-### 🇪🇺 European Union: Erasmus Mundus Joint Master GENIAL (Priority P1)
-* **Status:** `DOSSIER_COMPLETED (100% READY FOR PORTAL OPENING)`
-* **Dossier Directory:** `09_Erasmus_Mundus_GENIAL_Cloud_2027/`
-* **Degree & Consortium:** MSc Green Networking & Cloud Computing (GENIAL) — Université de Lorraine (France), Leeds Beckett University (UK), Luleå University of Technology (Sweden).
-* **Financial Award:** **100% Full Ride** (100% Tuition Waiver + €1,400/month living stipend for 24 months + €3,000/year travel & installation grant + full European insurance).
+### 🇪🇺 European Union: Erasmus Mundus Joint Master EMAI (Priority P1)
+* **Status:** `AWAITING PORTAL OPENING (OPENS NOVEMBER 2026)`
+* **Degree & Consortium:** MSc in Artificial Intelligence (EMAI) — Universitat Pompeu Fabra (Spain), Sapienza University of Rome (Italy), Radboud University (Netherlands), University of Ljubljana (Slovenia).
+* **Financial Award:** **100% Full Ride** (100% Tuition Waiver + €1,400/month living allowance + €3,000/year travel grant + full European insurance).
 * **Language Waiver:** **100% English MOI Accepted** (St. Mary's University degree exempts IELTS).
-* **Compiled & Verified Documents:**
-  * `Fuad_Ahmed_CV_Europass_GENIAL.pdf` (Academic Europass CV)
-  * `STATEMENT_OF_PURPOSE_GENIAL_EMJM.pdf` (Tailored Statement of Purpose)
-  * `Fuad_Ahmed_BSc_Degree_Complete_3Pages.pdf` (Degree + Transcripts)
-  * Recommendation letters (Dr. Tesfaye Assefa & Mr. Birhanu Getachew)
-  * Biometric Passport (`passport.pdf`)
-* **Specialization Fit:** 100% match with Fuad's background in Distributed Systems, Edge-Cloud Infrastructure, and High-Concurrency Backend Architecture.
-* **Immediate Next Action:** Create account and submit immediately upon portal opening window.
+* **Portal:** [https://www.upf.edu/web/emai/](https://www.upf.edu/web/emai/)
+* **Strategic Value:** Direct integration with Sapienza University of Rome (one of Fuad's top Italian target universities).
+* **Immediate Next Action:** Apply immediately upon portal opening in November 2026.
+
+---
+
+### 🇪🇺 European Union: Erasmus Mundus GENIAL (Archived)
+* **Status:** `ARCHIVED (CONSORTIUM FUNDING CONCLUDED 31-08-2025)`
+* **Audit Finding:** Live browser verification on `genial-app.univ-lorraine.fr` confirmed that the EU grant cycle ended August 2025 with no 2027 intake. Prepared distributed systems materials preserved in `09_Erasmus_Mundus_GENIAL_Cloud_2027/`.
 
 ---
 
@@ -97,7 +97,7 @@
 * **Status:** `DOSSIER_COMPLETED & ACTIVE APPLICATION`
 * **Universities & Intake Deadlines:**
   * **Politecnico di Milano (MSc Computer Science & Engineering):**
-    * Round 1 closes: **November 15, 2026** *(URGENT: Submit before Nov 15)*
+    * Round 1 closes: **December 1, 2026 (11:59 PM CET)** *(Verified via live browser audit; Early Bird fee €50)*
     * Round 2 closes: March 2, 2027
     * **Dossier Directory:** `10_Italy_Politecnico_di_Milano_2027/` (100% Ready)
     * **Compiled Documents:**
@@ -113,7 +113,7 @@
   * **Sapienza University of Rome & UniCal:**
     * Pre-selection opens: **January 2027**
 * **Immediate Next Action:**
-  * Complete online form entry on Polimi Online Services and upload the prepared package before November 15.
+  * Complete online form entry on Polimi Online Services (`https://aunicalogin.polimi.it`) and submit before December 1, 2026.
 
 ---
 
@@ -153,9 +153,10 @@
 | **Oct 12, 2026** | 🇨🇳 China CSC | Follow-up on Prof. Weizhe Zhang, Song Yang, Mingjun Xiao |
 | **Oct 13, 2026** | 🇨🇳 China CSC | Follow-up on Prof. Shaohuai Shi, Meihui Zhang, Gongming Zhao |
 | **Nov 2, 2026** | 🇮🇹 Italy Padua | University of Padua (UNIPD) portal opens for Fall 2027 |
-| **Nov 15, 2026** | 🇮🇹 Italy Polimi | Politecnico di Milano Round 1 submission deadline |
 | **Nov 15, 2026** | 🇭🇺 Hungary | Stipendium Hungaricum DreamApply portal opens |
 | **Nov 15, 2026** | 🇫🇷 France Eiffel | Contact CentraleSupélec & UGA coordinators for Eiffel support |
+| **Nov 2026** | 🇪🇺 EU EMAI | Erasmus Mundus Joint Master in AI (EMAI) portal opens |
+| **Dec 1, 2026** | 🇮🇹 Italy Polimi | Politecnico di Milano Round 1 Engineering cutoff (Early Bird €50) |
 | **Dec 1, 2026** | 🇨🇦 Canada | University of Manitoba UMGF fellowship deadline |
 | **Dec 1, 2026** | 🇮🇹 Italy Trento | University of Trento international application portal opens |
 | **Dec 15, 2026** | 🇷🇼 Rwanda ALU | Mastercard Foundation Scholars priority deadline |
