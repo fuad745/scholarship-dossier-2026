@@ -100,6 +100,7 @@
 | :--- | :--- | :--- | :--- |
 | **France (Études en France)** | **`ET26-00453`** | `FuadFrance2027!#` | **100% Completed** (Dossier validated) |
 | **Russia (Open Doors Olympiad)** | `396112` | (Session Authenticated) | **Submitted (93/100 Points)** |
+| **Italy (Politecnico di Milano)** | Person Code: **`11281494`**<br>User Code: `TU9736` | `FuadPolimi2027`<br>2FA Key: `wcJ8wEGF3T` | **Form 100% Filled & Uploaded** (App ID: `337641`, Awaiting €50 PagoPA) |
 | **China CSC (HIT, BIT, USTC)** | `fuadahmedt@gmail.com` | (Pre-application Outreach) | **6 Professors Contacted** |
 | **GitHub** | `fuad745` | SSH Key Authenticated | **Active Sync (`main`)** |
 

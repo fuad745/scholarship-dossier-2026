@@ -11,14 +11,15 @@
 
 ```
 [✅ COMPLETED]          [⚡ IN PROGRESS / MONITORING]        [⏳ UPCOMING INTAKES]
-• Russia Open Doors      • France EEF Program Cart Intake   • Italy UNIPD (Opens Nov 2)
-  (Portfolio 93 Pts)       (Candidate ID: ET26-00453)       • Hungary Stipendium (Opens Nov 15)
-• France EEF Dossier     • China CSC Outreach Follow-ups    • Canada Manitoba (Due Dec 1)
-  (100% Profile Done)      (6/6 Sent, Follow-up Oct 12-13)  • ALU Mastercard (Due Dec 15)
-• Erasmus Mundus GENIAL  • Italy Politecnico di Milano
-  Dossier 100% Ready       (Round 1 Closes Nov 15)
-• Polimi Round 1 Dossier
-  100% Ready (Syllabus/SOP)
+• Polimi Round 1:
+  100% Filled & Uploaded
+  (App #337641, Pay €50)
+• France EEF Dossier
+  (100% Profile Done)
+• Russia Open Doors
+  (Portfolio 93 Pts)
+• EMAI / Polimi Dossiers
+  (100% Compiled)
 ```
 
 ---
@@ -94,18 +95,16 @@
 ---
 
 ### 🇮🇹 Italy: Regional DSU Full Scholarships (Priority P1)
-* **Status:** `DOSSIER_COMPLETED & ACTIVE APPLICATION`
+* **Status:** `APPLICATION_100%_FILLED_AND_SAVED (AWAITING €50 PAGOPA FEE)`
 * **Universities & Intake Deadlines:**
   * **Politecnico di Milano (MSc Computer Science & Engineering):**
-    * Round 1 closes: **December 1, 2026 (11:59 PM CET)** *(Verified via live browser audit; Early Bird fee €50)*
-    * Round 2 closes: March 2, 2027
-    * **Dossier Directory:** `10_Italy_Politecnico_di_Milano_2027/` (100% Ready)
-    * **Compiled Documents:**
-      * `STATEMENT_OF_PURPOSE_POLIMI.pdf` (Tailored to DEIB & Systems)
-      * `POLIMI_DETAILED_COURSE_DESCRIPTIONS_SYLLABUS.pdf` (Complete 4-year course syllabus breakdown)
-      * `Fuad_Ahmed_CV_Polimi_Academic.pdf` (Academic CV)
-      * `Fuad_Ahmed_BSc_Degree_Complete_3Pages.pdf` (Degree + Transcripts)
-      * `POLIMI_ROUND_1_APPLICATION_GUIDE.md` (Step-by-step submission manual)
+    * **Person Code (Codice Persona):** **`11281494`** | **User Code:** `TU9736`
+    * **Password:** `FuadPolimi2027` | **2FA Key:** `wcJ8wEGF3T`
+    * **Application ID:** **`337641`** (`id_pren=337641`)
+    * **Intake & Programme:** Fall 2027 (Starts Sept 2027) — MSc Computer Science & Engineering (Leonardo Campus)
+    * **Documents Uploaded:** All 8 files uploaded & validated (Degree, Transcripts, GPA statement, CV, 4-year Course Syllabus, Motivation Letter, Recommendation Letter, MOI)
+    * **Round 1 Deadline:** **December 1, 2026 (11:59 PM CET)** (Early Bird Fee €50)
+    * **Current State:** Parked at **PagoPA checkout** screen. Once Fuad enters card details for the €50 fee, the application is formally locked and submitted.
   * **University of Padua - UNIPD (MSc Computer Engineering / Data Science):**
     * Application portal opens: **November 2, 2026** | Deadline: February 2, 2027
   * **University of Trento (MSc Computer Science):**
@@ -113,7 +112,7 @@
   * **Sapienza University of Rome & UniCal:**
     * Pre-selection opens: **January 2027**
 * **Immediate Next Action:**
-  * Complete online form entry on Polimi Online Services (`https://aunicalogin.polimi.it`) and submit before December 1, 2026.
+  * Complete the €50 application evaluation fee checkout via PagoPA.
 
 ---
 

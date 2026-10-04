@@ -214,10 +214,10 @@
       "target_intake": "Fall 2027 (Semester 1, starts Sept 2027)",
       "deadline": "2026-12-01",
       "portal_open": "2026-10-01",
-      "status": "ROUND_1_ACTIVE",
+      "status": "AWAITING_PAYMENT",
       "priority": "P1",
-      "portal_url": "https://aunicalogin.polimi.it/aunicalogin/getservizio.xml?id_servizio=376&lang=EN",
-      "notes": "Verified via live browser audit: Round 1 closes 1st December 2026 (Early Bird Fee €50). Round 2 closes 2nd March 2027. Ranked #1 in Italy. 100% prepared dossier in 10_Italy_Politecnico_di_Milano_2027/.",
+      "portal_url": "https://aunicalogin.polimi.it/aunicalogin/getservizio.xml?id_servizio=239&lang=EN",
+      "notes": "Application form 100% completed and all 8 documents uploaded on 04/10/2026. Application ID: 337641. Person Code: 11281494. Parked at PagoPA checkout for €50 Early Bird fee (deadline Dec 1, 2026).",
       "required_documents": [
         {
           "id": "passport",
@@ -255,7 +255,16 @@
           "ready": false
         }
       ],
-      "credentials": null
+      "credentials": {
+        "created_by": "AI Agent",
+        "portal_url": "https://aunicalogin.polimi.it/aunicalogin/getservizio.xml?id_servizio=239&lang=EN",
+        "person_code": "11281494",
+        "user_code": "TU9736",
+        "password": "FuadPolimi2027",
+        "totp_secret": "KDCYH5HA6K6OHFNT65UASRV6ASTVR6S6",
+        "totp_emergency_key": "wcJ8wEGF3T",
+        "application_id": "337641"
+      }
     },
     {
       "id": "italy-sapienza",
