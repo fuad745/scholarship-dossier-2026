@@ -12,11 +12,13 @@
 ```
 [✅ COMPLETED]          [⚡ IN PROGRESS / MONITORING]        [⏳ UPCOMING INTAKES]
 • Russia Open Doors      • France EEF Program Cart Intake   • Italy UNIPD (Opens Nov 2)
-  (Portfolio 93 Pts)       (Candidate ID: ET26-00453)       • Italy Polimi (Closes Nov 15)
-• France EEF Dossier     • China CSC Outreach Follow-ups    • Hungary Stipendium (Opens Nov 15)
-  (100% Profile Done)      (6/6 Sent, Follow-up Oct 12-13)  • Canada Manitoba (Due Dec 1)
-• Master Application     • Italy Politecnico di Milano      • ALU Mastercard (Due Dec 15)
-  Dossier (CV, SOP, MOI)   (Round 1 closes Nov 15)
+  (Portfolio 93 Pts)       (Candidate ID: ET26-00453)       • Hungary Stipendium (Opens Nov 15)
+• France EEF Dossier     • China CSC Outreach Follow-ups    • Canada Manitoba (Due Dec 1)
+  (100% Profile Done)      (6/6 Sent, Follow-up Oct 12-13)  • ALU Mastercard (Due Dec 15)
+• Erasmus Mundus GENIAL  • Italy Politecnico di Milano
+  Dossier 100% Ready       (Round 1 Closes Nov 15)
+• Polimi Round 1 Dossier
+  100% Ready (Syllabus/SOP)
 ```
 
 ---
@@ -24,15 +26,19 @@
 ## 🎯 1. Detailed Breakdown by Country & Program
 
 ### 🇪🇺 European Union: Erasmus Mundus Joint Master GENIAL (Priority P1)
-* **Status:** `SCREENED & READY_TO_APPLY (PORTAL OPENS OCT/NOV 2026)`
+* **Status:** `DOSSIER_COMPLETED (100% READY FOR PORTAL OPENING)`
+* **Dossier Directory:** `09_Erasmus_Mundus_GENIAL_Cloud_2027/`
 * **Degree & Consortium:** MSc Green Networking & Cloud Computing (GENIAL) — Université de Lorraine (France), Leeds Beckett University (UK), Luleå University of Technology (Sweden).
 * **Financial Award:** **100% Full Ride** (100% Tuition Waiver + €1,400/month living stipend for 24 months + €3,000/year travel & installation grant + full European insurance).
 * **Language Waiver:** **100% English MOI Accepted** (St. Mary's University degree exempts IELTS).
-* **Portal:** [genial.univ-lorraine.fr/application/](http://genial.univ-lorraine.fr/application/)
+* **Compiled & Verified Documents:**
+  * `Fuad_Ahmed_CV_Europass_GENIAL.pdf` (Academic Europass CV)
+  * `STATEMENT_OF_PURPOSE_GENIAL_EMJM.pdf` (Tailored Statement of Purpose)
+  * `Fuad_Ahmed_BSc_Degree_Complete_3Pages.pdf` (Degree + Transcripts)
+  * Recommendation letters (Dr. Tesfaye Assefa & Mr. Birhanu Getachew)
+  * Biometric Passport (`passport.pdf`)
 * **Specialization Fit:** 100% match with Fuad's background in Distributed Systems, Edge-Cloud Infrastructure, and High-Concurrency Backend Architecture.
-* **Immediate Next Action:**
-  * Draft the specialized Europass CV and Green Cloud Computing Statement of Purpose.
-  * Prepare online application account when portal opens.
+* **Immediate Next Action:** Create account and submit immediately upon portal opening window.
 
 ---
 
@@ -88,11 +94,18 @@
 ---
 
 ### 🇮🇹 Italy: Regional DSU Full Scholarships (Priority P1)
-* **Status:** `DOSSIER_PREPARATION & ACTIVE APPLICATION`
+* **Status:** `DOSSIER_COMPLETED & ACTIVE APPLICATION`
 * **Universities & Intake Deadlines:**
   * **Politecnico di Milano (MSc Computer Science & Engineering):**
     * Round 1 closes: **November 15, 2026** *(URGENT: Submit before Nov 15)*
     * Round 2 closes: March 2, 2027
+    * **Dossier Directory:** `10_Italy_Politecnico_di_Milano_2027/` (100% Ready)
+    * **Compiled Documents:**
+      * `STATEMENT_OF_PURPOSE_POLIMI.pdf` (Tailored to DEIB & Systems)
+      * `POLIMI_DETAILED_COURSE_DESCRIPTIONS_SYLLABUS.pdf` (Complete 4-year course syllabus breakdown)
+      * `Fuad_Ahmed_CV_Polimi_Academic.pdf` (Academic CV)
+      * `Fuad_Ahmed_BSc_Degree_Complete_3Pages.pdf` (Degree + Transcripts)
+      * `POLIMI_ROUND_1_APPLICATION_GUIDE.md` (Step-by-step submission manual)
   * **University of Padua - UNIPD (MSc Computer Engineering / Data Science):**
     * Application portal opens: **November 2, 2026** | Deadline: February 2, 2027
   * **University of Trento (MSc Computer Science):**
@@ -100,8 +113,7 @@
   * **Sapienza University of Rome & UniCal:**
     * Pre-selection opens: **January 2027**
 * **Immediate Next Action:**
-  * Finalize Politecnico di Milano Round 1 online submission before November 15.
-  * Obtain official hard-copy English Medium of Instruction (MOI) verification from St. Mary's University registrar.
+  * Complete online form entry on Polimi Online Services and upload the prepared package before November 15.
 
 ---
 

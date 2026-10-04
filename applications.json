@@ -201,6 +201,11 @@
           "ready": true
         },
         {
+          "id": "syllabus",
+          "label": "Detailed Course Descriptions & Syllabus Alignment (Full 4-Year Breakdown)",
+          "ready": true
+        },
+        {
           "id": "isee_parificato",
           "label": "ISEE Parificato (Family Income & Asset Affidavit for €7,650/yr DSU)",
           "ready": false

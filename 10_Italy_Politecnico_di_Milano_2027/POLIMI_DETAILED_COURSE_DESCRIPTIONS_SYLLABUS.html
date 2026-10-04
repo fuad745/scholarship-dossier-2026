@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Politecnico di Milano - Detailed Course Descriptions & Syllabus Alignment</title>
+<style>
+    @page {
+        size: A4;
+        margin: 12mm 15mm 12mm 15mm;
+    }
+    body {
+        font-family: 'Liberation Sans', Arial, sans-serif;
+        color: #1e293b;
+        line-height: 1.38;
+        font-size: 9.3pt;
+    }
+    .header {
+        border-bottom: 2px solid #1e3a8a;
+        padding-bottom: 6px;
+        margin-bottom: 10px;
+    }
+    .header h1 {
+        font-size: 15pt;
+        color: #1e3a8a;
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    .header .sub {
+        font-size: 10pt;
+        font-weight: 600;
+        color: #0f172a;
+        margin-top: 2px;
+    }
+    .meta {
+        font-size: 8.5pt;
+        color: #475569;
+        margin-top: 4px;
+    }
+    h2 {
+        color: #1e3a8a;
+        font-size: 10.8pt;
+        border-bottom: 1px solid #cbd5e1;
+        padding-bottom: 2px;
+        margin-top: 10px;
+        margin-bottom: 6px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    .course-card {
+        border: 1px solid #e2e8f0;
+        background: #f8fafc;
+        border-radius: 4px;
+        padding: 6px 10px;
+        margin-bottom: 8px;
+    }
+    .course-title {
+        font-weight: bold;
+        color: #0f172a;
+        font-size: 9.6pt;
+        display: flex;
+        justify-content: space-between;
+    }
+    .course-meta {
+        font-size: 8.4pt;
+        color: #0369a1;
+        font-weight: 600;
+        margin-bottom: 4px;
+    }
+    .course-desc {
+        color: #334155;
+        margin: 0;
+        font-size: 8.8pt;
+    }
+    .topic-list {
+        margin: 2px 0 0 14px;
+        padding: 0;
+        font-size: 8.7pt;
+    }
+    .topic-list li {
+        margin-bottom: 1.5px;
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>POLITECNICO DI MILANO &bull; DETAILED COURSE SYLLABUS</h1>
+    <div class="sub">Academic Prerequisites & Undergraduate Course Descriptions for MSc in Computer Science and Engineering</div>
+    <div class="meta">
+        <strong>Applicant:</strong> FUAD AHMED (TUBA, FUAD AHMED) &bull; Passport: E00340202 &bull; Email: fuadahmedt@gmail.com<br>
+        <strong>Conferring Institution:</strong> St. Mary’s University (Faculty of Informatics), Addis Ababa, Ethiopia &bull; Degree: BSc in Computer Science (4-Year, Full-Time, 100% English MOI)
+    </div>
+</div>
+
+<h2>1. Core Computer Systems, Architecture & Operating Systems</h2>
+
+<div class="course-card">
+    <div class="course-title">
+        <span>Operating Systems Architecture (CoSc 3011)</span>
+        <span>Credits: 4 ECTS Equiv: 7 ECTS</span>
+    </div>
+    <div class="course-meta">Category: Operating Systems & Low-Level Computing | Lab: 3 hrs/wk | Lecture: 3 hrs/wk</div>
+    <p class="course-desc">Comprehensive study of multi-programming operating system architectures, kernel design, process management, and concurrency.</p>
+    <ul class="topic-list">
+        <li><strong>Topics Covered:</strong> Process scheduling algorithms (round-robin, multi-level feedback queues), thread lifecycles, POSIX threads, inter-process communication (IPC), pipes, shared memory.</li>
+        <li><strong>Synchronization & Concurrency:</strong> Race conditions, critical sections, semaphores, mutex locks, monitors, deadlock conditions, Banker's algorithm, prevention and recovery.</li>
+        <li><strong>Memory & File Systems:</strong> Virtual memory, paging, segmentation, page fault handling, page replacement (LRU, clock algorithm), VFS, inode management, disk scheduling.</li>
+        <li><strong>Practical Lab:</strong> C/Linux programming for kernel system calls, fork-exec routines, POSIX synchronization, and custom memory management routines.</li>
+    </ul>
+</div>
+
+<div class="course-card">
+    <div class="course-title">
+        <span>Computer Organization and Architecture (CoSc 2032)</span>
+        <span>Credits: 4 ECTS Equiv: 6 ECTS</span>
+    </div>
+    <div class="course-meta">Category: Hardware-Software Interface & Architecture | Lab: 2 hrs/wk | Lecture: 3 hrs/wk</div>
+    <p class="course-desc">Fundamental concepts of digital logic, microprocessor architecture, instruction set architectures, and memory hierarchies.</p>
+    <ul class="topic-list">
+        <li><strong>Topics:</strong> Von Neumann architecture, CPU datapath and control unit design, ALU operations, instruction pipelining, pipeline hazards (data, control, structural), branch prediction.</li>
+        <li><strong>Memory Systems:</strong> Cache mapping techniques (direct, set-associative, fully associative), cache coherence, write policies, virtual memory translation, bus protocols, DMA controllers.</li>
+        <li><strong>Instruction Sets:</strong> Assembly language programming (MIPS/x86), register allocation, stack frame manipulation, hardware interrupt servicing.</li>
+    </ul>
+</div>
+
+<div class="course-card">
+    <div class="course-title">
+        <span>Distributed Systems (CoSc 4011)</span>
+        <span>Credits: 3 ECTS Equiv: 6 ECTS</span>
+    </div>
+    <div class="course-meta">Category: Distributed Systems & Scalable Architectures | Lab: 2 hrs/wk | Lecture: 3 hrs/wk</div>
+    <p class="course-desc">Architectures, theoretical models, and implementation principles for networked distributed and decentralized computing environments.</p>
+    <ul class="topic-list">
+        <li><strong>Foundations:</strong> Characterization of distributed systems, client-server vs peer-to-peer topologies, remote procedure calls (RPC), message passing interfaces, network socket programming.</li>
+        <li><strong>Time & State:</strong> Physical and logical clocks (Lamport timestamps, vector clocks), causal ordering, global state snapshot algorithms.</li>
+        <li><strong>Coordination & Fault Tolerance:</strong> Distributed mutual exclusion, leader election (Bully, Ring), consensus protocols, replication models (primary-backup, active replication), Paxos/Raft overview, Byzantine fault models.</li>
+    </ul>
+</div>
+
+<h2>2. Algorithms, Data Structures & Software Engineering</h2>
+
+<div class="course-card">
+    <div class="course-title">
+        <span>Data Structures and Algorithms (CoSc 2011)</span>
+        <span>Credits: 4 ECTS Equiv: 7 ECTS</span>
+    </div>
+    <div class="course-meta">Category: Foundational Computer Science | Lab: 3 hrs/wk | Lecture: 3 hrs/wk</div>
+    <p class="course-desc">Rigorous analysis and implementation of abstract data types, recursive procedures, and algorithmic complexity.</p>
+    <ul class="topic-list">
+        <li><strong>Structures:</strong> Linked lists, stacks, queues, binary search trees, AVL trees, Red-Black trees, B-Trees, min/max binary heaps, hash tables, collision resolution strategies.</li>
+        <li><strong>Algorithms & Analysis:</strong> Asymptotic notation (Big-O, Big-Omega, Big-Theta), divide-and-conquer, greedy algorithms, dynamic programming, sorting algorithms (QuickSort, MergeSort, HeapSort).</li>
+        <li><strong>Graph Theory:</strong> Graph representations (adjacency matrix, list), BFS, DFS, Dijkstra’s shortest path, Bellman-Ford, Kruskal’s and Prim’s minimum spanning trees.</li>
+    </ul>
+</div>
+
+<div class="course-card">
+    <div class="course-title">
+        <span>Object-Oriented Programming (CoSc 2021)</span>
+        <span>Credits: 4 ECTS Equiv: 6 ECTS</span>
+    </div>
+    <div class="course-meta">Category: Software Development | Lab: 3 hrs/wk | Lecture: 3 hrs/wk</div>
+    <p class="course-desc">Advanced object-oriented paradigms, class hierarchies, design patterns, and polymorphic execution in Java and C++.</p>
+    <ul class="topic-list">
+        <li><strong>Core Paradigms:</strong> Encapsulation, inheritance, polymorphism, abstract classes, interfaces, generic programming, exception handling, multithreading, memory management.</li>
+        <li><strong>Design Patterns:</strong> Creational (Singleton, Factory), Structural (Adapter, Decorator), and Behavioral (Observer, Strategy) design patterns.</li>
+    </ul>
+</div>
+
+<div class="course-card">
+    <div class="course-title">
+        <span>Database Management Systems (CoSc 2042)</span>
+        <span>Credits: 4 ECTS Equiv: 6 ECTS</span>
+    </div>
+    <div class="course-meta">Category: Data Management | Lab: 3 hrs/wk | Lecture: 3 hrs/wk</div>
+    <p class="course-desc">Relational database theory, normalization algorithms, SQL query optimization, and transaction processing.</p>
+    <ul class="topic-list">
+        <li><strong>Theory:</strong> Relational algebra, tuple relational calculus, ER modeling, functional dependencies, normal forms (1NF, 2NF, 3NF, BCNF).</li>
+        <li><strong>Transaction Management:</strong> ACID properties, serializability, two-phase locking (2PL), deadlock detection, write-ahead logging (WAL), crash recovery.</li>
+        <li><strong>Implementation:</strong> Advanced SQL, indexing structures (B+ Trees, Hash indexes), query execution plans, PostgreSQL and MySQL implementations.</li>
+    </ul>
+</div>
+
+<div class="course-card">
+    <div class="course-title">
+        <span>Computer Networks and Data Communications (CoSc 3032)</span>
+        <span>Credits: 4 ECTS Equiv: 6 ECTS</span>
+    </div>
+    <div class="course-meta">Category: Networking & Telecommunications | Lab: 2 hrs/wk | Lecture: 3 hrs/wk</div>
+    <p class="course-desc">In-depth study of network protocol stacks, physical transmission media, routing architectures, and transport reliability.</p>
+    <ul class="topic-list">
+        <li><strong>Layer Architectures:</strong> OSI and TCP/IP reference models, framing, error detection (CRC), flow control, ARQ protocols (Go-Back-N, Selective Repeat).</li>
+        <li><strong>Network & Transport:</strong> IPv4/IPv6 addressing, subnetting, CIDR, routing algorithms (Dijkstra, distance vector, BGP, OSPF), TCP congestion control (AIMD, slow start), flow control, UDP sockets.</li>
+        <li><strong>Application Layer:</strong> DNS, HTTP/HTTPS, TLS handshake, SMTP, SSH, network security fundamentals.</li>
+    </ul>
+</div>
+
+<h2>3. Mathematics & Quantitative Foundations</h2>
+
+<div class="course-card">
+    <div class="course-title">
+        <span>Calculus for Computer Science (Math 1011)</span>
+        <span>Credits: 4 ECTS Equiv: 6 ECTS</span>
+    </div>
+    <div class="course-desc">Differential and integral calculus: limits, continuity, derivative techniques, Mean Value Theorem, Taylor series, Riemann integration, multivariate partial derivatives, gradients, and optimization.</div>
+</div>
+
+<div class="course-card">
+    <div class="course-title">
+        <span>Discrete Mathematics (Math 1022)</span>
+        <span>Credits: 3 ECTS Equiv: 5 ECTS</span>
+    </div>
+    <div class="course-desc">Mathematical logic, propositional and predicate calculus, methods of proof (induction, contradiction), set theory, relations, combinatorics, recurrence relations, Boolean algebra, and formal grammars.</div>
+</div>
+
+<div class="course-card">
+    <div class="course-title">
+        <span>Linear Algebra (Math 2011)</span>
+        <span>Credits: 3 ECTS Equiv: 5 ECTS</span>
+    </div>
+    <div class="course-desc">Vector spaces, subspaces, linear independence, basis and dimension, matrices, determinants, Gaussian elimination, eigenvalues, eigenvectors, diagonalization, orthogonalization (Gram-Schmidt), and applications in computer graphics and machine learning.</div>
+</div>
+
+<div class="course-card">
+    <div class="course-title">
+        <span>Probability and Statistics for Computing (Stat 2022)</span>
+        <span>Credits: 3 ECTS Equiv: 5 ECTS</span>
+    </div>
+    <div class="course-desc">Probability axioms, conditional probability, Bayes’ theorem, discrete and continuous random variables (Binomial, Poisson, Gaussian), expectation, variance, Law of Large Numbers, Central Limit Theorem, hypothesis testing, and regression analysis.</div>
+</div>
+
+<h2>4. Senior Undergraduate Capstone Project</h2>
+<div class="course-card">
+    <div class="course-title">
+        <span>Senior Capstone Research Project (CoSc 4032)</span>
+        <span>Credits: 4 ECTS Equiv: 8 ECTS</span>
+    </div>
+    <div class="course-meta">Grade: A (Excellent) | Duration: Full Final Academic Year</div>
+    <p class="course-desc">
+        <strong>Title:</strong> <em>Design and Implementation of a High-Concurrency Fault-Tolerant Distributed Data Synchronization Protocol</em><br>
+        <strong>Abstract & Methodology:</strong> Architected a lightweight state-synchronization protocol across distributed nodes using Python AsyncIO and Go. Engineered delta-encoded delta serialization to minimize bandwidth consumption across high-latency networks. Implemented heartbeats, leader election routines, and thread-safe lock-free memory rings for high-throughput concurrent I/O.
+    </p>
+</div>
+
+</body>
+</html>
