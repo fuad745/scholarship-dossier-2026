@@ -1077,6 +1077,7 @@
 
     <div class="filter-pills" id="countryFilters">
       <button class="btn-filter-pill active" onclick="setCountryFilter('all')">All Countries</button>
+      <button class="btn-filter-pill" onclick="setCountryFilter('saudi')">🇸🇦 Saudi Arabia</button>
       <button class="btn-filter-pill" onclick="setCountryFilter('france')">🇫🇷 France</button>
       <button class="btn-filter-pill" onclick="setCountryFilter('italy')">🇮🇹 Italy</button>
       <button class="btn-filter-pill" onclick="setCountryFilter('china')">🇨🇳 China</button>
@@ -1297,6 +1298,50 @@
   <script>
     // Master Dataset with Initial 5-Stage Statuses, Tailored Checklists & Credentials
     const masterTracks = [
+      {
+            "id": "saudi-kaust",
+            "country": "Saudi Arabia",
+            "flag": "🇸🇦",
+            "university": "King Abdullah Univ of Science & Tech (KAUST)",
+            "program": "MS in Computer Science (CEMSE)",
+            "funding": "KAUST Fellowship",
+            "benefits": "100% Tuition + $20k-$30k/yr Cash + Free Housing + Flights",
+            "language": "MOI Accepted (Degree taught in English)",
+            "intake": "Fall 2027 (Starts Aug/Sept 2027)",
+            "deadline": "2027-01-15",
+            "status": "READY_TO_APPLY",
+            "priority": "P1",
+            "portal_url": "https://admissions.kaust.edu.sa/",
+            "default_note": "$0 application fee. 100% full-ride fellowship for all admitted MS students. World-class Shaheen III supercomputer & systems labs. Dossier 100% ready in 11_Saudi_Arabia_KAUST_Fellowship_2027/.",
+            "credentials": null,
+            "required_documents": [
+                  {
+                        "id": "passport",
+                        "label": "Biometric Passport (E00340202)",
+                        "ready": true
+                  },
+                  {
+                        "id": "degree",
+                        "label": "3-Page Degree & Transcripts (Legalized)",
+                        "ready": true
+                  },
+                  {
+                        "id": "moi",
+                        "label": "St. Mary's English MOI Certificate",
+                        "ready": true
+                  },
+                  {
+                        "id": "cv_sop",
+                        "label": "Academic CV & KAUST Statement of Purpose",
+                        "ready": true
+                  },
+                  {
+                        "id": "recs",
+                        "label": "2 Academic Recommendation Letters",
+                        "ready": true
+                  }
+            ]
+      },
       {
             "id": "emjm-emai",
             "country": "EU Joint (Spain, Italy, Netherlands, Slovenia)",
@@ -1837,10 +1882,10 @@
             "language": "MOI Accepted (Degree taught in English)",
             "intake": "Fall 2027 (Starts Sept 2027)",
             "deadline": "2026-11-27",
-            "status": "NOT_STARTED",
-            "priority": "P2",
+            "status": "READY_TO_APPLY",
+            "priority": "P1",
             "portal_url": "https://yenchingacademy.pku.edu.cn/",
-            "default_note": "Prestigious fully funded fellowship. Hard cutoff 12:00 noon Beijing Time.",
+            "default_note": "$0 application fee. Prestigious fully funded fellowship. Hard cutoff 12:00 noon Beijing Time (Nov 27, 2026). Dossier 100% ready in 12_China_Peking_University_Yenching_2027/.",
             "credentials": null,
             "required_documents": [
                   {
@@ -2299,6 +2344,7 @@
         if (currentStageFilter !== "all" && status !== currentStageFilter) return false;
 
         // Country filter
+        if (currentCountryFilter === "saudi" && !t.country.toLowerCase().includes("saudi")) return false;
         if (currentCountryFilter === "france" && !t.country.toLowerCase().includes("france")) return false;
         if (currentCountryFilter === "italy" && !t.country.toLowerCase().includes("italy")) return false;
         if (currentCountryFilter === "china" && !t.country.toLowerCase().includes("china")) return false;

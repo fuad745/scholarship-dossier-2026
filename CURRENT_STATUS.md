@@ -10,21 +10,45 @@
 ## 🧭 Executive Summary: Where We Stopped & What's Next
 
 ```
-[✅ COMPLETED]          [⚡ IN PROGRESS / MONITORING]        [⏳ UPCOMING INTAKES]
-• Polimi Round 1:
-  100% Filled & Uploaded
-  (App #337641, Pay €50)
-• France EEF Dossier
-  (100% Profile Done)
-• Russia Open Doors
-  (Portfolio 93 Pts)
-• EMAI / Polimi Dossiers
-  (100% Compiled)
+[✅ COMPLETED / READY TO SUBMIT]   [⚡ IN PROGRESS / MONITORING]        [⏳ UPCOMING INTAKES]
+• Polimi Round 1:                 • China CSC Outreach:              • EMAI Consortium
+  100% Filled (Pay €50)             6 Profs Contacted (Follow Oct 12)  (Opens Nov 2026)
+• KAUST Fellowship ($0 Fee):      • France EEF Dossier:              • UNIPD Padua
+  Dossier 100% Ready                Dossier Done (Cart Locked)         (Opens Nov 2)
+• PKU Yenching ($0 Fee):          • Russia Open Doors:               • Hungary Stipendium
+  Dossier 100% Ready (Nov 27)       Portfolio 93 Pts (Stage 1 Done)    (Opens Nov 15)
 ```
 
 ---
 
 ## 🎯 1. Detailed Breakdown by Country & Program
+
+### 🇸🇦 Saudi Arabia: KAUST Fellowship (Priority P1)
+* **Status:** `DOSSIER_100%_COMPILED (READY TO SUBMIT - $0 APPLICATION FEE)`
+* **Institution:** King Abdullah University of Science and Technology (KAUST), Thuwal, Saudi Arabia
+* **Degree Program:** Master of Science in Computer Science (CEMSE Division)
+* **Financial Award:** **100% Full Ride KAUST Fellowship** (100% Tuition Waiver + **$20,000 to $30,000/year tax-free cash stipend** + free private furnished housing + full medical/dental + round-trip annual flights).
+* **Language Waiver:** **100% English MOI Accepted** (St. Mary's degree conducted in English).
+* **Application Fee:** **$0.00 (Free to apply)**.
+* **Portal:** [https://admissions.kaust.edu.sa/](https://admissions.kaust.edu.sa/)
+* **Dossier Artifacts:** Fully compiled in `11_Saudi_Arabia_KAUST_Fellowship_2027/` (`STATEMENT_OF_PURPOSE_KAUST.pdf`, `Fuad_Ahmed_CV_KAUST_Academic.pdf`, 3-page degree/transcripts scan, and reference letters).
+* **Immediate Next Action:** Execute portal application via browser automation for `fuadahmedt@gmail.com`.
+
+---
+
+### 🇨🇳 China: Peking University Yenching Academy (Priority P1)
+* **Status:** `DOSSIER_100%_COMPILED (READY TO SUBMIT - $0 APPLICATION FEE)`
+* **Institution:** Peking University (PKU), Beijing, China (Top #1 in China / Top #14 Global)
+* **Degree Program:** Master’s in China Studies (Track: Economics & Management / Law & Society - Digital Governance)
+* **Financial Award:** **100% Full Yenching Fellowship** (100% Tuition Waiver + Free Residential Campus Accommodation + **3,500 RMB/month cash stipend** + International Round-Trip Flights).
+* **Language Waiver:** **100% English MOI Accepted** (St. Mary's degree conducted in English).
+* **Application Fee:** **$0.00 (Free to apply)**.
+* **Portal:** [https://yenchingacademy.pku.edu.cn/](https://yenchingacademy.pku.edu.cn/)
+* **Application Deadline:** **November 27, 2026 at 12:00 noon Beijing Time (BJT)**.
+* **Dossier Artifacts:** Fully compiled in `12_China_Peking_University_Yenching_2027/` (`STATEMENT_OF_PURPOSE_AND_RESEARCH_PROPOSAL_YENCHING.pdf`, `Fuad_Ahmed_CV_Yenching_Academic.pdf`, degree scans).
+* **Immediate Next Action:** Execute portal registration and application submission via browser automation.
+
+---
 
 ### 🇪🇺 European Union: Erasmus Mundus Joint Master EMAI (Priority P1)
 * **Status:** `AWAITING PORTAL OPENING (OPENS NOVEMBER 2026)`
@@ -155,8 +179,10 @@
 | **Nov 15, 2026** | 🇭🇺 Hungary | Stipendium Hungaricum DreamApply portal opens |
 | **Nov 15, 2026** | 🇫🇷 France Eiffel | Contact CentraleSupélec & UGA coordinators for Eiffel support |
 | **Nov 2026** | 🇪🇺 EU EMAI | Erasmus Mundus Joint Master in AI (EMAI) portal opens |
+| **Nov 27, 2026** | 🇨🇳 China PKU | Peking University Yenching Academy fellowship deadline (12:00 BJT) |
 | **Dec 1, 2026** | 🇮🇹 Italy Polimi | Politecnico di Milano Round 1 Engineering cutoff (Early Bird €50) |
 | **Dec 1, 2026** | 🇨🇦 Canada | University of Manitoba UMGF fellowship deadline |
 | **Dec 1, 2026** | 🇮🇹 Italy Trento | University of Trento international application portal opens |
 | **Dec 15, 2026** | 🇷🇼 Rwanda ALU | Mastercard Foundation Scholars priority deadline |
+| **Jan 15, 2027** | 🇸🇦 Saudi KAUST | KAUST Fellowship MS in Computer Science application deadline |
 | **Mar 1–15, 2027** | 🇫🇷 France EEF | Final program cart submission deadline for French universities |
