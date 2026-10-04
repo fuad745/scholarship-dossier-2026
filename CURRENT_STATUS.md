@@ -23,6 +23,19 @@
 
 ## 🎯 1. Detailed Breakdown by Country & Program
 
+### 🇪🇺 European Union: Erasmus Mundus Joint Master GENIAL (Priority P1)
+* **Status:** `SCREENED & READY_TO_APPLY (PORTAL OPENS OCT/NOV 2026)`
+* **Degree & Consortium:** MSc Green Networking & Cloud Computing (GENIAL) — Université de Lorraine (France), Leeds Beckett University (UK), Luleå University of Technology (Sweden).
+* **Financial Award:** **100% Full Ride** (100% Tuition Waiver + €1,400/month living stipend for 24 months + €3,000/year travel & installation grant + full European insurance).
+* **Language Waiver:** **100% English MOI Accepted** (St. Mary's University degree exempts IELTS).
+* **Portal:** [genial.univ-lorraine.fr/application/](http://genial.univ-lorraine.fr/application/)
+* **Specialization Fit:** 100% match with Fuad's background in Distributed Systems, Edge-Cloud Infrastructure, and High-Concurrency Backend Architecture.
+* **Immediate Next Action:**
+  * Draft the specialized Europass CV and Green Cloud Computing Statement of Purpose.
+  * Prepare online application account when portal opens.
+
+---
+
 ### 🇫🇷 France: Études en France & Eiffel Excellence (Priority P1)
 * **Status:** `DOSSIER_PROFILE_COMPLETED (AWAITING PROGRAM CART INTAKE UNLOCK)`
 * **Candidate Identifier:** **`ET26-00453`** | **Portal:** [etudesenfrance.diplomatie.gouv.fr](https://etudesenfrance.diplomatie.gouv.fr/)

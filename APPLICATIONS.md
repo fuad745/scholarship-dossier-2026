@@ -33,6 +33,7 @@ python3 track.py update italy-trento APPLIED
 
 | ID | Country | University | MSc Degree Program | Funding Scheme | Total Financial Value | Language Waiver Policy | Target Intake | Application Deadline | Current Status | Priority |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| `emjm-genial` | 🇪🇺 EU Joint | **Univ. de Lorraine, Leeds Beckett & LTU** | MSc Green Networking & Cloud Computing (GENIAL) | **Erasmus Mundus Scholarship** | 100% Tuition + €1,400/mo + €3,000/yr Travel + Full Insurance | St. Mary's MOI Certificate | **Fall 2027** *(Starts Sept 2027)* | **Feb 15, 2027** *(Opens Oct/Nov)* | 🟡 Ready to Apply | **P1** |
 | `italy-trento` | 🇮🇹 Italy | **University of Trento** | MSc Computer Science / Software Eng | **DSU Trentino** | 100% Tuition + Free Dorm + €7,200/yr + Meals | St. Mary's MOI Certificate | **Fall 2027** *(Sept/Oct 2027)* | **Feb 20, 2027** *(Opens Dec)* | 🟡 Ready to Apply | **P1** |
 | `italy-padua` | 🇮🇹 Italy | **University of Padua (UNIPD)** | MSc Computer Engineering / Data Science | **Veneto ESU + Excellence** | 100% Tuition + Free Dorm + €7,000/yr + Meals | St. Mary's MOI Certificate | **Fall 2027** *(Starts Oct 2027)* | **Feb 2, 2027** *(Opens Nov 2)* | 🟡 Dossier Prep | **P1** |
 | `italy-polimi` | 🇮🇹 Italy | **Politecnico di Milano** | MSc Computer Science and Engineering | **DSU Lombardia** | 100% Tuition + Housing + €7,650/yr + Meals | St. Mary's MOI Certificate | **Fall 2027** *(Starts Sept 2027)* | **R1: Nov 15, 2026**<br>**R2: Mar 2, 2027** | 🟢 Round 1 Active | **P1** |
