@@ -38,7 +38,9 @@
   * Uploaded documents: `STATEMENT_OF_PURPOSE_KAUST.pdf`, `Fuad_Ahmed_CV_KAUST_Academic.pdf`, 3-page BSc transcript/degree PDF, and passport.
   * 3 Referees registered and links dispatched: Dr. Tesfaye Assefa, Mr. Birhanu Getachew, Dr. Yared Semu.
   * Electronic signature signed and saved. Zero validation errors.
-* **Current State:** Parked on pre-submission **Review** page per user instruction (*"i will review it and submit latter"*). Fuad can log in and click "Submit Application" ($0 fee).
+* **⚠️ Pre-Submission Correction Required:**
+  * Update [Emergency Contact Details](https://apply.kaust.edu.sa/apply/frm?35480fd0-99b9-4651-995a-7e5abb24e61f) from placeholder father info to **Mother: Juhara Ousman**, Phone: **`+251 911 747 500`**, Address: `Kolfe Keraniyo Sub City, Addis Ababa, Ethiopia` (as father Ahmed Tuba is deceased).
+* **Current State:** Parked on pre-submission **Review** page per user instruction. Fuad can log in, quickly edit the Emergency Contact section, and click "Submit Application" ($0 fee).
 
 ---
 

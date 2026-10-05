@@ -37,11 +37,22 @@ All documents required by KAUST have been tailored and compiled into PDF format:
 
 ---
 
-## 📝 Step-by-Step KAUST Application Workflow
-1. **Access Portal:** Navigate to [https://admissions.kaust.edu.sa/](https://admissions.kaust.edu.sa/) and click **"Apply Now"**.
-2. **Create Account:** Register with primary email `fuadahmedt@gmail.com`.
-3. **Select Program:** Select **Computer Science (MS)** under the CEMSE Division.
-4. **Upload Academic Credentials:** Upload `Fuad_Ahmed_BSc_Degree_Complete_3Pages.pdf` under Higher Education Transcripts.
-5. **Upload Statement & CV:** Attach `STATEMENT_OF_PURPOSE_KAUST.pdf` and `Fuad_Ahmed_CV_KAUST_Academic.pdf`.
-6. **Enter Referees:** Enter contact information for Dr. Tesfaye Assefa and Mr. Birhanu Getachew (the portal emails them reference upload links).
-7. **Submit:** Review and submit for $0 application fee.
+## 📝 Step-by-Step KAUST Application Workflow & Pre-Submission Checklist
+1. **Access Portal:** Navigate to [https://apply.kaust.edu.sa/apply/review](https://apply.kaust.edu.sa/apply/review).
+   * Credentials: Email: `fuadahmedt@gmail.com` | Password: `FuadKaust2027!#`
+2. **Current Application Status:** **100% FILLED & SAVED (Parked on Review Screen)**.
+3. ⚠️ **ACTION REQUIRED BEFORE FINAL SUBMISSION — Update Emergency Contact:**
+   * Direct Link: [Emergency Contact Form](https://apply.kaust.edu.sa/apply/frm?35480fd0-99b9-4651-995a-7e5abb24e61f)
+   * Previous placeholder entry: Father (Ahmed Tuba).
+   * **Correct Official Entry:**
+     * **Relationship:** `Mother`
+     * **First Name:** `Juhara`
+     * **Last Name:** `Ousman`
+     * **Email:** *(Optional or `fuadahmedt@gmail.com`)*
+     * **Phone Number:** **`+251 911 747 500`** (or `+251911747500`)
+     * **Address:** `Kolfe Keraniyo Sub City, Addis Ababa, Ethiopia`
+   * Click **Save** and then return to the **Review** page.
+4. **Referees Dispatched:** All 3 academic referees registered (Dr. Tesfaye Assefa, Mr. Birhanu Getachew, Dr. Yared Semu).
+5. **Electronic Signature:** Concurred and saved with zero validation errors.
+6. **Submit:** Click "Submit Application" ($0 fee).
+

@@ -32,6 +32,18 @@
 
 ---
 
+## 👨‍👩‍👦 1.1 Family Status & Emergency Contact (Next of Kin)
+
+| Field | Official Value | Notes |
+| :--- | :--- | :--- |
+| **Primary Emergency Contact** | **Juhara Ousman** | Mother / Next of Kin |
+| **Relationship to Applicant** | **Mother** | Primary guardian & emergency point of contact |
+| **Emergency Contact Phone** | **`+251 911 747 500`** | Mobile: `0911747500` |
+| **Emergency Contact Address** | Kolfe Keraniyo Sub City, Addis Ababa, Ethiopia | Co-resident |
+| **Father Status** | **Deceased** | Father: Ahmed Tuba (Deceased) |
+
+---
+
 ## 🎓 2. Academic Background & Educational Credentials
 
 ### A. Bachelor of Science (BSc) in Computer Science

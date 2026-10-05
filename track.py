@@ -145,11 +145,13 @@ def cmd_profile(args):
 • Passport No.    : E00340202 (Valid to 15/04/2036)
 • Email           : fuadahmedt@gmail.com
 • Phone / WhatsApp: +251 925 278 350
-• Location        : Addis Ababa, Ethiopia
+• Location        : Kolfe Keraniyo Sub City, Addis Ababa, Ethiopia
+• Emergency Contact: Juhara Ousman (Mother) | Phone: +251 911 747 500
+• Family Status   : Father (Ahmed Tuba) deceased | Mother is next-of-kin
 • Degree          : BSc in Computer Science, St. Mary's University (Grad. Aug 2022)
 • Cumulative GPA  : 3.20 / 4.00 (Major GPA: 3.20, ~80% equivalent)
 • English Status  : Medium of Instruction (MOI) Verified -> 100% EXEMPT FROM IELTS
-• Active Passports: ET26-00453 (France EEF), 396112 (Russia Open Doors)
+• Active Portals  : KAUST (341fe207), PKU Yenching (876644237), Polimi (11281494), EEF (ET26-00453), Open Doors (396112)
 ====================================================================================
 """)
 

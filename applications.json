@@ -8,9 +8,16 @@
     "institution": "St. Mary's University, Addis Ababa",
     "gpa_major": 3.2,
     "gpa_scale": 4.0,
-    "language_status": "English Medium of Instruction (MOI) - St. Mary's University (IELTS/TOEFL Exempted)"
+    "language_status": "English Medium of Instruction (MOI) - St. Mary's University (IELTS/TOEFL Exempted)",
+    "emergency_contact": {
+      "name": "Juhara Ousman",
+      "relationship": "Mother",
+      "phone": "+251911747500",
+      "address": "Kolfe Keraniyo Sub City, Addis Ababa, Ethiopia",
+      "note": "Father (Ahmed Tuba) deceased"
+    }
   },
-  "last_updated": "2026-10-03T14:30:00+03:00",
+  "last_updated": "2026-10-05T17:15:00+03:00",
   "active_tracks": [
     {
       "id": "saudi-kaust",
