@@ -1,6 +1,6 @@
 # 📍 Active Progress & Current Status (Live Snapshot)
 
-> **LAST UPDATED:** October 3, 2026  
+> **LAST UPDATED:** October 5, 2026  
 > **SYNC STATUS:** Synchronized with GitHub (`fuad745/scholarship-dossier-2026`)  
 > **APPLICANT:** Fuad Ahmed (`fuadahmedt@gmail.com` | `+251 925 278 350`)  
 > **BSc:** Computer Science, St. Mary's University (GPA: 3.20 / 4.00, MOI English Exempted)
@@ -10,15 +10,15 @@
 ## 🧭 Executive Summary: Where We Stopped & What's Next
 
 ```
-[✅ COMPLETED / READY TO SUBMIT]   [⚡ IN PROGRESS / MONITORING]        [⏳ UPCOMING INTAKES]
-• Polimi Round 1:                 • China CSC Outreach:              • UNIPD Padua (Opens Nov 2)
-  100% Filled (Pay €50)             6 Profs Contacted (Follow Oct 12)  (Dossier 100% Ready)
-• KAUST Fellowship ($0 Fee):      • France EEF Dossier:              • EMAI Consortium
-  100% Ready (Emergency Updated)    Dossier Done (Cart Locked)         (Opens Nov 2026)
-• PKU Yenching ($0 Fee):          • Russia Open Doors:               • Hungary Stipendium
-  100% Ready (Nov 27 Deadline)      Portfolio 93 Pts (Stage 1 Done)    (Opens Nov 15)
-• MBZUAI Fellowship ($0 Fee):
-  Dossier 100% Ready (Priority Nov 15)
+[✅ PARKED FOR USER REVIEW / READY TO SUBMIT]   [⚡ IN PROGRESS / MONITORING]        [⏳ UPCOMING INTAKES]
+• KAUST Fellowship ($0 Fee):                   • China CSC Outreach:              • EMAI Consortium
+  100% Ready (Emergency Updated)                 6 Profs Contacted (Follow Oct 12)  (Opens Nov 2026)
+• PKU Yenching ($0 Fee):                       • France EEF Dossier:              • Hungary Stipendium
+  100% Ready (Nov 27 Deadline)                   Dossier Done (Cart Locked)         (Opens Nov 15)
+• MBZUAI Fellowship ($0 Fee):                  • Russia Open Doors:               • Trento DSU
+  100% Ready (App: IA-0000049567)                Portfolio 93 Pts (Stage 1 Done)    (Opens Dec 1)
+• UNIPD Padua (Call 1 Closes Nov 15):          • Polimi Round 1:
+  100% Ready (App: 376598)                       100% Filled (Pay €50 PagoPA)
 ```
 
 ---
@@ -46,24 +46,30 @@
 ---
 
 ### 🇦🇪 United Arab Emirates: MBZUAI Graduate Fellowship (Priority P1)
-* **Status:** `DOSSIER_100%_PREPARED (READY TO APPLY ONLINE)`
+* **Status:** `100%_FILLED_AND_PARKED (READY FOR USER FINAL REVIEW & SUBMISSION)`
 * **Institution:** Mohamed bin Zayed University of Artificial Intelligence (MBZUAI), Masdar City, Abu Dhabi, UAE
 * **Degree Program:** Master of Science in Computer Science (Distributed Systems & AI Infrastructure Track)
 * **Financial Award:** **100% Full Ride MBZUAI Fellowship** (100% Tuition Waiver + **8,000 AED/month cash stipend (~$2,175 USD/month)** + Free private furnished accommodation + Full health insurance + UAE student visa + Annual round-trip flight tickets).
 * **Language Waiver:** **100% English MOI Exemption Letter Accepted** (Official St. Mary's University MOI certificate included in dossier).
 * **Application Fee:** **$0.00 (Free to apply)**.
-* **Portal:** [https://mbzuai.ac.ae/study/admissions/](https://mbzuai.ac.ae/study/admissions/)
+* **Portal / Review URL:** [https://apply.mbzuai.ac.ae/ApplicantPortal/s/my-applications](https://apply.mbzuai.ac.ae/ApplicantPortal/s/my-applications)
+* **Credentials:** Email: `fuadahmedt@gmail.com` | Username: `FuadTuba101` | Password: `FuadMbzuai2027!#`
+* **Application Number:** **`IA-0000049567`** (MSc Computer Science, Fall 2027)
 * **Deadlines:**
   * **Priority Deadline:** **November 15, 2026 (5:00 PM GST)** *(Early review & maximum fellowship priority)*
   * **Regular Deadline:** December 15, 2026
-* **What is 100% Prepared in `13_UAE_MBZUAI_Fellowship_2027/`:**
-  * `STATEMENT_OF_PURPOSE_MBZUAI.pdf`: Tailored SOP linking high-concurrency systems, Redis caching, and capstone synchronization protocol to distributed AI systems and accelerator runtimes.
-  * `Fuad_Ahmed_CV_MBZUAI_Academic.pdf`: Academic CV highlighting systems, backend, and Linux engineering.
-  * 3-Page BSc degree & transcripts with official English MOI certificate attached.
-  * 2 Recommendation letters (Dr. Tesfaye Assefa and Mr. Birhanu Getachew).
-  * Biometric passport scan (`E00340202`).
-  * Emergency Contact specified: Mother (Juhara Ousman, `+251 911 747 500`).
-* **Immediate Next Action:** Create applicant account on MBZUAI portal and submit before the November 15, 2026 priority cutoff ($0 fee).
+* **What is 100% Completed:**
+  * Application registered, verified, and linked to profile.
+  * All 6 checklist tasks completed and required documents uploaded:
+    1. Photo with White Background (`fuad_photo_white_bg.jpg`)
+    2. Academic Transcript & Degree (`Fuad_Ahmed_BSc_Degree_Complete_3Pages.pdf`)
+    3. Proof of English Proficiency (`Fuad_Ahmed_BSc_Degree_Complete_3Pages.pdf` - Page 3 MOI)
+    4. Statement of Purpose (`STATEMENT_OF_PURPOSE_MBZUAI.pdf`)
+    5. Valid Passport (`passport.pdf`)
+    6. Additional Documents: Academic CV & 2 Recommendation Letters attached.
+  * **Emergency Contact Verified:** Mother (Juhara Ousman, `+251 911 747 500`).
+  * Screenshot verified: [`mbzuai_application_progress.png`](file:///home/kichner/Desktop/stuff/docs/13_UAE_MBZUAI_Fellowship_2027/mbzuai_application_progress.png).
+* **Current State:** 100% completed, all checklist items satisfied. Parked in draft/review status without final submission per user constraint. Fuad can log in and click "Submit Application" ($0 fee).
 
 ---
 
@@ -166,26 +172,32 @@
     * **Documents Uploaded:** All 8 files uploaded & validated (Degree, Transcripts, GPA statement, CV, 4-year Course Syllabus, Motivation Letter, Recommendation Letter, MOI)
     * **Round 1 Deadline:** **December 1, 2026 (11:59 PM CET)** (Early Bird Fee €50)
     * **Current State:** Parked at **PagoPA checkout** screen. Once Fuad enters card details for the €50 fee, the application is formally locked and submitted.
-  * **University of Padua - UNIPD (MSc Computer Engineering / Data Science):**
-    * **Status:** `DOSSIER_100%_PREPARED (AWAITING PORTAL OPENING NOVEMBER 2, 2026)`
+  * **University of Padua - UNIPD (MSc Computer Science):**
+    * **Status:** `100%_FILLED_AND_PARKED (READY FOR USER FINAL REVIEW & SUBMISSION)`
     * **Application Portal:** [apply.unipd.it](https://apply.unipd.it/) (DreamApply)
-    * **Intake Window:** Opens **November 2, 2026** | First Round Closes: **February 2, 2027**
+    * **Direct Review URL:** [https://apply.unipd.it/application/view/id/376598](https://apply.unipd.it/application/view/id/376598)
+    * **Dream ID:** `667887` | **Application ID:** `376598`
+    * **Intake Window:** First Call opened **September 15, 2026** | First Call Closes: **November 15, 2026 (23:59:59 CET)**
     * **Scholarships:** Veneto ESU Full Scholarship (100% Tuition + Housing + Meals + ~€7,000/yr cash) + Padua International Excellence Grant (€8,000/yr).
-    * **What is 100% Prepared in `14_Italy_University_of_Padua_2027/`:**
-      * `MOTIVATION_LETTER_UNIPD.pdf`: Tailored systems motivation letter for DEI.
-      * `Fuad_Ahmed_CV_UNIPD_Academic.pdf`: European academic CV.
-      * `DETAILED_COURSE_DESCRIPTIONS_SYLLABUS.pdf`: 4-Year complete BSc course catalogue.
-      * 3-Page BSc degree & transcripts with official English MOI certificate attached.
-      * 2 Recommendation letters (Dr. Tesfaye Assefa and Mr. Birhanu Getachew).
-      * Passport scan (`E00340202`).
+    * **What is 100% Completed:**
+      * Application profile, contacts, and legal address verified.
+      * **Emergency Contact Verified:** Mother (Juhara Ousman, `+251 911 747 500`).
+      * Academic education: St. Mary's University BSc Computer Science (3.20 GPA, English MOI waiver requested).
+      * Documents uploaded & attached:
+        1. Motivation Letter (`MOTIVATION_LETTER_UNIPD.pdf`)
+        2. Academic CV (`Fuad_Ahmed_CV_UNIPD_Academic.pdf`)
+        3. Course Syllabus (`DETAILED_COURSE_DESCRIPTIONS_SYLLABUS.pdf`)
+        4. Degree & Transcript (`Fuad_Ahmed_BSc_Degree_Complete_3Pages.pdf` with MOI)
+        5. Valid Passport (`passport.pdf`)
+      * Screenshot verified: [`unipd_application_progress.png`](file:///home/kichner/Desktop/stuff/docs/14_Italy_University_of_Padua_2027/unipd_application_progress.png).
+    * **Current State:** 100% completed, parked on full Review screen per user instruction. Fuad can log in and click "Submit application".
   * **University of Trento (MSc Computer Science):**
     * Application portal opens: **December 1, 2026** | Deadline: February 20, 2027
   * **Sapienza University of Rome & UniCal:**
     * Pre-selection opens: **January 2027**
 * **Immediate Next Action:**
   * Complete the €50 application evaluation fee checkout via PagoPA for Polimi.
-  * Submit MBZUAI application before November 15 ($0 fee).
-  * Submit UNIPD DreamApply application as soon as portal opens on November 2.
+  * Review and submit KAUST, Yenching, MBZUAI, and UNIPD applications at Fuad's convenience ($0 application fees).
 
 ---
 

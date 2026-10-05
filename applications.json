@@ -17,7 +17,7 @@
       "note": "Father (Ahmed Tuba) deceased"
     }
   },
-  "last_updated": "2026-10-05T17:50:00+03:00",
+  "last_updated": "2026-10-05T20:07:00+03:00",
   "active_tracks": [
     {
       "id": "saudi-kaust",
@@ -81,11 +81,16 @@
       "target_intake": "Fall 2027 (Starts Aug/Sept 2027)",
       "deadline": "2026-11-15",
       "portal_open": "2026-09-01",
-      "status": "DOSSIER_READY_FOR_SUBMISSION",
+      "status": "PARKED_FOR_USER_REVIEW",
       "priority": "P1",
-      "portal_url": "https://mbzuai.ac.ae/study/admissions/",
-      "notes": "$0 application fee. 100% Full ride with $2,175/mo cash stipend. Priority cutoff Nov 15, 2026 (Regular: Dec 15). Complete dossier assembled in 13_UAE_MBZUAI_Fellowship_2027.",
+      "portal_url": "https://apply.mbzuai.ac.ae/ApplicantPortal/s/my-applications",
+      "notes": "$0 application fee. 100% Full ride with $2,175/mo cash stipend. Form 100% filled, emergency contact set to mother (Juhara Ousman), all 6 checklist documents uploaded. Application ID: IA-0000049567. Parked on Review screen for user final submission.",
       "required_documents": [
+        {
+          "id": "photo",
+          "label": "Photo with White Background (fuad_photo_white_bg.jpg)",
+          "ready": true
+        },
         {
           "id": "passport",
           "label": "Biometric Passport (E00340202)",
@@ -112,7 +117,15 @@
           "ready": true
         }
       ],
-      "credentials": null
+      "credentials": {
+        "email": "fuadahmedt@gmail.com",
+        "username": "FuadTuba101",
+        "password": "FuadMbzuai2027!#",
+        "id_label": "Application Number",
+        "application_id": "IA-0000049567",
+        "notes": "Direct Portal URL: https://apply.mbzuai.ac.ae/ApplicantPortal/s/my-applications. Application ID: IA-0000049567",
+        "created_by": "AI Agent"
+      }
     },
     {
       "id": "emjm-emai",
@@ -260,17 +273,17 @@
       "id": "italy-padua",
       "country": "Italy",
       "university": "University of Padua (UNIPD)",
-      "program": "MSc Computer Engineering / Data Science",
+      "program": "MSc Computer Science",
       "funding": "Veneto ESU Scholarship + Padua International Excellence Grant",
       "benefits": "100% Tuition + Housing Subsidy + €7,000/yr Cash + Meals",
       "language_requirement": "MOI Accepted (NO IELTS)",
       "target_intake": "Fall 2027 (Starts Oct 2027)",
-      "deadline": "2027-02-02",
-      "portal_open": "2026-11-02",
-      "status": "DOSSIER_READY_FOR_PORTAL_OPEN",
+      "deadline": "2026-11-15",
+      "portal_open": "2026-09-15",
+      "status": "PARKED_FOR_USER_REVIEW",
       "priority": "P1",
-      "portal_url": "https://apply.unipd.it/",
-      "notes": "Dossier 100% prepared in 14_Italy_University_of_Padua_2027. Motivation Letter, Academic CV, Syllabus, Transcripts, MOI, Recs, and Passport ready. Portal opens November 2, 2026.",
+      "portal_url": "https://apply.unipd.it/application/view/id/376598",
+      "notes": "First call for 2027/28 intake opened Sept 15, 2026 and closes Nov 15, 2026 (23:59 CET). Application 100% completed and all documents uploaded (Motivation Letter, CV, Syllabus, 3-page Degree/Transcripts/MOI, Passport, Rec letters). Emergency contact set to Mother: Juhara Ousman. Application ID: 376598 (Dream ID: 667887). Parked on Review page for user final submission.",
       "required_documents": [
         {
           "id": "passport",
@@ -293,6 +306,11 @@
           "ready": true
         },
         {
+          "id": "syllabus",
+          "label": "Detailed Course Descriptions / Syllabus",
+          "ready": true
+        },
+        {
           "id": "recs",
           "label": "2 Academic Recommendation Letters",
           "ready": true
@@ -303,7 +321,13 @@
           "ready": false
         }
       ],
-      "credentials": null
+      "credentials": {
+        "email": "fuadahmedt@gmail.com",
+        "dream_id": "667887",
+        "application_id": "376598",
+        "notes": "Direct Review URL: https://apply.unipd.it/application/view/id/376598. Application ID: 376598, Dream ID: 667887",
+        "created_by": "AI Agent"
+      }
     },
     {
       "id": "italy-polimi",
