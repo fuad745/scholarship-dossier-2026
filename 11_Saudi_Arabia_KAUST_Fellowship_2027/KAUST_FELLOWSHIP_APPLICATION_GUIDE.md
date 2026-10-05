@@ -41,17 +41,13 @@ All documents required by KAUST have been tailored and compiled into PDF format:
 1. **Access Portal:** Navigate to [https://apply.kaust.edu.sa/apply/review](https://apply.kaust.edu.sa/apply/review).
    * Credentials: Email: `fuadahmedt@gmail.com` | Password: `FuadKaust2027!#`
 2. **Current Application Status:** **100% FILLED & SAVED (Parked on Review Screen)**.
-3. ⚠️ **ACTION REQUIRED BEFORE FINAL SUBMISSION — Update Emergency Contact:**
-   * Direct Link: [Emergency Contact Form](https://apply.kaust.edu.sa/apply/frm?35480fd0-99b9-4651-995a-7e5abb24e61f)
-   * Previous placeholder entry: Father (Ahmed Tuba).
-   * **Correct Official Entry:**
-     * **Relationship:** `Mother`
-     * **First Name:** `Juhara`
-     * **Last Name:** `Ousman`
-     * **Email:** *(Optional or `fuadahmedt@gmail.com`)*
-     * **Phone Number:** **`+251 911 747 500`** (or `+251911747500`)
-     * **Address:** `Kolfe Keraniyo Sub City, Addis Ababa, Ethiopia`
-   * Click **Save** and then return to the **Review** page.
+3. ✅ **Emergency Contact Updated & Verified:**
+   * **Relationship:** `Mother`
+   * **First Name:** `Juhara`
+   * **Last Name:** `Ousman`
+   * **Phone Number:** **`+251 911 747 500`**
+   * **Address:** `Kolfe Keraniyo Sub City, Addis Ababa, Ethiopia`
+   * Screenshot Verified: [`kaust_emergency_contact_updated.png`](file:///home/kichner/Desktop/stuff/docs/11_Saudi_Arabia_KAUST_Fellowship_2027/kaust_emergency_contact_updated.png)
 4. **Referees Dispatched:** All 3 academic referees registered (Dr. Tesfaye Assefa, Mr. Birhanu Getachew, Dr. Yared Semu).
 5. **Electronic Signature:** Concurred and saved with zero validation errors.
 6. **Submit:** Click "Submit Application" ($0 fee).

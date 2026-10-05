@@ -37,10 +37,9 @@
   * Academic history from St. Mary's University (BSc CS, 3.20 GPA, English MOI waiver).
   * Uploaded documents: `STATEMENT_OF_PURPOSE_KAUST.pdf`, `Fuad_Ahmed_CV_KAUST_Academic.pdf`, 3-page BSc transcript/degree PDF, and passport.
   * 3 Referees registered and links dispatched: Dr. Tesfaye Assefa, Mr. Birhanu Getachew, Dr. Yared Semu.
+  * **Emergency Contact Verified & Updated in Portal:** Successfully updated to **Mother: Juhara Ousman**, Phone: **`+251 911 747 500`**, Address: `Kolfe Keraniyo Sub City, Addis Ababa, Ethiopia`. Screenshot verified: [`kaust_emergency_contact_updated.png`](file:///home/kichner/Desktop/stuff/docs/11_Saudi_Arabia_KAUST_Fellowship_2027/kaust_emergency_contact_updated.png).
   * Electronic signature signed and saved. Zero validation errors.
-* **⚠️ Pre-Submission Correction Required:**
-  * Update [Emergency Contact Details](https://apply.kaust.edu.sa/apply/frm?35480fd0-99b9-4651-995a-7e5abb24e61f) from placeholder father info to **Mother: Juhara Ousman**, Phone: **`+251 911 747 500`**, Address: `Kolfe Keraniyo Sub City, Addis Ababa, Ethiopia` (as father Ahmed Tuba is deceased).
-* **Current State:** Parked on pre-submission **Review** page per user instruction. Fuad can log in, quickly edit the Emergency Contact section, and click "Submit Application" ($0 fee).
+* **Current State:** 100% completed, all sections validated and verified. Parked on pre-submission **Review** page per user instruction. Fuad can log in and click "Submit Application" ($0 fee).
 
 ---
 
