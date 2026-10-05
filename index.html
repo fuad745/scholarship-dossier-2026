@@ -173,6 +173,33 @@
       font-weight: 600;
     }
 
+    /* Application Fee Indicators */
+    .fee-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 3px 8px;
+      border-radius: var(--radius-full);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+    .fee-badge.fee-free {
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      color: #34d399;
+    }
+    .fee-badge.fee-paid {
+      background: rgba(239, 68, 68, 0.15);
+      border: 1px solid rgba(239, 68, 68, 0.4);
+      color: #f87171;
+    }
+    .fee-badge.fee-low {
+      background: rgba(245, 158, 11, 0.15);
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      color: #fbbf24;
+    }
+
     .subtitle-text {
       font-size: 13.5px;
       color: var(--text-2);
@@ -1076,11 +1103,14 @@
     </div>
 
     <div class="filter-pills" id="countryFilters">
-      <button class="btn-filter-pill active" onclick="setCountryFilter('all')">All Countries</button>
+      <button class="btn-filter-pill active" onclick="setCountryFilter('all')">All Opportunities</button>
+      <button class="btn-filter-pill" onclick="setCountryFilter('free')" style="border-color: rgba(16, 185, 129, 0.4); color: #34d399;">💚 $0 Free Apps</button>
+      <button class="btn-filter-pill" onclick="setCountryFilter('fee')" style="border-color: rgba(239, 68, 68, 0.4); color: #f87171;">💳 Fee Required</button>
       <button class="btn-filter-pill" onclick="setCountryFilter('saudi')">🇸🇦 Saudi Arabia</button>
-      <button class="btn-filter-pill" onclick="setCountryFilter('france')">🇫🇷 France</button>
+      <button class="btn-filter-pill" onclick="setCountryFilter('uae')">🇦🇪 UAE</button>
       <button class="btn-filter-pill" onclick="setCountryFilter('italy')">🇮🇹 Italy</button>
       <button class="btn-filter-pill" onclick="setCountryFilter('china')">🇨🇳 China</button>
+      <button class="btn-filter-pill" onclick="setCountryFilter('france')">🇫🇷 France</button>
       <button class="btn-filter-pill" onclick="setCountryFilter('russia')">🇷🇺 Russia</button>
       <button class="btn-filter-pill" onclick="setCountryFilter('p1')">⭐ Priority P1</button>
       <button class="btn-filter-pill" onclick="setCountryFilter('work')">💼 Work Track</button>
@@ -1347,6 +1377,66 @@
                         "label": "3 Academic Recommendation Letters (Sent)",
                         "ready": true
                   }
+            ],
+            "app_fee": "$0.00 (Free)",
+            "fee_is_free": true
+      },
+      {
+            "id": "uae-mbzuai",
+            "country": "United Arab Emirates",
+            "flag": "🇦🇪",
+            "university": "Mohamed bin Zayed Univ of AI (MBZUAI)",
+            "program": "MSc Computer Science (Distributed Systems & AI)",
+            "funding": "MBZUAI Full-Ride Fellowship",
+            "benefits": "100% Tuition + 8,000 AED/mo (,175/mo) + Free Housing + Flights",
+            "language": "MOI Exemption Accepted (Official Letter)",
+            "intake": "Fall 2027 (Starts Aug/Sept 2027)",
+            "deadline": "2026-11-15",
+            "status": "READY_FOR_SUBMISSION",
+            "priority": "P1",
+            "app_fee": "$0.00 (Free)",
+            "fee_is_free": true,
+            "portal_url": "https://apply.mbzuai.ac.ae/ApplicantPortal/s/my-applications",
+            "default_note": "$0 application fee. Form 100% completed, emergency contact set to mother (Juhara Ousman), all 6 checklist documents uploaded. Application ID: IA-0000049567. Parked on Review screen for user final submission.",
+            "credentials": {
+                  "email": "fuadahmedt@gmail.com",
+                  "username": "FuadTuba101",
+                  "password": "FuadMbzuai2027!#",
+                  "id_label": "Application ID",
+                  "notes": "Direct Portal URL: https://apply.mbzuai.ac.ae/ApplicantPortal/s/my-applications. Application ID: IA-0000049567",
+                  "created_by": "AI Agent"
+            },
+            "required_documents": [
+                  {
+                        "id": "photo",
+                        "label": "Photo with White Background (fuad_photo_white_bg.jpg)",
+                        "ready": true
+                  },
+                  {
+                        "id": "passport",
+                        "label": "Biometric Passport (E00340202)",
+                        "ready": true
+                  },
+                  {
+                        "id": "degree",
+                        "label": "3-Page Degree & Transcripts",
+                        "ready": true
+                  },
+                  {
+                        "id": "moi",
+                        "label": "St. Mary's English MOI Certificate (Page 3)",
+                        "ready": true
+                  },
+                  {
+                        "id": "cv_sop",
+                        "label": "Tailored MBZUAI Statement of Purpose & Academic CV",
+                        "ready": true
+                  },
+                  {
+                        "id": "recs",
+                        "label": "2 Academic Recommendation Letters",
+                        "ready": true
+                  }
             ]
       },
       {
@@ -1391,7 +1481,9 @@
                         "label": "2 Academic Recommendation Letters",
                         "ready": true
                   }
-            ]
+            ],
+            "app_fee": "€0.00 (Free)",
+            "fee_is_free": true
       },
       {
             "id": "emjm-genial",
@@ -1440,7 +1532,9 @@
                         "label": "BSc Computer Science Course Syllabus Description",
                         "ready": true
                   }
-            ]
+            ],
+            "app_fee": "N/A (Consortium Ended)",
+            "fee_is_free": true
       },
       {
             "id": "italy-trento",
@@ -1489,24 +1583,32 @@
                         "label": "ISEE Parificato (Trentino DSU €7,200/yr Cash)",
                         "ready": false
                   }
-            ]
+            ],
+            "app_fee": "€15.00",
+            "fee_is_free": false
       },
       {
             "id": "italy-padua",
             "country": "Italy",
             "flag": "🇮🇹",
             "university": "University of Padua (UNIPD)",
-            "program": "MSc Computer Engineering / Data Science",
+            "program": "MSc Computer Science",
             "funding": "Veneto ESU Scholarship + Padua International Excellence Grant",
             "benefits": "100% Tuition + Housing Subsidy + €7,000/yr Cash + Meals",
             "language": "MOI Accepted (NO IELTS)",
             "intake": "Fall 2027 (Starts Oct 2027)",
-            "deadline": "2027-02-02",
-            "status": "NEEDS_DOCS",
+            "deadline": "2026-11-15",
+            "status": "READY_FOR_SUBMISSION",
             "priority": "P1",
-            "portal_url": "https://apply.unipd.it/",
-            "default_note": "Automatic evaluation for €8,000/yr merit grant alongside ESU need grant.",
-            "credentials": null,
+            "portal_url": "https://apply.unipd.it/application/view/id/376598",
+            "default_note": "€30 application fee payable on DreamApply via PagoPA upon final submit. Application 100% filled, emergency contact set to mother (Juhara Ousman), and all documents uploaded. Application ID: 376598 (Dream ID: 667887). Parked on Review page for user final submission.",
+            "credentials": {
+                  "email": "fuadahmedt@gmail.com",
+                  "username": "376598 (Dream ID: 667887)",
+                  "id_label": "Application ID",
+                  "notes": "Direct Review URL: https://apply.unipd.it/application/view/id/376598. Application ID: 376598, Dream ID: 667887",
+                  "created_by": "AI Agent"
+            },
             "required_documents": [
                   {
                         "id": "passport",
@@ -1529,6 +1631,11 @@
                         "ready": true
                   },
                   {
+                        "id": "syllabus",
+                        "label": "Detailed Course Descriptions / Syllabus",
+                        "ready": true
+                  },
+                  {
                         "id": "recs",
                         "label": "2 Academic Recommendation Letters",
                         "ready": true
@@ -1538,7 +1645,9 @@
                         "label": "ISEE Parificato (Veneto ESU Scholarship €7,000/yr Cash)",
                         "ready": false
                   }
-            ]
+            ],
+            "app_fee": "€30.00",
+            "fee_is_free": false
       },
       {
             "id": "italy-polimi",
@@ -1601,7 +1710,9 @@
                         "label": "ISEE Parificato (Family Income & Asset Affidavit for €7,650/yr DSU)",
                         "ready": false
                   }
-            ]
+            ],
+            "app_fee": "€50.00",
+            "fee_is_free": false
       },
       {
             "id": "italy-sapienza",
@@ -1650,7 +1761,9 @@
                         "label": "ISEE Parificato (LazioDiSCo Scholarship €7,000/yr Cash)",
                         "ready": false
                   }
-            ]
+            ],
+            "app_fee": "€30.00",
+            "fee_is_free": false
       },
       {
             "id": "italy-unical",
@@ -1699,7 +1812,9 @@
                         "label": "Extra-EU Family Economic Affidavit (€6,000/yr Award)",
                         "ready": false
                   }
-            ]
+            ],
+            "app_fee": "€0.00 (Free)",
+            "fee_is_free": true
       },
       {
             "id": "china-hit",
@@ -1758,7 +1873,9 @@
                         "label": "Supervisor Provisional Acceptance Letter (PAL) from Professor",
                         "ready": false
                   }
-            ]
+            ],
+            "app_fee": "400 RMB (~$55)",
+            "fee_is_free": false
       },
       {
             "id": "china-bit",
@@ -1817,7 +1934,9 @@
                         "label": "Supervisor Provisional Acceptance Letter (PAL) from Professor",
                         "ready": false
                   }
-            ]
+            ],
+            "app_fee": "600 RMB (~$85)",
+            "fee_is_free": false
       },
       {
             "id": "china-ustc",
@@ -1876,7 +1995,9 @@
                         "label": "Supervisor Provisional Acceptance Letter (PAL) from Professor",
                         "ready": false
                   }
-            ]
+            ],
+            "app_fee": "600 RMB (~$85)",
+            "fee_is_free": false
       },
       {
             "id": "china-pku-yenching",
@@ -1932,7 +2053,9 @@
                         "label": "International Academic CV",
                         "ready": true
                   }
-            ]
+            ],
+            "app_fee": "$0.00 (Free)",
+            "fee_is_free": true
       },
       {
             "id": "russia-open-doors",
@@ -1989,7 +2112,9 @@
                         "label": "Stage 2 Online Proctored Subject Exam (CS & Math)",
                         "ready": false
                   }
-            ]
+            ],
+            "app_fee": "$0.00 (Free)",
+            "fee_is_free": true
       },
       {
             "id": "hungary-stipendium",
@@ -2038,7 +2163,9 @@
                         "label": "Ethiopian MoE Partner Nomination Dossier",
                         "ready": false
                   }
-            ]
+            ],
+            "app_fee": "$0.00 (Free)",
+            "fee_is_free": true
       },
       {
             "id": "canada-manitoba",
@@ -2087,7 +2214,9 @@
                         "label": "Prospective Graduate Supervisor Confirmation",
                         "ready": false
                   }
-            ]
+            ],
+            "app_fee": "$100 CAD (~$75)",
+            "fee_is_free": false
       },
       {
             "id": "rwanda-alu",
@@ -2131,7 +2260,9 @@
                         "label": "2 Professional & Academic Recommendation Letters",
                         "ready": true
                   }
-            ]
+            ],
+            "app_fee": "$0.00 (Free)",
+            "fee_is_free": true
       },
       {
             "id": "romania-work-visa",
@@ -2175,7 +2306,9 @@
                         "label": "Romanian Employer Work Authorization (Aviz de Muncă / IGI)",
                         "ready": false
                   }
-            ]
+            ],
+            "app_fee": "$0.00 (Employer Sponsored)",
+            "fee_is_free": true
       },
       {
             "id": "france-campus-france",
@@ -2237,10 +2370,11 @@
                         "label": "2 Academic Recommendation Letters (St. Mary's)",
                         "ready": true
                   }
-            ]
+            ],
+            "app_fee": "Campus France EEF Fee (~€75)",
+            "fee_is_free": false
       }
 ];
-
     // Storage Management (State v2)
     const STORAGE_KEY = "fuad_scholarship_state_v2";
 
@@ -2312,6 +2446,13 @@
       return `<button class="status-picker-trigger ${cls}" onclick="openStatusPicker('${trackId}')">${text} ▾</button>`;
     }
 
+    function getFeeBadgeHtml(t) {
+      if (t.fee_is_free) {
+        return `<span class="fee-badge fee-free" title="Zero application fee ($0)">🎉 $0 Free</span>`;
+      }
+      return `<span class="fee-badge fee-paid" title="Application fee required">💳 ${escapeHtml(t.app_fee || 'Fee Required')}</span>`;
+    }
+
     function calculateDaysLeft(deadlineStr) {
       if (!deadlineStr || deadlineStr.includes("Year") || deadlineStr.includes("Rolling")) return "Rolling";
       try {
@@ -2357,8 +2498,11 @@
         // Stage filter
         if (currentStageFilter !== "all" && status !== currentStageFilter) return false;
 
-        // Country filter
+        // Country & Fee filter
+        if (currentCountryFilter === "free" && !t.fee_is_free) return false;
+        if (currentCountryFilter === "fee" && t.fee_is_free) return false;
         if (currentCountryFilter === "saudi" && !t.country.toLowerCase().includes("saudi")) return false;
+        if (currentCountryFilter === "uae" && !t.country.toLowerCase().includes("emirates") && !t.country.toLowerCase().includes("uae")) return false;
         if (currentCountryFilter === "france" && !t.country.toLowerCase().includes("france")) return false;
         if (currentCountryFilter === "italy" && !t.country.toLowerCase().includes("italy")) return false;
         if (currentCountryFilter === "china" && !t.country.toLowerCase().includes("china")) return false;
@@ -2490,13 +2634,20 @@
                   <span>${t.flag}</span>
                   <span>${t.country}</span>
                 </div>
-                ${getStatusBadgeHtml(status, t.id)}
+                <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+                  ${getFeeBadgeHtml(t)}
+                  ${getStatusBadgeHtml(status, t.id)}
+                </div>
               </div>
 
               <h3 class="uni-heading">${t.university}</h3>
               <p class="program-desc">${t.program}</p>
 
               <div class="specs-grid">
+                <div class="spec-item">
+                  <span class="spec-label">Application Fee</span>
+                  <span class="spec-value" style="${t.fee_is_free ? 'color:#34d399; font-weight:700;' : 'color:#f87171; font-weight:700;'}">${t.app_fee || (t.fee_is_free ? '$0.00 (Free)' : 'Fee Required')}</span>
+                </div>
                 <div class="spec-item">
                   <span class="spec-label">Financial Value</span>
                   <span class="spec-value" style="color:#34d399;">${t.benefits}</span>
@@ -2595,7 +2746,10 @@
             const { note, credentials } = getTrackData(t);
             return `
               <div class="kanban-card" onclick="openStatusPicker('${t.id}')">
-                <div style="font-size: 11px; color: var(--text-2); margin-bottom: 2px;">${t.flag} ${t.country}</div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 2px;">
+                  <span style="font-size: 11px; color: var(--text-2);">${t.flag} ${t.country}</span>
+                  ${getFeeBadgeHtml(t)}
+                </div>
                 <div class="kanban-card-title">${t.university}</div>
                 <div style="font-size: 11px; color: #34d399; margin-bottom: 4px;">${t.benefits}</div>
                 <div style="font-size: 11px; color: #fbbf24; font-family: monospace;">Due: ${t.deadline}</div>
@@ -2621,8 +2775,9 @@
         return `
           <div class="timeline-row">
             <div>
-              <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
+              <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px; flex-wrap:wrap;">
                 <span>${t.flag} <strong>${t.university}</strong> (${t.country})</span>
+                ${getFeeBadgeHtml(t)}
                 ${getStatusBadgeHtml(status, t.id)}
               </div>
               <div style="font-size:12.5px; color:var(--text-2);">${t.program} • <span style="color:#34d399;">${t.benefits}</span></div>

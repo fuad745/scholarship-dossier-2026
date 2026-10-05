@@ -68,7 +68,8 @@
         "id_label": "Slate App ID",
         "notes": "Direct Review URL: https://apply.kaust.edu.sa/apply/review. Activation PIN: 798019021",
         "created_by": "AI Agent"
-      }
+      },
+      "application_fee": "$0.00 (Free)"
     },
     {
       "id": "uae-mbzuai",
@@ -125,7 +126,8 @@
         "application_id": "IA-0000049567",
         "notes": "Direct Portal URL: https://apply.mbzuai.ac.ae/ApplicantPortal/s/my-applications. Application ID: IA-0000049567",
         "created_by": "AI Agent"
-      }
+      },
+      "application_fee": "$0.00 (Free)"
     },
     {
       "id": "emjm-emai",
@@ -169,7 +171,8 @@
           "ready": true
         }
       ],
-      "credentials": null
+      "credentials": null,
+      "application_fee": "€0.00 (Free)"
     },
     {
       "id": "emjm-genial",
@@ -218,7 +221,8 @@
           "ready": true
         }
       ],
-      "credentials": null
+      "credentials": null,
+      "application_fee": "N/A (Consortium Ended)"
     },
     {
       "id": "italy-trento",
@@ -267,7 +271,8 @@
           "ready": false
         }
       ],
-      "credentials": null
+      "credentials": null,
+      "application_fee": "€15.00"
     },
     {
       "id": "italy-padua",
@@ -327,7 +332,8 @@
         "application_id": "376598",
         "notes": "Direct Review URL: https://apply.unipd.it/application/view/id/376598. Application ID: 376598, Dream ID: 667887",
         "created_by": "AI Agent"
-      }
+      },
+      "application_fee": "€30.00"
     },
     {
       "id": "italy-polimi",
@@ -390,7 +396,8 @@
         "totp_secret": "KDCYH5HA6K6OHFNT65UASRV6ASTVR6S6",
         "totp_emergency_key": "wcJ8wEGF3T",
         "application_id": "337641"
-      }
+      },
+      "application_fee": "€50.00"
     },
     {
       "id": "italy-sapienza",
@@ -439,7 +446,8 @@
           "ready": false
         }
       ],
-      "credentials": null
+      "credentials": null,
+      "application_fee": "€30.00"
     },
     {
       "id": "italy-unical",
@@ -488,7 +496,8 @@
           "ready": false
         }
       ],
-      "credentials": null
+      "credentials": null,
+      "application_fee": "€0.00 (Free)"
     },
     {
       "id": "china-hit",
@@ -551,7 +560,8 @@
           "ready": false
         }
       ],
-      "credentials": null
+      "credentials": null,
+      "application_fee": "400 RMB (~$55)"
     },
     {
       "id": "china-bit",
@@ -614,7 +624,8 @@
           "ready": false
         }
       ],
-      "credentials": null
+      "credentials": null,
+      "application_fee": "600 RMB (~$85)"
     },
     {
       "id": "china-ustc",
@@ -677,7 +688,8 @@
           "ready": false
         }
       ],
-      "credentials": null
+      "credentials": null,
+      "application_fee": "600 RMB (~$85)"
     },
     {
       "id": "china-pku-yenching",
@@ -733,7 +745,8 @@
         "id_label": "Yenching Record ID",
         "notes": "Direct Review URL: https://apply.yca.pku.edu.cn/entryform/registerForm/864474322327055621/876644237548990213?modelcode=M100100. Account ID: 876643523670060805",
         "created_by": "AI Agent"
-      }
+      },
+      "application_fee": "$0.00 (Free)"
     },
     {
       "id": "russia-open-doors",
@@ -792,7 +805,8 @@
         "password": "FuadRussia2027!#",
         "portal_url": "https://od.globaluni.ru/en/",
         "notes": "Verified 93/100 points portfolio submitted."
-      }
+      },
+      "application_fee": "$0.00 (Free)"
     },
     {
       "id": "hungary-stipendium",
@@ -841,7 +855,8 @@
           "ready": false
         }
       ],
-      "credentials": null
+      "credentials": null,
+      "application_fee": "$0.00 (Free)"
     },
     {
       "id": "canada-manitoba",
@@ -890,7 +905,8 @@
           "ready": false
         }
       ],
-      "credentials": null
+      "credentials": null,
+      "application_fee": "$100 CAD (~$75)"
     },
     {
       "id": "rwanda-alu",
@@ -934,7 +950,8 @@
           "ready": true
         }
       ],
-      "credentials": null
+      "credentials": null,
+      "application_fee": "$0.00 (Free)"
     },
     {
       "id": "romania-work-visa",
@@ -978,7 +995,8 @@
           "ready": false
         }
       ],
-      "credentials": null
+      "credentials": null,
+      "application_fee": "$0.00 (Employer Sponsored)"
     },
     {
       "id": "france-campus-france",
@@ -1041,7 +1059,8 @@
         "password": "FuadFrance2027!#",
         "portal_url": "https://etudesenfrance.diplomatie.gouv.fr/connexion",
         "notes": "Verified active. Profile 100% completed by AI Agent."
-      }
+      },
+      "application_fee": "Campus France EEF Fee (~€75)"
     }
   ],
   "china_professors": [

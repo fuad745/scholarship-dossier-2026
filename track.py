@@ -29,15 +29,15 @@ def cmd_list(args):
     tracks = data.get("active_tracks", [])
     filter_country = args[0].lower() if args else None
 
-    print("\n" + "=" * 105)
-    print(f"{'ID':<20} | {'COUNTRY':<8} | {'INTAKE':<24} | {'DEADLINE':<12} | {'STATUS':<20} | {'PRIORITY'}")
-    print("=" * 105)
+    print("\n" + "=" * 115)
+    print(f"{'ID':<20} | {'COUNTRY':<8} | {'FEE':<15} | {'DEADLINE':<12} | {'STATUS':<20} | {'PRIORITY'}")
+    print("=" * 115)
 
     for t in tracks:
         if filter_country and filter_country not in t["country"].lower():
             continue
-        print(f"{t['id']:<20} | {t['country']:<8} | {t['target_intake'][:24]:<24} | {str(t['deadline'])[:12]:<12} | {t['status']:<20} | {t['priority']}")
-    print("=" * 105)
+        print(f"{t['id']:<20} | {t['country']:<8} | {str(t.get('application_fee', 'N/A'))[:15]:<15} | {str(t['deadline'])[:12]:<12} | {t['status']:<20} | {t['priority']}")
+    print("=" * 115)
     print(f"Total: {len(tracks)} tracked programs. Use `python track.py show <id>` for full details.\n")
 
 def cmd_show(args):
@@ -54,6 +54,7 @@ def cmd_show(args):
             print(f"• Track ID         : {t['id']}")
             print(f"• Degree Program   : {t['program']}")
             print(f"• Funding Scheme   : {t['funding']}")
+            print(f"• Application Fee  : {t.get('application_fee', 'N/A')}")
             print(f"• Financial Award  : {t['benefits']}")
             print(f"• English Policy   : {t['language_requirement']}")
             print(f"• Target Intake    : {t['target_intake']}")
