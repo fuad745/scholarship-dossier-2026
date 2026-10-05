@@ -11,12 +11,14 @@
 
 ```
 [✅ COMPLETED / READY TO SUBMIT]   [⚡ IN PROGRESS / MONITORING]        [⏳ UPCOMING INTAKES]
-• Polimi Round 1:                 • China CSC Outreach:              • EMAI Consortium
-  100% Filled (Pay €50)             6 Profs Contacted (Follow Oct 12)  (Opens Nov 2026)
-• KAUST Fellowship ($0 Fee):      • France EEF Dossier:              • UNIPD Padua
-  Dossier 100% Ready                Dossier Done (Cart Locked)         (Opens Nov 2)
+• Polimi Round 1:                 • China CSC Outreach:              • UNIPD Padua (Opens Nov 2)
+  100% Filled (Pay €50)             6 Profs Contacted (Follow Oct 12)  (Dossier 100% Ready)
+• KAUST Fellowship ($0 Fee):      • France EEF Dossier:              • EMAI Consortium
+  100% Ready (Emergency Updated)    Dossier Done (Cart Locked)         (Opens Nov 2026)
 • PKU Yenching ($0 Fee):          • Russia Open Doors:               • Hungary Stipendium
-  Dossier 100% Ready (Nov 27)       Portfolio 93 Pts (Stage 1 Done)    (Opens Nov 15)
+  100% Ready (Nov 27 Deadline)      Portfolio 93 Pts (Stage 1 Done)    (Opens Nov 15)
+• MBZUAI Fellowship ($0 Fee):
+  Dossier 100% Ready (Priority Nov 15)
 ```
 
 ---
@@ -40,6 +42,28 @@
   * **Emergency Contact Verified & Updated in Portal:** Successfully updated to **Mother: Juhara Ousman**, Phone: **`+251 911 747 500`**, Address: `Kolfe Keraniyo Sub City, Addis Ababa, Ethiopia`. Screenshot verified: [`kaust_emergency_contact_updated.png`](file:///home/kichner/Desktop/stuff/docs/11_Saudi_Arabia_KAUST_Fellowship_2027/kaust_emergency_contact_updated.png).
   * Electronic signature signed and saved. Zero validation errors.
 * **Current State:** 100% completed, all sections validated and verified. Parked on pre-submission **Review** page per user instruction. Fuad can log in and click "Submit Application" ($0 fee).
+
+---
+
+### 🇦🇪 United Arab Emirates: MBZUAI Graduate Fellowship (Priority P1)
+* **Status:** `DOSSIER_100%_PREPARED (READY TO APPLY ONLINE)`
+* **Institution:** Mohamed bin Zayed University of Artificial Intelligence (MBZUAI), Masdar City, Abu Dhabi, UAE
+* **Degree Program:** Master of Science in Computer Science (Distributed Systems & AI Infrastructure Track)
+* **Financial Award:** **100% Full Ride MBZUAI Fellowship** (100% Tuition Waiver + **8,000 AED/month cash stipend (~$2,175 USD/month)** + Free private furnished accommodation + Full health insurance + UAE student visa + Annual round-trip flight tickets).
+* **Language Waiver:** **100% English MOI Exemption Letter Accepted** (Official St. Mary's University MOI certificate included in dossier).
+* **Application Fee:** **$0.00 (Free to apply)**.
+* **Portal:** [https://mbzuai.ac.ae/study/admissions/](https://mbzuai.ac.ae/study/admissions/)
+* **Deadlines:**
+  * **Priority Deadline:** **November 15, 2026 (5:00 PM GST)** *(Early review & maximum fellowship priority)*
+  * **Regular Deadline:** December 15, 2026
+* **What is 100% Prepared in `13_UAE_MBZUAI_Fellowship_2027/`:**
+  * `STATEMENT_OF_PURPOSE_MBZUAI.pdf`: Tailored SOP linking high-concurrency systems, Redis caching, and capstone synchronization protocol to distributed AI systems and accelerator runtimes.
+  * `Fuad_Ahmed_CV_MBZUAI_Academic.pdf`: Academic CV highlighting systems, backend, and Linux engineering.
+  * 3-Page BSc degree & transcripts with official English MOI certificate attached.
+  * 2 Recommendation letters (Dr. Tesfaye Assefa and Mr. Birhanu Getachew).
+  * Biometric passport scan (`E00340202`).
+  * Emergency Contact specified: Mother (Juhara Ousman, `+251 911 747 500`).
+* **Immediate Next Action:** Create applicant account on MBZUAI portal and submit before the November 15, 2026 priority cutoff ($0 fee).
 
 ---
 
@@ -143,13 +167,25 @@
     * **Round 1 Deadline:** **December 1, 2026 (11:59 PM CET)** (Early Bird Fee €50)
     * **Current State:** Parked at **PagoPA checkout** screen. Once Fuad enters card details for the €50 fee, the application is formally locked and submitted.
   * **University of Padua - UNIPD (MSc Computer Engineering / Data Science):**
-    * Application portal opens: **November 2, 2026** | Deadline: February 2, 2027
+    * **Status:** `DOSSIER_100%_PREPARED (AWAITING PORTAL OPENING NOVEMBER 2, 2026)`
+    * **Application Portal:** [apply.unipd.it](https://apply.unipd.it/) (DreamApply)
+    * **Intake Window:** Opens **November 2, 2026** | First Round Closes: **February 2, 2027**
+    * **Scholarships:** Veneto ESU Full Scholarship (100% Tuition + Housing + Meals + ~€7,000/yr cash) + Padua International Excellence Grant (€8,000/yr).
+    * **What is 100% Prepared in `14_Italy_University_of_Padua_2027/`:**
+      * `MOTIVATION_LETTER_UNIPD.pdf`: Tailored systems motivation letter for DEI.
+      * `Fuad_Ahmed_CV_UNIPD_Academic.pdf`: European academic CV.
+      * `DETAILED_COURSE_DESCRIPTIONS_SYLLABUS.pdf`: 4-Year complete BSc course catalogue.
+      * 3-Page BSc degree & transcripts with official English MOI certificate attached.
+      * 2 Recommendation letters (Dr. Tesfaye Assefa and Mr. Birhanu Getachew).
+      * Passport scan (`E00340202`).
   * **University of Trento (MSc Computer Science):**
     * Application portal opens: **December 1, 2026** | Deadline: February 20, 2027
   * **Sapienza University of Rome & UniCal:**
     * Pre-selection opens: **January 2027**
 * **Immediate Next Action:**
-  * Complete the €50 application evaluation fee checkout via PagoPA.
+  * Complete the €50 application evaluation fee checkout via PagoPA for Polimi.
+  * Submit MBZUAI application before November 15 ($0 fee).
+  * Submit UNIPD DreamApply application as soon as portal opens on November 2.
 
 ---
 
@@ -188,7 +224,8 @@
 | **Ongoing (Mon & Fri)** | 🇫🇷 France EEF | Log into `ET26-00453` and check program cart unlock |
 | **Oct 12, 2026** | 🇨🇳 China CSC | Follow-up on Prof. Weizhe Zhang, Song Yang, Mingjun Xiao |
 | **Oct 13, 2026** | 🇨🇳 China CSC | Follow-up on Prof. Shaohuai Shi, Meihui Zhang, Gongming Zhao |
-| **Nov 2, 2026** | 🇮🇹 Italy Padua | University of Padua (UNIPD) portal opens for Fall 2027 |
+| **Nov 2, 2026** | 🇮🇹 Italy Padua | University of Padua (UNIPD) portal opens (Dossier 100% Ready) |
+| **Nov 15, 2026** | 🇦🇪 UAE MBZUAI | **MBZUAI Full-Ride Fellowship Priority Deadline (5:00 PM GST)** |
 | **Nov 15, 2026** | 🇭🇺 Hungary | Stipendium Hungaricum DreamApply portal opens |
 | **Nov 15, 2026** | 🇫🇷 France Eiffel | Contact CentraleSupélec & UGA coordinators for Eiffel support |
 | **Nov 2026** | 🇪🇺 EU EMAI | Erasmus Mundus Joint Master in AI (EMAI) portal opens |
@@ -197,5 +234,7 @@
 | **Dec 1, 2026** | 🇨🇦 Canada | University of Manitoba UMGF fellowship deadline |
 | **Dec 1, 2026** | 🇮🇹 Italy Trento | University of Trento international application portal opens |
 | **Dec 15, 2026** | 🇷🇼 Rwanda ALU | Mastercard Foundation Scholars priority deadline |
+| **Dec 15, 2026** | 🇦🇪 UAE MBZUAI | MBZUAI Regular Application Deadline |
 | **Jan 15, 2027** | 🇸🇦 Saudi KAUST | KAUST Fellowship MS in Computer Science application deadline |
 | **Mar 1–15, 2027** | 🇫🇷 France EEF | Final program cart submission deadline for French universities |
+

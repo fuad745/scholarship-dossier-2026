@@ -17,7 +17,7 @@
       "note": "Father (Ahmed Tuba) deceased"
     }
   },
-  "last_updated": "2026-10-05T17:15:00+03:00",
+  "last_updated": "2026-10-05T17:50:00+03:00",
   "active_tracks": [
     {
       "id": "saudi-kaust",
@@ -69,6 +69,50 @@
         "notes": "Direct Review URL: https://apply.kaust.edu.sa/apply/review. Activation PIN: 798019021",
         "created_by": "AI Agent"
       }
+    },
+    {
+      "id": "uae-mbzuai",
+      "country": "United Arab Emirates",
+      "university": "Mohamed bin Zayed Univ of AI (MBZUAI)",
+      "program": "MSc Computer Science (Distributed Systems & AI)",
+      "funding": "MBZUAI Full-Ride Fellowship",
+      "benefits": "100% Tuition + 8,000 AED/mo ($2,175/mo) Cash + Free Housing + Flights",
+      "language_requirement": "English MOI Exemption Letter Accepted",
+      "target_intake": "Fall 2027 (Starts Aug/Sept 2027)",
+      "deadline": "2026-11-15",
+      "portal_open": "2026-09-01",
+      "status": "DOSSIER_READY_FOR_SUBMISSION",
+      "priority": "P1",
+      "portal_url": "https://mbzuai.ac.ae/study/admissions/",
+      "notes": "$0 application fee. 100% Full ride with $2,175/mo cash stipend. Priority cutoff Nov 15, 2026 (Regular: Dec 15). Complete dossier assembled in 13_UAE_MBZUAI_Fellowship_2027.",
+      "required_documents": [
+        {
+          "id": "passport",
+          "label": "Biometric Passport (E00340202)",
+          "ready": true
+        },
+        {
+          "id": "degree",
+          "label": "3-Page Degree & Transcripts",
+          "ready": true
+        },
+        {
+          "id": "moi",
+          "label": "St. Mary's English MOI Certificate (Page 3)",
+          "ready": true
+        },
+        {
+          "id": "cv_sop",
+          "label": "Tailored MBZUAI Statement of Purpose & Academic CV",
+          "ready": true
+        },
+        {
+          "id": "recs",
+          "label": "2 Academic Recommendation Letters",
+          "ready": true
+        }
+      ],
+      "credentials": null
     },
     {
       "id": "emjm-emai",
@@ -223,10 +267,10 @@
       "target_intake": "Fall 2027 (Starts Oct 2027)",
       "deadline": "2027-02-02",
       "portal_open": "2026-11-02",
-      "status": "DOSSIER_PREPARATION",
+      "status": "DOSSIER_READY_FOR_PORTAL_OPEN",
       "priority": "P1",
       "portal_url": "https://apply.unipd.it/",
-      "notes": "Automatic evaluation for €8,000/yr merit grant alongside ESU need grant.",
+      "notes": "Dossier 100% prepared in 14_Italy_University_of_Padua_2027. Motivation Letter, Academic CV, Syllabus, Transcripts, MOI, Recs, and Passport ready. Portal opens November 2, 2026.",
       "required_documents": [
         {
           "id": "passport",
